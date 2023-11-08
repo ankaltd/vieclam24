@@ -1,0 +1,16 @@
+{
+    "host": "103.167.199.37",
+    "username": "vieclam@vieclam24.com.vn",
+    "password": "E8c1BPGP",
+    "remotePath": "/public_html/wp-content/themes/vieclam24/",
+    "protocol": "ftp",
+    "port": 0,
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": true,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode"
+    ]
+}
