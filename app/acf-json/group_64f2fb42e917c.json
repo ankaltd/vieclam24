@@ -1,0 +1,1248 @@
+{
+    "key": "group_64f2fb42e917c",
+    "title": "Document Single: Tài liệu chi tiết",
+    "fields": [
+        {
+            "key": "field_64f2fb420343c",
+            "label": "Định dạng tài liệu",
+            "name": "wep_docs_format",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "choices": {
+                "list_link_content": "Nội dung với link xem thêm (danh sách)",
+                "service_content": "Chi tiết dịch vụ (bảng)",
+                "service_detail": "Chi tiết kỹ thuật (bảng)",
+                "specifications": "Thông số kỹ thuật (bảng)",
+                "html_content": "Nội dung HTML (đơn)",
+                "table_content": "Nội dung bảng thông số (bảng)",
+                "list_content": "Danh sách thông tin (danh sách)",
+                "link_content": "Mục nội dung có liên kết (đơn)",
+                "time_content": "Mục thời gian (đơn)"
+            },
+            "default_value": "html_content",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "allow_custom": 0,
+            "search_placeholder": ""
+        },
+        {
+            "key": "field_64f2fe390343d",
+            "label": "Các ưu đãi (danh sách)",
+            "name": "wep_docs_offlers_list",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64f2fb420343c",
+                        "operator": "==",
+                        "value": "list_link_content"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Thêm mục ưu đãi",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64f2ff4a0343e",
+                    "label": "Tiêu đề ưu đãi",
+                    "name": "wep_docs_offers_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f2fe390343d"
+                },
+                {
+                    "key": "field_64f2ff7d0343f",
+                    "label": "Liên kết chi tiết ưu đãi",
+                    "name": "wep_docs_offers_link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "parent_repeater": "field_64f2fe390343d"
+                },
+                {
+                    "key": "field_65132113d72ef",
+                    "label": "Nổi bật",
+                    "name": "wep_docs_offers_highlight",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Chọn mục này sẽ được hiện ngoài trang chủ",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_save_meta": 0,
+                    "message": "",
+                    "default_value": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1,
+                    "parent_repeater": "field_64f2fe390343d"
+                }
+            ],
+            "acfe_repeater_stylised_button": 0
+        },
+        {
+            "key": "field_64f3071f80e9b",
+            "label": "Ưu đãi riêng lẻ (một mục)",
+            "name": "wep_docs_offlers_item",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Tạo một mục ưu đãi có nội dung và liên kết tới trang chi tiết",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64f2fb420343c",
+                        "operator": "==",
+                        "value": "link_content"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "layout": "row",
+            "acfe_seamless_style": 0,
+            "acfe_group_modal": 0,
+            "sub_fields": [
+                {
+                    "key": "field_64f3076d80e9e",
+                    "label": "Nội dung ưu đãi",
+                    "name": "web_docs_offers_content",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Ưu đãi 1",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_64f3079980e9f",
+                    "label": "Liên kết chi tiết ưu đãi",
+                    "name": "web_docs_offers_detail_link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url"
+                }
+            ],
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large"
+        },
+        {
+            "key": "field_6512f7aaa024c",
+            "label": "Thời gian riêng lẻ (bảo hành hoặc sửa chữa)",
+            "name": "wep_docs_time_item",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Tạo một mục thời gian (bảo hành hoặc sửa chữa)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64f2fb420343c",
+                        "operator": "==",
+                        "value": "time_content"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "layout": "row",
+            "acfe_seamless_style": 0,
+            "acfe_group_modal": 0,
+            "sub_fields": [
+                {
+                    "key": "field_6512f7aaa024e",
+                    "label": "Thời gian",
+                    "name": "web_docs_time_number",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "Nhập thời gian bảo hành hoặc thời gian sửa chữa (tháng hoặc giờ)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_save_meta": 0,
+                    "default_value": 3,
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_6512f7aaa024d",
+                    "label": "Đơn vị",
+                    "name": "web_docs_time_unit",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "Chọn đơn vị cho thời gian bảo hành hoặc sửa chữa",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_save_meta": 0,
+                    "choices": {
+                        "month": "Tháng",
+                        "year": "Năm",
+                        "minute": "Phút",
+                        "hour": "Giờ",
+                        "day": "Ngày"
+                    },
+                    "default_value": "month",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "allow_custom": 0,
+                    "search_placeholder": ""
+                }
+            ],
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large"
+        },
+        {
+            "key": "field_64f2ffed03440",
+            "label": "Bảng thông số (bảng)",
+            "name": "wep_docs_table_props",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Có thể sử dụng tạo bảng thông số kỹ thuật cho các loại máy hoặc bảng báo giá",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64f2fb420343c",
+                        "operator": "==",
+                        "value": "table_content"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Thêm thông số",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64f2ffed03441",
+                    "label": "Tên thông số",
+                    "name": "wep_docs_prop_name",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Thông số 1",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f2ffed03440"
+                },
+                {
+                    "key": "field_64f2ffed03442",
+                    "label": "Giá trị thông số",
+                    "name": "wep_docs_prop_value",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Giá trị 1",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f2ffed03440"
+                }
+            ],
+            "acfe_repeater_stylised_button": 0
+        },
+        {
+            "key": "field_64f30926e16de",
+            "label": "Bảng chi tiết dịch vụ (bảng)",
+            "name": "wep_docs_table_services",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Dùng làm bảng chi tiết dịch vụ",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64f2fb420343c",
+                        "operator": "==",
+                        "value": "service_content"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Thêm thông số",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64f30926e16df",
+                    "label": "Thời gian sửa",
+                    "name": "wep_docs_table_service_repair_time",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "30 phút",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f30926e16de"
+                },
+                {
+                    "key": "field_64f30926e16e0",
+                    "label": "Hình thức sửa",
+                    "name": "wep_docs_table_service_repair_style",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Xem trực tiếp",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f30926e16de"
+                },
+                {
+                    "key": "field_64f309bae16e1",
+                    "label": "Thời gian bảo hành",
+                    "name": "wep_docs_table_service_repair_warranty",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "12 tháng",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f30926e16de"
+                },
+                {
+                    "key": "field_64f309e5e16e2",
+                    "label": "Tình trạng",
+                    "name": "wep_docs_table_service_repair_status",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Còn hàng",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f30926e16de"
+                }
+            ],
+            "acfe_repeater_stylised_button": 0
+        },
+        {
+            "key": "field_64f345f093ae7",
+            "label": "Bảng chi tiết kỹ thuật (bảng)",
+            "name": "wep_docs_table_services_detail",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Dùng làm bảng chi tiết dịch vụ",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64f2fb420343c",
+                        "operator": "==",
+                        "value": "service_detail"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Thêm thông số",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64f345f093ae8",
+                    "label": "Model",
+                    "name": "wep_docs_table_service_model",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "iPhone X",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f345f093ae7"
+                },
+                {
+                    "key": "field_64f345f093ae9",
+                    "label": "Lỗi phần thiết bị",
+                    "name": "wep_docs_table_service_device_error",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Màn hình",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f345f093ae7"
+                },
+                {
+                    "key": "field_64f346fbae83d",
+                    "label": "Loại hình sửa chữa",
+                    "name": "wep_docs_table_service_repair_type",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Thay màn hình",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f345f093ae7"
+                },
+                {
+                    "key": "field_64f34717ae83e",
+                    "label": "Hãng thiết bị",
+                    "name": "wep_docs_table_service_brand_name",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Apple",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f345f093ae7"
+                },
+                {
+                    "key": "field_64f345f093aea",
+                    "label": "Thời gian bảo hành",
+                    "name": "wep_docs_table_service_repair_warranty",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "12 tháng",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f345f093ae7"
+                },
+                {
+                    "key": "field_64f347d3ae840",
+                    "label": "Thời gian sửa",
+                    "name": "wep_docs_table_service_repair_time",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "30 - 60 phút",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f345f093ae7"
+                },
+                {
+                    "key": "field_64f345f093aeb",
+                    "label": "Dịch vụ",
+                    "name": "wep_docs_table_service_name",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Sửa chữa điện thoại",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f345f093ae7"
+                },
+                {
+                    "key": "field_64f3476aae83f",
+                    "label": "Trạng thái",
+                    "name": "wep_docs_table_service_status",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Còn hàng",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f345f093ae7"
+                }
+            ],
+            "acfe_repeater_stylised_button": 0
+        },
+        {
+            "key": "field_64f3460793aec",
+            "label": "Bảng thông số kỹ thuật (bảng)",
+            "name": "wep_docs_table_specifications",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Dùng làm bảng chi tiết dịch vụ",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64f2fb420343c",
+                        "operator": "==",
+                        "value": "specifications"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Thêm thông số",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64f3460893aed",
+                    "label": "Model",
+                    "name": "wep_docs_table_product_model",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "iPhone XS | XS Max",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f3460793aec"
+                },
+                {
+                    "key": "field_64f3460893aee",
+                    "label": "Hãng sản xuất",
+                    "name": "wep_docs_table_product_brand",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Apple",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f3460793aec"
+                },
+                {
+                    "key": "field_64f3460893aef",
+                    "label": "Thời gian bảo hành",
+                    "name": "wep_docs_table_service_repair_warranty",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "12 tháng",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f3460793aec"
+                },
+                {
+                    "key": "field_64f3460893af0",
+                    "label": "Tình trạng máy",
+                    "name": "wep_docs_table_product",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Trầy sước",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f3460793aec"
+                },
+                {
+                    "key": "field_64f34888ae842",
+                    "label": "Hệ điều hành",
+                    "name": "wep_docs_table_product_os",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "iOS",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f3460793aec"
+                },
+                {
+                    "key": "field_64f3489dae843",
+                    "label": "Thời gian bảo hành",
+                    "name": "wep_docs_table_product_warranty",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Đổi lỗi trong 01 Tháng đầu",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f3460793aec"
+                },
+                {
+                    "key": "field_64f348c5ae844",
+                    "label": "Kích thước màn hình",
+                    "name": "wep_docs_table_product_screensize",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "6.5 inches",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f3460793aec"
+                },
+                {
+                    "key": "field_64f348dcae845",
+                    "label": "Công nghệ màn hình",
+                    "name": "wep_docs_table_product_screensize_tech",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Super Retina OLED",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f3460793aec"
+                },
+                {
+                    "key": "field_64f348faae846",
+                    "label": "Camera sau",
+                    "name": "wep_docs_table_product_camera_back",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "12 MP",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f3460793aec"
+                },
+                {
+                    "key": "field_64f3491eae847",
+                    "label": "Camera trước",
+                    "name": "wep_docs_table_product_camera_front",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "7 MP",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f3460793aec"
+                },
+                {
+                    "key": "field_64f34934ae848",
+                    "label": "Chipset - CPU",
+                    "name": "wep_docs_table_product_chipset",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Apple A12 Bionic 6 nhân",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f3460793aec"
+                },
+                {
+                    "key": "field_64f3494aae849",
+                    "label": "Bộ nhớ trong",
+                    "name": "wep_docs_table_product_rom",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "256 GB",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f3460793aec"
+                },
+                {
+                    "key": "field_64f349c5ae84e",
+                    "label": "Bộ nhớ ngoài",
+                    "name": "wep_docs_table_product_ram",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "256 GB",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f3460793aec"
+                },
+                {
+                    "key": "field_64f3496aae84a",
+                    "label": "SIM",
+                    "name": "wep_docs_table_product_sim",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Nano-SIM",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f3460793aec"
+                },
+                {
+                    "key": "field_64f34980ae84b",
+                    "label": "Độ phân giải màn hình",
+                    "name": "wep_docs_table_product_resolution",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "1242 x 2688 pixel",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f3460793aec"
+                },
+                {
+                    "key": "field_64f34998ae84c",
+                    "label": "Hệ điều hành",
+                    "name": "wep_docs_table_product_os_version",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 12,
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f3460793aec"
+                },
+                {
+                    "key": "field_64f349adae84d",
+                    "label": "GPU",
+                    "name": "wep_docs_table_product_gpu",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Apple GPU 4 nhân",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f3460793aec"
+                },
+                {
+                    "key": "field_64f34873ae841",
+                    "label": "Tình trạng",
+                    "name": "wep_docs_table_product_status",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Còn hàng",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f3460793aec"
+                }
+            ],
+            "acfe_repeater_stylised_button": 0
+        },
+        {
+            "key": "field_64f3014203443",
+            "label": "Danh sách thông tin (danh sách)",
+            "name": "wep_docs_info_list",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Dùng làm danh sách ưu đãi, với nội dung linh hoạt",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64f2fb420343c",
+                        "operator": "==",
+                        "value": "list_content"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Thêm mục thông tin",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64f3014203444",
+                    "label": "Tên thông tin",
+                    "name": "wep_docs_info_name",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Thông tin 1",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f3014203443"
+                },
+                {
+                    "key": "field_64f3014203445",
+                    "label": "Giá trị thông tin",
+                    "name": "wep_docs_info_value",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0,
+                    "parent_repeater": "field_64f3014203443"
+                },
+                {
+                    "key": "field_65132202289a4",
+                    "label": "Nổi bật",
+                    "name": "wep_docs_info_highlight",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Chọn mục này sẽ ưu tiên nổi bật ngoài trang chủ",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_save_meta": 0,
+                    "message": "",
+                    "default_value": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1,
+                    "parent_repeater": "field_64f3014203443"
+                }
+            ],
+            "acfe_repeater_stylised_button": 0
+        },
+        {
+            "key": "field_64f301ec03446",
+            "label": "Nội dung tài liệu",
+            "name": "wep_docs_content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Nội dung mô tả thêm đơn lẻ",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64f2fb420343c",
+                        "operator": "==",
+                        "value": "html_content"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "docs"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt"
+    ],
+    "active": true,
+    "description": "Cài đặt nội dung cho tài liệu chi tiết",
+    "show_in_rest": 0,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1695752781
+}

@@ -1,0 +1,107 @@
+/* Product Category Styles */
+.wep_category_service_grid {
+    &__filtering {
+        font-size: 13px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 0 15px 0;
+
+
+        .wep-filtering-att {
+            padding: 5px 10px;
+            border-radius: 6px;
+            border: solid 1px $wep_color_active;
+            text-decoration: none;
+            margin: 0 3px;
+
+            &:hover {
+                border: solid 1px #999;
+            }
+
+            &::before {
+                font-family: WooCommerce;
+                speak: never;
+                font-weight: 400;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                margin-right: 0.618em;
+                content: "\e013";
+                text-decoration: none;
+                color: #a00;
+            }
+        }
+    }
+
+    &__sorting {
+        font-size: 13px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0;
+
+        .wep-radio {
+            .wep-control-input:checked~.wep-control-label {
+                border: solid 1px $wep_color_active;
+                color: $wep_color_active;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    background-color: $wep_color_active;
+                    /* Màu đỏ khi được chọn */
+                    content: '';
+                    display: block;
+                    right: 0;
+                    top: 0;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                }
+            }
+
+            .wep-control-label {
+                border-radius: 60px;
+                border: solid 1px #eee;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+
+            input {
+                appearance: none;
+            }
+        }
+
+    }
+
+}
+
+// Category Description
+.wep_category_service {
+    &_sorting_bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .wep_description {
+        padding: 15px;
+        border: solid 1px #eee;
+        border-radius: 6px;
+        margin-bottom: 15px;
+    }
+
+}
+
+.wep_category_service_filtering_bar {
+    margin-top: 15px;
+    margin-bottom: -5px;
+}
+
+.wep_category_service_grid__quick_filter {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;    
+}

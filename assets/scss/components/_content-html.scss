@@ -1,0 +1,139 @@
+/* Styles for All HTML Content - Unit Base Elements */
+
+.wep_content_html {
+    line-height: 1.5;
+    font-size: 15px;
+
+    /* Link */
+    a {
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $wep_color_active;
+        }
+    }
+
+    /* Media */
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+
+        margin-bottom: 10px;
+
+        &.alignleft {
+            float: left;
+            margin-right: 10px;
+        }
+
+        &.alignright {
+            float: right;
+            margin-left: 10px;
+        }
+
+        &.aligncenter {
+            display: block;
+            float: none;
+            margin: auto;
+        }
+    }
+
+    /* Figure */
+    figure {
+        max-width: 100%;
+        margin-bottom: 15px;
+
+        &.alignleft {
+            float: left;
+            margin-right: 10px;
+        }
+
+        &.alignright {
+            float: right;
+            margin-left: 10px;            
+        }
+
+        &.aligncenter {
+            margin: 10px auto;
+        }
+
+        &.alignnone {
+            float: none;
+        }
+    }
+
+    /* Quote */
+    blockquote {
+        background-color: #eee;
+        padding: 10px 15px;
+        border-radius: $wep_radius;
+        width: 95%;
+        margin: auto;
+        margin-bottom: 15px;
+        border:solid 1px #ddd;
+        transition: border 0.3s ease;
+
+        &:hover {
+            border:solid 1px $wep_color_active;
+        }
+    }
+
+    /* Table */
+    table {
+
+        margin-bottom: 15px;
+
+        td,
+        th {
+            border: solid 1px #eee;
+            padding: 5px 10px;
+        }
+
+        th {
+            background-color: #f8f8f8;
+            &.views {
+                color: $wep_color_active;
+            }
+        }
+
+        tr {
+            &.odd {
+                background-color: #eee;
+            }
+        }
+    }
+
+    /* List */
+    ul, ol {
+        padding-left: 20px;
+        line-height: 1.8;
+        li {
+            padding-left: 0;
+        }
+    }
+
+    dl {
+        dd {
+            padding-left: 18px;
+        }
+    }
+
+    /* Format */
+    big {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,560 @@
+// HeadMenu
+#bvdt-navbar {
+    width: 100%;
+    height: 0;
+    padding: 0;
+}
+
+.bvdt_headmenu {
+    &__item {
+        a {
+            display: inline-block;
+            padding: 7px 17px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+    }
+}
+
+// HeadNav
+.bvdt_headnav {
+
+    &__logo {
+        display: inline-block;
+        padding: 10px 30px;
+    }
+
+    &__toggler {
+        text-align: right;
+        padding: 10px 20px;
+
+        .navbar-toggler {
+
+            border-radius: 50%;
+            border: none;
+
+            .navbar-toggler-icon {
+                margin-top: 0;
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .navbar-nav {
+        margin-bottom: 20px;
+
+        .nav-item {
+            a {
+                text-decoration: none;
+            }
+
+            &.dropdown {
+                &>.dropdown-menu {
+                    &>li {
+                        .nav-link {
+                            color: #333 !important;
+
+                            &:hover {
+                                color: $wep_color_active !important;
+                            }
+                        }
+
+                        position: relative;
+
+                        &>.dropdown-menu {
+                            display: none;
+                            top: 0;
+                            left: 180px;
+                            padding-top: 0;
+                        }
+
+                        &:hover {
+
+                            &>.dropdown-menu {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 3px;
+                border-radius: 5px;
+                top: 35px;
+                left: 0;
+                width: 0%;
+                background: transparent;
+                transform: inherit;
+                transform-origin: center left;
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover {
+                text-decoration: none;
+                cursor: pointer;
+
+                // Fixed Hover Mega Menu
+                // &::before {
+                //     content: "";
+                //     display: block;
+                //     position: absolute;
+                //     bottom: 0;
+                //     height: 30px;
+                //     background: transparent;
+                //     width: 120px;
+                //     margin: auto;
+                // }
+
+                &::after {
+                    width: 70%;
+                    background: linear-gradient(270deg, #162A52 3.49%, #166089 98.26%);
+                }
+            }
+        }
+
+        .dropdown-header {
+            padding: 10px 0;
+            white-space: normal;
+            line-height: 1.5;
+        }
+
+        .dropdown-list {
+            display: flex;
+            flex-wrap: wrap;
+
+            .dropdown-item {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                white-space: normal;
+
+                &::before {
+                    // content: url("../assets/images/icons/arrow-list.png");
+                    // display: inline-block;
+                    // position: relative;
+                    // margin-right: 5px;
+                    // ;
+                    // margin-bottom: 3px;
+                }
+            }
+
+            // Remove icon arrow if dropdown-item has image icons
+            &.bvdt-icons {
+                .dropdown-item {
+                    &::before {
+                        content: none;
+                    }
+
+                    .icon {
+                        margin-right: 5px;
+                        width: 36px;
+                        height: 36px;
+                        padding: 10px;
+                        border-radius: 50%;
+                        background-color: #E5E5E5;
+
+                        img {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    &:hover {
+                        .icon {
+                            background-color: #a4c1fc;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .mega-group-heading {
+            display: flex;
+            background-color: #162A52;
+            color: white !important;
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+            width: 98%;
+            white-space: normal;
+            border-radius: 5px;
+            margin-bottom: 5px;
+
+            &:hover {
+                background-color: #162A52 !important;
+                text-decoration: none !important;
+            }
+
+            &::before {
+                margin-left: 5px;
+            }
+        }
+
+        .nav-link,
+        .dropdown-item {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            color: #162A52;
+
+            &:hover {
+                color: $wep_color_active;
+            }
+        }
+
+        .dropdown-item {
+            font-size: 14px;
+
+            &:hover {
+                background: none;
+                color: $wep_color_active !important;
+            }
+        }
+
+        .dropdown-mega {
+            padding: 20px 0;
+
+            .dropdown-item {
+                padding: 5px 0 !important;
+            }
+
+            left: 0;
+            right: 0;
+            margin: 0 auto 35px auto;
+        }
+
+
+        // hover mouse show dropdown
+        .dropdown-menu {
+            display: none;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 15px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            transform: translateY(-50px);
+            transition: all 0.4s ease-in-out;
+
+            &.sub_image {
+                justify-content: center;
+
+                img {
+                    border: solid 1px transparent;
+                    transition: border 0.3s ease;
+
+                    &:hover {
+                        border: solid 1px $wep_color_active;
+                    }
+                }
+            }
+
+            .dropdown-item {
+                // &::before {
+                //     content: url("../assets/images/icons/arrow-list.png");
+                //     display: inline-block;
+                //     position: relative;
+                //     margin-right: 5px;
+                //     margin-bottom: 3px;
+                // }
+            }
+
+            .dropdown-item-sub {
+                padding-left: 20px;
+
+                .dropdown-item {
+                    &::before {
+                        content: none !important;
+                        display: none !important;
+                    }
+
+                    font-size: 13px;
+                    margin-bottom: 0;
+                    white-space: pre-wrap;
+                }
+
+            }
+        }
+
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: flex;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu-end {
+            right: 0;
+            left: auto;
+        }
+
+        .nav-item.dropdown.show .dropdown-toggle::after {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-toggle::after {
+            display: inline-block;
+            margin-left: .255em;
+            vertical-align: .255em;
+            content: "";
+            border-top: .3em solid;
+            border-right: .3em solid transparent;
+            border-bottom: 0;
+            border-left: .3em solid transparent;
+        }
+
+        // Mega Menu
+        .dropdown-mega {
+
+            &.level_2 {
+                .icon_arrow {
+                    display: none !important;
+                }
+
+                .dropdown-item {
+                    .icon_arrow {
+                        display: inline-block !important;
+                    }   
+                }
+                &>li {
+                    width: 25%;
+                    flex-basis: 25%;
+
+                    &>a {
+                        font-weight: 600;
+                    }                    
+                }
+            }
+
+            &.level_2,
+            &.level_3 {
+                li {
+                    position: static !important;
+                    padding-left: 5px;
+                }
+
+                ul {
+                    position: static !important;
+                    padding-left: 10px;
+                    display: flex !important;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    width: 100%;
+                }
+            }
+
+            &.level_3 {
+                border: none;
+                box-shadow: none;
+            }
+
+        }
+
+    }
+
+    .offcanvas {
+
+        &-header {
+            justify-content: flex-end;
+            padding-top: 20px;
+
+            .btn-close {
+                position: relative;
+                right: 0;
+            }
+        }
+
+        &-body {
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+
+            a {
+                color: #333;
+            }
+        }
+
+        .outter {
+            &-nav {
+                height: 500px;
+                width: 120px;
+                margin-right: -12px;
+            }
+
+            &-content {
+                border-left: solid 1px #ccc;
+            }
+        }
+
+        // Tab Nav and Content
+        .tab {
+            &-nav {
+
+                .nav-link {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    border-top-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+                    border: solid 1px transparent;
+                    border-right: solid 1px #e41d30;
+                    border-bottom: none;
+                    padding: 10px 3px;
+                    text-decoration: none;
+
+                    .icon {
+                        padding: 5px;
+                    }
+
+                    &.active,
+                    &:hover {
+                        color: #e41d30;
+                        border: solid 1px #e41d30;
+                        border-right: solid 1px transparent;
+                    }
+
+                }
+            }
+
+            &-content {
+                line-height: 1.5;
+                width: 100%;
+                height: 500px;
+
+                a {
+                    text-decoration: none;
+                    // Menu item link
+                    padding: 3px 6px;
+                    line-height: 1.5;
+                    display: inline-block;
+                    margin-bottom: 5px;
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+
+                .main_menu_item__title {
+                    a {
+                        font-size: 16px;
+                        border: none !important;
+                    }
+                }
+
+                .sub_menu_item {
+                    &.level_2 {
+                        a {
+                            font-weight: 400 !important;
+
+                            // &::before {
+                            //     content: url("../assets/images/icons/arrow-list.png");
+                            //     display: inline-block;
+                            //     position: relative;
+                            //     margin-right: 5px;
+                            //     margin-bottom: 3px;
+                            // }
+                        }
+
+                    }
+                }
+
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .wrapper-item {
+                    margin-bottom: 10px;
+                }
+
+                .list-item {
+                    a {
+                        display: inline-block;
+                        padding: 3px 9px;
+                        border-radius: 20px;
+                        border: solid 1px #eee;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        left: 15px;
+        bottom: 30px;
+        width: calc(100% - 30px);
+        overflow: hidden;
+        z-index: 9999;
+        margin: 10px 0;
+
+        .outter-content {
+            width: calc(100% - 90px);
+        }
+    }
+}
+
+/* Admin Menu */
+.admin-bar {
+    .bvdt_headnav {
+        .offcanvas {
+            .outter-nav {
+                height: 338px;
+
+            }
+        }
+    }
+}
+
+/* End CSS chung cho mọi thiết bị */
+/* ... */
+
+/* Sử dụng media query để chỉ áp dụng CSS cho thiết bị có chiều rộng màn hình dưới 768px (đây có thể được điều chỉnh tùy theo màn hình di động của bạn) */
+@media screen and (max-width: 768px) {
+
+    /* CSS dành riêng cho thiết bị di động */
+    /* Ẩn tất cả các .collapse-panel mặc định */
+    .collapse-panel {
+        display: none;
+    }
+
+    /* Hiển thị .collapse-panel khi .active được thêm vào */
+    .active+.collapse-panel {
+        display: block;
+        animation: slideDown 0.5s ease-in-out;
+        /* Thêm hiệu ứng trượt xuống */
+    }
+
+    .collapse-button {
+        transition: transform 0.3s;
+        transform: rotate(0);
+
+        &.expanded {
+            &::before {
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+
+    /* Định nghĩa hiệu ứng trượt xuống */
+    @keyframes slideDown {
+        0% {
+            // transform: translateY(-100%);
+            max-height: 0;
+            opacity: 0;
+        }
+
+        100% {
+            // transform: translateY(0);
+            max-height: 1000px;
+            opacity: 1;
+        }
+    }
+}

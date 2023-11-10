@@ -1,0 +1,355 @@
+/* Header  */
+/* Tùy chỉnh kiểu dáng của #wep_header khi là fixed-top */
+#wep_header.fixed-top {
+    background-color: #e41d30;
+    /* Màu nền của header khi fixed */
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Đổ bóng cho header */
+}
+
+/* Admin bar */
+.admin-bar {
+
+    .fixed-top,
+    .offcanvas {
+        top: 32px;
+    }
+
+    .wep_wrapper {
+        top: 0px;
+        opacity: 0;
+        transition: top 0.3s ease, opacity 0.3s ease;
+    }
+
+    #wep_header {
+        &+.bvdt_headnav {
+            #bvdt-navbar {
+                .wep_offcanvas_menu {
+                    .wep_wrapper {
+                        top: 145px;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#wpadminbar {
+    position: fixed;
+}
+
+header {
+    background: #e41d30;
+}
+
+.wep_wrapper {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    border-bottom: solid 1px transparent;
+    border-top: solid 4px transparent;
+    left: 0;
+    right: 0;
+    transition: top 0.3s ease;
+}
+
+#wep_header {
+    &+.bvdt_headnav {
+        #bvdt-navbar {
+            .wep_offcanvas_menu {
+                .wep_wrapper {
+                    top: 113px;
+                }
+            }
+        }
+    }
+}
+
+
+.header {
+    color: white;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    &__row,
+    &__tools {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+}
+
+/* Header Logo */
+.wep_logo {
+    img {
+        border-radius: 4px;
+    }
+}
+
+/* Search Box */
+/* Độ bo và màu viền */
+.wep_search_box {
+    position: relative;
+    padding: 0;
+
+    .bi-search {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        z-index: 9;
+        transform: translateY(-45%);
+        display: block;
+        color: gray;
+    }
+
+    /* Placeholder màu xám */
+    input {
+        border-radius: 10px !important;
+        padding-left: 30px;
+
+        &::placeholder {
+            color: gray;
+        }
+
+        &::focus {
+            content: '';
+        }
+    }
+
+}
+
+/* Hotline */
+.wep_hotline {
+
+    a {
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        align-items: center;
+
+        .bi-telephone {
+            font-weight: 900;
+            font-size: 32px;
+        }
+    }
+
+    &__text {
+        font-size: 13px;
+        padding: 0 5px;
+
+        span {
+            white-space: normal;
+        }
+    }
+}
+
+/* Contact Button */
+.wep_contact_button,
+.wep_request_consult {
+    padding: 0 10px;
+
+    a {
+        text-decoration: none;
+        display: flex;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 30px;
+        border: solid 1px transparent;
+        transition: border 0.3s ease;
+
+        &:hover {
+            border: solid 1px white;
+            background: rgba(255, 255, 255, 0.3);
+        }
+    }
+
+    &__text {
+        font-size: 13px;
+        padding: 0 5px;
+        white-space: nowrap;
+    }
+}
+
+/* Keyword List */
+.wep_keyword_list {
+    font-size: 13px;
+
+    &__wrapper {
+        margin: 0;
+        margin-top: -10px;
+        height: 70px;
+        display: flex;
+    }
+
+    a {
+        display: inline-block;
+        padding: 3px 10px;
+        margin: 1px 0;
+        border-radius: 15px;
+        border: solid 1px rgba(255, 255, 255, 0.5);
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        &:hover {
+            border: solid 1px white;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+    }
+
+
+    &--bglight {
+        a {
+            border: solid 1px #ddd;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: white;
+                border: solid 1px $wep_color_active;
+                background-color: $wep_color_active;
+            }
+        }
+    }
+}
+
+.wep_category_service {
+    .wep_keyword_list {
+        margin-top: 7px;
+        a {
+            border: solid 1px #ddd;
+
+            &:hover {
+                border: solid 1px #999;
+            }
+        }
+    }
+}
+
+/* Open Offcanvas */
+.wep_open_menu {
+    padding: 0;
+    margin: 0;
+    width: 44px;
+    height: 44px;
+
+    &::before {
+        border: solid 1px white;
+        color: white;
+        content: "\2261";
+        /* Sử dụng ký tự Unicode cho biểu tượng ba gạch ngang */
+        font-size: 26px;
+        /* Điều chỉnh kích thước biểu tượng theo ý muốn */
+        padding: 0 10px;
+        /* Tạo khoảng cách giữa biểu tượng và văn bản */
+        border-radius: 4px;
+    }
+
+    &:first-child {
+        &:active {
+            border: none;
+            background-color: transparent;
+        }
+    }
+
+}
+
+/* Offcanvas Menu */
+.wep_offcanvas_menu,
+.wep_service_filter {
+    top: 160px;
+    border-radius: $wep_radius;
+    margin: 20px;
+}
+
+.admin-bar {
+    .wep_offcanvas_menu {
+        top: 132px;
+    }
+
+}
+
+.admin-bar {
+    .wep_service_filter {
+        top: 130px;
+    }
+
+}
+
+/* Offcanvas Filter */
+.wep_service_filter {
+    top: 160px;
+    border-radius: $wep_radius;
+    margin-left: 0;
+    z-index: 9999;
+    width: calc(100% - 40px) !important;
+}
+
+/* Search Result */
+#wep_quick_search__result {
+    border-radius: $wep_radius;
+    position: fixed;
+    width: 500px;
+    max-height: 200px;
+    background: white;
+    top: 100px;
+    left: 267px;
+    z-index: 999999;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: none;
+
+    a {
+        font-size: 13px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $wep_color_active;
+        }
+    }
+}
+
+/* Fibo search */
+.dgwt-wcas-style-pirx {
+    .dgwt-wcas-sf-wrapp {
+        border-radius: $wep_radius;
+        padding: 1px;
+
+        input[type=search] {
+            &.dgwt-wcas-search-input {
+                padding: 5px 10px 5px 30px;
+                font-size: 15px;
+            }
+        }
+
+        button {
+            &.dgwt-wcas-search-submit {
+                top: 5px;
+                left: 5px;
+            }
+        }
+    }
+}
+
+/* Modal Booking Popup */
+#wepBookingModal {
+    margin-top: 200px;
+
+    .wep_booking_submit {
+        display: flex;
+    }
+
+    .wpcf7-response-output {
+        color: #333;
+    }
+}
+
+#wepleModalLabel {
+    color: #333;
+}

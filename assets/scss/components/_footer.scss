@@ -1,0 +1,224 @@
+/* Columns */
+.wep_footer_column {
+    li {
+        margin-bottom: 7px;
+    }
+}
+
+/* Footer Benefits */
+.wep_footer_benefits {
+    background-image: url('../assets/images/background/bg-footer.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../assets/images/background/bg-footer.svg);
+    color: white;
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin-bottom: 0;
+    }
+
+    &__icon {
+        width: 50px;
+        flex-basis: 50px;
+        margin-bottom: 10px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__content {
+        display: flex;
+        width: 100%;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        padding-left: 10px;
+        flex-direction: column;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    &__text {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+}
+
+/* Chatters */
+.wep_chatters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+    bottom: 120px !important;
+    right: 20px;
+    justify-content: flex-end;
+}
+
+/* Goto Top */
+.wep_gotop {
+    bottom: 76px;
+    position: fixed;
+    right: 25px;
+    background: $wep_color_active;
+    width: 44px;
+    height: 44px;
+    border-radius: $wep_radius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+/* Footer  */
+#wep_footer {
+    position: relative;
+    font-size: 14px;
+
+    .wep_footer_column {
+
+        li {
+            display: flex;
+
+            .icon {
+                min-width: 24px;
+                height: auto;
+                margin-right: 5px;
+            }
+        }
+
+
+        a {
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: block;
+            width: 100%;
+
+            &:hover {
+                text-decoration: underline;
+                color: $wep_color_active;
+            }
+        }
+
+        &__title {
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-bottom: solid 1px #eee;
+            padding: 10px 0;
+            margin-bottom: 10px;
+            position: relative;
+
+            &:not(.collapsed) {
+                &::after {
+                    background-image: ("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 class=%27icon icon-tabler icon-tabler-chevron-down%27 width=%2716%27 height=%2716%27 viewBox=%270 0 24 24%27 stroke-width=%272%27 stroke=%27currentColor%27 fill=%27none%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3E%3Cpath stroke=%27none%27 d=%27M0 0h24v24H0z%27 fill=%27none%27%3E%3C/path%3E%3Cpath d=%27M6 9l6 6l6 -6%27%3E%3C/path%3E%3C/svg%3E")
+                }
+            }
+
+            &:after {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                content: '';
+                transition: all 0.4s ease;
+                width: 16px;
+                height: 16px;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 class=%27icon icon-tabler icon-tabler-chevron-down%27 width=%2716%27 height=%2716%27 viewBox=%270 0 24 24%27 stroke-width=%272%27 stroke=%27currentColor%27 fill=%27none%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3E%3Cpath stroke=%27none%27 d=%27M0 0h24v24H0z%27 fill=%27none%27%3E%3C/path%3E%3Cpath d=%27M6 9l6 6l6 -6%27%3E%3C/path%3E%3C/svg%3E");
+            }
+
+
+        }
+    }
+}
+
+/* Tùy chỉnh CSS cho menu nằm ngang */
+.wep_footer_sticky {
+    background-color: white;
+    padding: 10px !important;
+    z-index: 9999 !important;
+
+    .sticky_menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+
+        &__item {
+            text-decoration: none;
+            color: #666;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+
+            &:hover,
+            .active {
+                color: $wep_color_active;
+            }
+
+            &--booking {
+                border: solid 1px $wep_color_active;
+                background-color: $wep_color_active;
+                border-radius: $wep_radius;
+                padding: 10px 20px;
+                color: white;
+
+                &:hover,
+                .active {
+                    color: white;
+                }
+
+            }
+
+            &--post_comment {
+                border: solid 1px #666;
+                border-radius: 50px;
+                padding: 10px 20px;
+                flex-direction: row;
+
+                svg {
+                    margin-right: 5px;
+                }
+
+                &:hover,
+                .active {
+                    border: solid 1px $wep_color_active;
+
+
+                }
+            }
+        }
+    }
+}
+
+/* Getways Logo */
+.wep_payment_getways {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+
+    &__logo {
+        display: block;
+        padding-right: 3px;
+        max-width: 58px;
+    }
+}

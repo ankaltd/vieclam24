@@ -1,0 +1,73 @@
+/* Custom WooCommerce Styles */
+
+.woocommerce {
+    ul.products {
+        li.product {
+            a {
+                img {
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+
+    .wep_pricing_wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    table.shop_attributes {
+        td {
+            padding: 0 10px;
+        }
+
+        th {
+            background-color: white;
+        }
+
+        .woocommerce-product-attributes-item--product-categories {
+            .woocommerce-product-attributes-item__label {
+                background-color: #F4F7F8 !important;
+            }
+        }
+    }
+
+    .woocommerce-product-attributes-item--product-categories {
+        background-color: #F4F7F8;
+
+        .woocommerce-product-attributes-item__value {
+            a {
+                display: inline-block;
+                padding-right: 10px;
+                border-right: solid 1px #eee;
+
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+    }
+
+}
+
+.wep_service {
+    &__related {
+        .wep_onsale {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 99;
+        }
+    }
+}
+
+.single-product {
+    .wep_pricing_wrapper {
+        flex-wrap: wrap;
+    }
+}
+
+/* Review Plugin */
+// #review_form_wrapper {
+//     max-width: 100% !important;
+// }

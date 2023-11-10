@@ -1,0 +1,83 @@
+// Button & Links
+.wep_readmore {
+    color: $wep_color_active;
+    font-size: 14px;
+    font-weight: 600;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &--btn {
+        display: flex;
+        border: solid 1px $wep_color_active;
+        padding: 5px 10px;
+        border-radius: 6px;
+        align-items: center;
+
+        &:hover {
+            text-decoration: none;
+            background-color: $wep_color_active;
+            color: white !important;
+
+            .icon {
+                color: white !important;
+            }
+        }
+    }
+}
+
+// Links
+.wep_more_link {
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $wep_color_active
+    }
+}
+
+// Button
+
+.wep_button {
+    font-size: 13px;
+    padding: 5px 15px;
+    display: inline-block;
+    border: solid 1px #ddd;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        color: white;
+        border: solid 1px $wep_color_active;
+        background-color: $wep_color_active;
+
+        .icon {
+            color: white;
+            fill: white;
+        }
+    }
+
+    .icon {
+        color: #666;
+        fill: #666;
+        transition: all 0.3s ease;
+        margin-left: 5px;
+    }
+
+}
+
+// Link
+.wep_edit_link {
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $wep_color_active;
+        text-decoration: underline;
+    }
+}

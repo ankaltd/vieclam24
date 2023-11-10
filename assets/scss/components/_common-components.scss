@@ -1,0 +1,415 @@
+/* Other Components of BVDT */
+
+.wep_content {
+    border-radius: $wep_radius;
+    border: solid 1px #eee;
+    overflow: auto;
+    border-bottom: 10px;
+}
+
+.wep_hightlight {
+    border-radius: $wep_radius;
+}
+
+// Breadcrumb 
+.wep_breadcrumb {
+    font-size: 13px;
+    padding: 15px 0;
+    border-bottom: solid 1px #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .breadcrumb {
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            color: $wep_color_active;
+        }
+    }
+
+
+}
+
+// Filter Sticky
+.wep_service_filter {
+    .offcanvas-body {
+        width: 100% !important;
+    }
+}
+
+.wep_open_filter {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 1px white !important;
+    color: #212529;
+    display: block;
+    height: fit-content;
+    padding: 5px 10px;
+    border-radius: $wep_radius;
+    margin-right: 5px;
+}
+
+// Pagenav
+.wep_pagenav {
+    a {
+        text-decoration: none;
+    }
+
+    ul.pagination {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li.page-item {
+            margin: 0 5px;
+
+            &:hover {
+                a.page-link {
+                    background-color: #f2f2f2; // Màu nền khi di chuột vào
+                    border: solid 1px #ddd;
+                }
+            }
+
+            &.active,
+            &.current {
+                a.page-link {
+                    background-color: $wep_color_active; // Màu nền khi là trang hiện tại
+                    color: white;
+                }
+            }
+
+            span.active {
+                background-color: $wep_color_active; // Màu nền khi là trang hiện tại
+                color: white;
+            }
+
+
+            a.page-link,
+            span.active {
+                text-decoration: none;
+                border: solid 1px transparent;
+                padding: 0 12.5px;
+                display: inline-block;
+                transition: all 0.3s ease;
+                min-height: 36px;
+                min-width: 36px;
+                line-height: 32px;
+                border-radius: 60px;
+            }
+        }
+    }
+}
+
+
+
+
+// Scroll with touch ****************
+.scrollable {
+
+    &_hoz {
+        /* Đảm bảo container rộng bằng chiều ngang của màn hình */
+        width: 100%;
+        /* Đặt chiều cao của khu vực cuộn (thay đổi theo nhu cầu) */
+        height: 46px;
+        margin-top: 5px;
+        margin-bottom: -18px;
+
+        position: relative;
+        overflow-y: hidden;
+
+        /* Không cuộn dọc */
+        overflow-x: scroll;
+
+        /* Ẩn thanh cuộn ngang */
+        &::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+            /* make scrollbar transparent */
+        }
+
+        // Button
+
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            width: 30px;
+            /* Độ rộng của nút mũi tên */
+            height: 100%;
+            /* Đảm bảo nút mũi tên bằng chiều cao của container */
+            position: absolute;
+            top: 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            /* Hiệu ứng hover */
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+                /* Màu nền khi hover */
+            }
+        }
+
+        // Content
+        .content {
+            /* Đảm bảo rằng nội dung có chiều ngang lớn hơn container */
+            white-space: nowrap;
+            /* Thêm nội dung dài ở đây và đảm bảo rằng nó sẽ vượt ra ngoài kích thước của .scrollable_hoz */
+        }
+    }
+
+    &_ver {
+
+        /* Đảm bảo container cao bằng chiều dọc của màn hình */
+        height: 100%;
+
+        /* Đặt chiều rộng của khu vực cuộn (thay đổi theo nhu cầu) */
+        width: 100px;
+        margin-right: -18px;
+
+        position: relative;
+        overflow-x: hidden;
+
+        /* Không cuộn ngang */
+        overflow-y: scroll;
+
+        /* Ẩn thanh cuộn dọc */
+        &::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+            /* make scrollbar transparent */
+        }
+
+        .content {
+            /* Đảm bảo rằng nội dung có chiều ngang lớn hơn container */
+            height: 200%;
+
+            /* Thêm nội dung dài ở đây và đảm bảo rằng nó sẽ vượt ra ngoài kích thước của .scrollable_ver */
+            white-space: normal;
+        }
+    }
+}
+
+/* FAQs */
+.wep_faqs {
+    border-radius: $wep_radius;
+    margin-bottom: 15px;
+    border: solid 1px #eee;
+
+    &__header {
+        padding: 0 20px;
+    }
+
+    &__body {
+        padding: 0 20px
+    }
+
+    &__icon {
+        margin-right: 10px;
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: black;
+        font-weight: 500;
+    }
+
+    .accordion-button {
+        font-weight: 500;
+        background-color: #f8f8f8;
+
+        &:focus {
+            border-color: transparent;
+            box-shadow: none;
+        }
+    }
+
+    .accordion-item {
+        margin-bottom: 10px;
+        border-radius: $wep_radius;
+    }
+}
+
+/* Expand */
+.wep_description,
+.wep_short {
+    &__content {
+        transition: all 0.3s ease;
+
+        &.collapse:not(.show) {
+            display: block;
+            height: auto;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        &.wep_height_160 {
+            &.collapse:not(.show) {
+                height: 160px;
+            }
+        }
+    }
+}
+
+/* Comments */
+.wep_category_comments {
+    border-radius: $wep_radius;
+    margin-bottom: 15px;
+    border: solid 1px #eee;
+
+    .list-unstyled {
+        list-style: none;
+        padding: 0;
+
+        .media {
+            display: flex;
+
+            img.mr-3 {
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+
+            .media-body {
+                font-size: 14px;
+                flex-grow: 1;
+                border-radius: $wep_radius;
+                padding: 10px;
+                background-color: #f8f8f8; // Màu nền của .media-body
+
+                h5 {
+                    margin-top: 0;
+                    margin-bottom: 0.5rem;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+
+    .comment-meta {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                color: $wep_color_active;
+            }
+        }
+    }
+
+    .comment-content {
+        background-color: #f3f6f8;
+        font-size: 14px;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        border-radius: $wep_radius;
+        padding: 10px;
+        margin-top: 5px;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            border: solid 10px #f3f6f8;
+            border-left-color: transparent;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: 10px;
+            top: -20px;
+        }
+    }
+
+    .comment-metadata {
+        font-size: 13px;
+    }
+
+    .avatar {
+        display: inline-block;
+        border-radius: 30px;
+        max-width: 44px;
+        height: auto;
+        margin-right: 15px;
+        max-height: 44px;
+    }
+
+    .reply {
+        a {
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 5px 5px 10px 0;
+            display: inline-block;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .comment-author {
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 10px;
+
+        .fn {
+            padding-right: 5px;
+            font-weight: 600;
+            font-size: 13px;
+            width: 100%;
+        }
+
+        .says {
+            display: block;
+            color: #666;
+
+            &+.comment-metadata {
+                margin-left: 5px;
+                display: inline-block;
+
+                &>a {
+                    color: #666;
+                }
+            }
+        }
+    }
+
+    .logged-in-as {
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .comment-list {
+        list-style: none;
+
+        ol,
+        ul {
+            list-style: none;
+        }
+    }
+
+    .comment-respond {
+        padding-left: 0;
+    }
+}
+
+/* Splide Custom */
+.splide__arrow {
+    svg {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+}

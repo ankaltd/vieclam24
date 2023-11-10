@@ -1,0 +1,18 @@
+// Media: Carousel & Banner
+.img-fluid {
+    width: 100%;
+}
+// picture
+.wp-block-image {
+    display: block;
+    padding: 20px;
+    &.alignleft {
+        float: left;
+    }
+    &.aligncenter {
+        margin: auto;
+    }
+    &.alignright {
+        float: right;
+    }
+}

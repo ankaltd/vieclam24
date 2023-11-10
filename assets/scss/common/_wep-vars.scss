@@ -1,0 +1,42 @@
+/* Font family */
+$font-family-base: 'Inter', Arial, Helvetica, sans-serif !important;
+$font-size-base: 0.9rem;
+
+/* Heading Size */
+$h1-font-size: 45px;
+$h2-font-size: 40px;
+$h3-font-size: 36px;
+$h4-font-size: 18px;
+$h5-font-size: 16px;
+$h6-font-size: 12px;
+
+/* Container widths */
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1220px
+) !default;
+
+/* WEP  Colors */
+$wep_color_primary: #e41d30;
+$wep_color_active: #e41d30;
+$wep_color_text: #363636;
+$wep_color_background: #f3f6f8;
+
+/* WEP  Space */
+$wep_space: 20px;
+
+/* Radius */
+$wep_radius: 10px;
+
+/* Body color */
+$body-color: #373737;
+
+/* Link color */
+$link-color: #14233A;
+$link-hover-color: #14233A;
+
+/* Link decoration */
+$link-decoration: none;

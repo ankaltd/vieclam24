@@ -1,0 +1,35 @@
+// Styles for the pc component
+@media screen and (min-width: 1200px) {
+
+    // Typography
+
+
+    // Concept
+
+
+    // Home Sections    
+
+    // Mega Menu
+    .bvdt_headnav {
+        .navbar-nav {
+            .dropdown-mega {
+                width: 1220px;
+                padding: 20px 10px;
+
+                .container {
+                    max-width: 1200px;
+                }
+
+                // Not have sub
+                &.level_2 {                    
+                    &:not(:has(.level_3)) {
+                        /* CSS styles cho các thành phần .level_2 không có .level_3 con */
+                        flex-direction: column;
+                        max-width: 250px;
+                    }
+                }
+
+            }
+        }
+    }
+}

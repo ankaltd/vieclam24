@@ -22,6 +22,7 @@
               "lmtime": 0,
               "modified": false
             },
+            "app": {},
             "archive-loop.php": {
               "type": "-",
               "size": 649,
@@ -92,9 +93,9 @@
             },
             "functions.php": {
               "type": "-",
-              "size": 18390,
+              "size": 167,
               "lmtime": 0,
-              "modified": false
+              "modified": true
             },
             "header.php": {
               "type": "-",
@@ -108,7 +109,38 @@
               "lmtime": 0,
               "modified": false
             },
-            "inc": {},
+            "inc": {
+              "class-wep-functions.php": {
+                "type": "-",
+                "size": 21327,
+                "lmtime": 1699543844196,
+                "modified": false
+              },
+              "customizer.js": {
+                "type": "-",
+                "size": 999,
+                "lmtime": 0,
+                "modified": false
+              },
+              "customizer.php": {
+                "type": "-",
+                "size": 3538,
+                "lmtime": 0,
+                "modified": false
+              },
+              "wp-bootstrap-navwalker-footer.php": {
+                "type": "-",
+                "size": 2861,
+                "lmtime": 0,
+                "modified": false
+              },
+              "wp-bootstrap-navwalker.php": {
+                "type": "-",
+                "size": 9114,
+                "lmtime": 0,
+                "modified": false
+              }
+            },
             "index.php": {
               "type": "-",
               "size": 605,

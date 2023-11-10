@@ -1,0 +1,39 @@
+/* Category Page Styles */
+
+.wep_news_category {
+    a {
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $wep_color_active;
+        }
+    }
+}
+
+.wep_category_news {
+
+    &__item {
+        margin-bottom: 15px;
+        border-bottom: solid 1px #eee;
+    }
+
+    &__thumbnail {
+        border-radius: 6px;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    &__date {
+        font-size: 13px;
+    }
+
+    &__category {
+        background-color: black;
+        color: white;
+        padding: 3px 6px;
+        border-radius: 50px;
+
+    }
+
+}

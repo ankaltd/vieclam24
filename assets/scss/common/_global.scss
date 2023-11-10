@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+
+    // Shadow
+    .shadow {
+        -webkit-box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.075) !important;
+        box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.075) !important;
+    }
+}
+
+// fixed scroll append with AOS library 
+section {
+    background-position-x: center;
+    background-position-y: top;
+    padding: 15px 0;
+    clear: both;
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: $wep_space;
+        line-height: 1.7;
+    }
+}
+
+// Spacing
+.no_padding {
+    padding: 0;
+}
+
+// Margin
+.wep_margin {
+    display: inherit;
+    margin-bottom: $wep_space !important;
+
+    &--b3 {
+        margin-bottom: 30px !important;
+    }
+
+    &--b4 {
+        margin-bottom: 40px !important;
+    }
+
+    &--b5 {
+        margin-bottom: 50px !important;
+    }
+
+    &--b6 {
+        margin-bottom: 60px !important;
+    }
+
+    &--b7 {
+        margin-bottom: 70px !important;
+    }
+}
+
+// Border
+.wep_border {
+
+    &--all {
+        border: solid 1px #ddd;
+        padding: $wep_space/2;
+    }
+
+    &--left {
+        border-left: solid 1px #ddd;
+        padding-left: $wep_space/2;
+    }
+
+    &--right {
+        border-right: solid 1px #ddd;
+        padding-right: $wep_space/2;
+    }
+
+    &--bottom {
+        border-bottom: solid 1px #ddd;
+        padding-bottom: $wep_space/2;
+    }
+
+    &--top {
+        border-top: solid 1px #ddd;
+        padding-top: $wep_space/2;
+    }
+}
+
+// Sticky
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+// Spinner
+.wep-spinner {
+    visibility: hidden;
+    display: inline-block;
+    background-color: #23282d;
+    opacity: 0.75;
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0 24px;
+    position: relative;
+
+    &.is_active {
+        visibility: visible;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        background-color: #fbfbfc;
+        top: 4px;
+        left: 4px;
+        width: 6px;
+        height: 6px;
+        border: none;
+        border-radius: 100%;
+        transform-origin: 8px 8px;
+        animation-name: spin;
+        animation-duration: 1000ms;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+}

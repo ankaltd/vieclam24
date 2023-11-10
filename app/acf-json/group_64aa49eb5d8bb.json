@@ -1,0 +1,817 @@
+{
+    "key": "group_64aa49eb5d8bb",
+    "title": "Product Cat: Danh mục dịch vụ",
+    "fields": [
+        {
+            "key": "field_64f1ea648eeef",
+            "label": "Loại danh mục",
+            "name": "wep_product_cat_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "service": "Dịch vụ (sửa chữa, thay thế)",
+                "product": "Sản phẩm (máy, phụ kiện)"
+            },
+            "default_value": "service",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_64f326daddc40",
+            "label": "Tên ngắn (hiện ở keyword)",
+            "name": "wep_product_cat_short_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Nhập tên ngắn cho danh mục - Để hiển thị tại danh sách từ khóa",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Nhập tên danh mục ngắn gọn",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64c63d6105d38",
+            "label": "1. Banner",
+            "name": "wep_product_cat_hero_banner",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_65214512461d1",
+                    "label": "Cài đặt Banner cho danh mục",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "accordion",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_64f6b06662446",
+                    "label": "Hiện Banner?",
+                    "name": "wep_product_cat_show_banner",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_64f6b10c62447",
+                    "label": "Sử dụng Banner chung",
+                    "name": "wep_product_cat_use_general_banner",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Sử dụng Banner chung tùy chọn tại (Cài đặt BVĐT > 4. Danh mục sản phẩm)",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_64f6b06662446",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_64f6b1d862448",
+                    "label": "Chọn Banner riêng",
+                    "name": "wep_product_cat_use_custom_banner",
+                    "aria-label": "",
+                    "type": "relationship",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_64f6b06662446",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_64f6b10c62447",
+                                "operator": "!=",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "banner"
+                    ],
+                    "post_status": [
+                        "publish"
+                    ],
+                    "taxonomy": "",
+                    "filters": [
+                        "search"
+                    ],
+                    "return_format": "id",
+                    "min": "",
+                    "max": "",
+                    "elements": [
+                        "featured_image"
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_64db471e94bb2",
+            "label": "2. Link liên quan",
+            "name": "wep_product_cat_popular_services",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Chọn các danh mục để lấy danh sách nội dung",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_65214538461d2",
+                    "label": "Cài đặt link liên quan",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "accordion",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_65214f123f258",
+                    "label": "Danh sách link liên quan",
+                    "name": "wep_product_cat_services_list_used",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Thêm danh sách liên kết trên đầu",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_653d0c78a72c3",
+                    "label": "Tự nhập",
+                    "name": "wep_product_cat_services_list_custom",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_65214f123f258",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_64f6b4858d3a9",
+                    "label": "Dịch vụ phổ biến",
+                    "name": "wep_product_cat_services_list",
+                    "aria-label": "",
+                    "type": "taxonomy",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_65214f123f258",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_653d0c78a72c3",
+                                "operator": "!=",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "taxonomy": "product_cat",
+                    "add_term": 1,
+                    "save_terms": 0,
+                    "load_terms": 0,
+                    "return_format": "id",
+                    "field_type": "multi_select",
+                    "allow_null": 0,
+                    "multiple": 0
+                },
+                {
+                    "key": "field_653d0ccea72c5",
+                    "label": "Danh sách link",
+                    "name": "wep_product_cat_services_list_content",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_653d0c78a72c3",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_65214f123f258",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Thêm liên kết",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_653d0cf6a72c6",
+                            "label": "Tiêu đề",
+                            "name": "wep_product_cat_services_item_text",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_653d0ccea72c5"
+                        },
+                        {
+                            "key": "field_653d0d46a72c7",
+                            "label": "Liên kết",
+                            "name": "wep_product_cat_services_item_link",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_653d0ccea72c5"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_65013548af89a",
+            "label": "3. Cài đặt bộ lọc",
+            "name": "wep_product_cat_filter",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_652144ef461d0",
+                    "label": "Cài đặt bộ lọc riêng danh mục",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "accordion",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_65013548af89e",
+                    "label": "Dùng cài đặt mặc định",
+                    "name": "wep_product_cat_filter_global",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Cài đặt mặc định là kế thừa từ Danh mục cha hoặc giá trị mặc định tại Cài đặt chung",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_653919e3deab6",
+                    "label": "Cài đặt riêng",
+                    "name": "wep_product_cat_filter_custom_setting",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Mặc định sẽ hiển thị toàn bộ các hộp lọc",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_65013548af89e",
+                                "operator": "!=",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_65013596af8a1",
+                    "label": "Bộ lọc cho dịch vụ",
+                    "name": "wep_product_cat_filter_service",
+                    "aria-label": "",
+                    "type": "wep_attributes",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_65013548af89e",
+                                "operator": "!=",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_653919e3deab6",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "key": "field_650135e0af8a2",
+                    "label": "Bộ lọc cho sản phẩm",
+                    "name": "wep_product_cat_filter_product",
+                    "aria-label": "",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_64f1ea648eeef",
+                                "operator": "==",
+                                "value": "product"
+                            },
+                            {
+                                "field": "field_65013548af89e",
+                                "operator": "!=",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "brand": "Thương hiệu",
+                        "status": "Tình trạng (cũ, mỡi, 99%,...)",
+                        "price": "Giá",
+                        "screen_size": "Cỡ màn hình",
+                        "capacity": "Dung lượng \/ Bộ nhớ trong",
+                        "battery": "Dung lượng PIN",
+                        "charge": "Tính năng sạc (nhanh, chậm)"
+                    },
+                    "default_value": [],
+                    "return_format": "value",
+                    "allow_custom": 0,
+                    "layout": "vertical",
+                    "toggle": 1,
+                    "save_custom": 0,
+                    "custom_choice_button_text": "Add new choice"
+                }
+            ]
+        },
+        {
+            "key": "field_64b83c519a083",
+            "label": "4. Phần mô tả dịch vụ",
+            "name": "wep_product_cat_description",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Tự nhập nội dung",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_652145ad461d4",
+                    "label": "Cài đặt mô tả dưới danh mục",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "accordion",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_64b83ca43142b",
+                    "label": "Nội dung mô tả dịch vụ",
+                    "name": "wep_product_cat_description_content",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
+        },
+        {
+            "key": "field_64aa3be16586e",
+            "label": "5. Câu hỏi thường gặp FAQs",
+            "name": "wep_product_cat_faqs",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Chọn danh sách hình ảnh",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_65214590461d3",
+                    "label": "Cài đặt bộ câu hỏi thường gặp",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "accordion",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_64f6b75e8d3aa",
+                    "label": "Hiện FAQs",
+                    "name": "wep_product_cat_show_faqs",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_64f6b7838d3ab",
+                    "label": "Dùng bộ FAQs chung",
+                    "name": "wep_product_cat_use_general_faqs",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Sử dụng bộ FAQs chung tùy chọn tại (Cài đặt > 4. Danh mục sản phẩm - dịch vụ",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_64f6b75e8d3aa",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                },
+                {
+                    "key": "field_65216f91dcfd8",
+                    "label": "Chọn bộ hay chọn lẻ",
+                    "name": "wep_product_cat_use_type_faqs",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_64f6b7838d3ab",
+                                "operator": "!=",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_64f6b75e8d3aa",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "set": "Chọn bộ",
+                        "select": "Chọn lẻ"
+                    },
+                    "default_value": false,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_65216f3ddcfd7",
+                    "label": "Dùng bộ FAQs riêng",
+                    "name": "wep_product_cat_use_set_faqs",
+                    "aria-label": "",
+                    "type": "taxonomy",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_65216f91dcfd8",
+                                "operator": "==",
+                                "value": "set"
+                            },
+                            {
+                                "field": "field_64f6b7838d3ab",
+                                "operator": "!=",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "taxonomy": "faq_group",
+                    "add_term": 1,
+                    "save_terms": 0,
+                    "load_terms": 0,
+                    "return_format": "id",
+                    "field_type": "select",
+                    "allow_null": 0,
+                    "multiple": 0
+                },
+                {
+                    "key": "field_64f6b7e48d3ac",
+                    "label": "Chọn từng FAQs riêng",
+                    "name": "wep_product_cat_use_custom_faqs",
+                    "aria-label": "",
+                    "type": "relationship",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_64f6b75e8d3aa",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_64f6b7838d3ab",
+                                "operator": "!=",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_65216f91dcfd8",
+                                "operator": "==",
+                                "value": "select"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "faq"
+                    ],
+                    "post_status": [
+                        "publish"
+                    ],
+                    "taxonomy": "",
+                    "filters": [
+                        "search",
+                        "taxonomy"
+                    ],
+                    "return_format": "id",
+                    "min": "",
+                    "max": "",
+                    "elements": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "product_cat"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Cài đặt nội dung danh mục dịch vụ - sản phẩm",
+    "show_in_rest": 0,
+    "modified": 1698502670
+}

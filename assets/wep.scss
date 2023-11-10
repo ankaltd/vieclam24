@@ -1,0 +1,98 @@
+// wep.scss
+
+// Required
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc) 
+@import "../node_modules/bootstrap/scss/functions";
+
+// Default variable overrides
+// 2. Include any default SCSS variable overrides here
+@import "../assets/scss/common/wep-vars";
+
+// Required
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts 
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// 6. Overrides root CSS vars here
+@import "../assets/scss/common/responsive-vars";
+
+
+// Optional Bootstrap components here
+// 7. Optionally include any other parts as needed
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+// =========================
+@import "../node_modules/bootstrap/scss/tables";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/dropdown";
+@import "../node_modules/bootstrap/scss/button-group";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/accordion";
+@import "../node_modules/bootstrap/scss/breadcrumb";
+@import "../node_modules/bootstrap/scss/pagination";
+@import "../node_modules/bootstrap/scss/badge";
+@import "../node_modules/bootstrap/scss/alert";
+@import "../node_modules/bootstrap/scss/progress";
+@import "../node_modules/bootstrap/scss/list-group";
+@import "../node_modules/bootstrap/scss/close";
+@import "../node_modules/bootstrap/scss/toasts";
+@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/tooltip";
+@import "../node_modules/bootstrap/scss/popover";
+@import "../node_modules/bootstrap/scss/carousel";
+@import "../node_modules/bootstrap/scss/spinners";
+@import "../node_modules/bootstrap/scss/offcanvas";
+@import "../node_modules/bootstrap/scss/placeholders";
+
+// 8. Add additional WEP components ...
+
+// Common WEP
+@import "../assets/scss/common/global";
+@import "../assets/scss/common/typography";
+@import "../assets/scss/common/unit";
+@import "../assets/scss/common/button";
+@import "../assets/scss/common/hover";
+@import "../assets/scss/common/responsive";
+@import "../assets/scss/common/darkmode";
+@import "../assets/scss/common/concept";
+@import "../assets/scss/common/wp_blocks";
+
+// Components WEP
+@import "../assets/scss/components/common-components";
+@import "../assets/scss/components/header";
+@import "../assets/scss/components/navigation";
+@import "../assets/scss/components/home";
+@import "../assets/scss/components/product-cat";
+@import "../assets/scss/components/product-detail";
+@import "../assets/scss/components/category";
+@import "../assets/scss/components/single";
+@import "../assets/scss/components/contact";
+@import "../assets/scss/components/sidebar";
+@import "../assets/scss/components/footer";
+@import "../assets/scss/components/content-html";
+@import "../assets/scss/components/woo-custom";
+
+// Responsive mobile first
+@import "../assets/scss/common/wep-tablet";
+@import "../assets/scss/common/wep-laptop";
+@import "../assets/scss/common/wep-pc";
+
+
+// 9. Optionally include helpers and utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";

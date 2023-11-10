@@ -1,0 +1,202 @@
+/* Kiểu dáng cho block mặc định */
+html :where(.editor-styles-wrapper) {
+    color: $wep_color_text;
+    font-family: "Lexend Deca", sans-serif;
+
+    h1,
+    h1.wp-block-heading {
+        font-size: 45px;
+    }
+
+    h2,
+    h2.wp-block-heading {
+        font-size: 40px;
+        margin: 0 0 10px 0;
+    }
+
+    h3,
+    h3.wp-block-heading {
+        font-size: 36px;
+    }
+
+    h4,
+    h4.wp-block-heading {
+        font-size: 18px;
+    }
+
+    h5,
+    h5.wp-block-heading {
+        font-size: 16px;
+    }
+
+    h6,
+    h6.wp-block-heading {
+        font-size: 12px;
+    }
+}
+
+a:where(:not(.wp-element-button)) {
+    text-decoration: none !important;
+}
+
+.editor-styles-wrapper {
+    .edit-post-visual-editor__post-title-wrapper {
+        text-align: center;
+    }
+
+    a:where(:not(.wp-element-button)) {
+        text-decoration: none !important;
+    }
+}
+
+/* ACF Panel in Editor */
+.acf-block-panel {
+    .acf-label {
+        hr {
+            border: solid 2px #333;
+            margin: 0;
+        }
+    }
+}
+
+.wep_block {
+    margin-top: 28px;
+    margin-bottom: 28px;
+    color: $wep_color_text;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+/* Block Paragraph */
+.wp-block-paragraph {
+    /* CSS của block Paragraph */
+    color: $wep_color_text;
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Block Heading */
+.wp-block-heading {
+    /* CSS của block Heading */
+    color: $wep_color_primary;
+    font-size: 2.4rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h1,
+h1.wp-block-heading {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+h2,
+h2.wp-block-heading {
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+h3,
+h3.wp-block-heading {
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+h4,
+h4.wp-block-heading {
+    font-size: 18px;
+}
+
+h5,
+h5.wp-block-heading {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+h6,
+h6.wp-block-heading {
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* Block Image */
+.wp-block-image {
+    /* CSS của block Image */
+    border: solid 1px #f8f8f8;
+}
+
+/* Và các block khác... */
+.wp-block-quote {
+    color: $wep_color_primary;
+    font-size: 16px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.wp-block-list {
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.wp-block-button {
+    font-size: 14px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.wp-block-table {
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.wp-block-media-text {
+    font-size: 12px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+figure.wp-block-gallery.has-nested-images {
+    align-items: normal;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Loại bỏ hiệu ứng khi cuộn ra khỏi khung nhìn */
+.aos-animate {
+    &.aos-init.no-hidden {
+        opacity: 1 !important;
+        transform: translateY(0);
+    }
+}
+
+@media screen {
+    html:not(.no-js) [no-hidden=true].no-hidden {
+        opacity: 1 !important;
+        transform: translateY(0);
+        transition-property: opacity, -webkit-transform;
+        transition-property: opacity, transform;
+        transition-property: opacity, transform, -webkit-transform;
+    }
+
+    html:not(.no-js) [data-aos^=fade][data-aos^=fade].no-hidden {
+        opacity: 1 !important;
+        transform: translateY(0);
+        transition-property: opacity, -webkit-transform;
+        transition-property: opacity, transform;
+        transition-property: opacity, transform, -webkit-transform;
+    }
+}
