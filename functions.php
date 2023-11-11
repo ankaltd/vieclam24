@@ -17,7 +17,7 @@ require_once(__DIR__ . '/app/wep-router.php');
 // Include Autoload for core classes
 require_once(__DIR__ . '/app/autoloader.php');
 
-new Class_WEP_Functions();
+new WEP_Functions();
 
 // Setup Theme
 // new WEP_Setup;

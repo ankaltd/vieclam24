@@ -4,6 +4,7 @@
  * Setup Theme Class
  */
 class WEP_Setup {
+    
     public function __construct() {
 
         // On WP Init
@@ -100,7 +101,7 @@ class WEP_Setup {
         new WEP_Ajax();
 
         // Init SEO module for web
-        new WEP_SEO;
+        new WEP_SEO_Class;
 
         // Init Shortcode
         new WEP_Shortcode;

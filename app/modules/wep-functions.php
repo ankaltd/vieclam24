@@ -1,7 +1,7 @@
 <?php
 
 
-class Class_WEP_Functions {
+class WEP_Functions {
 
     function __construct() {
 
