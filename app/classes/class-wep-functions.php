@@ -65,7 +65,128 @@ class Class_WEP_Functions {
         if (is_readable($custom_walker_footer)) {
             require_once $custom_walker_footer;
         }
+
+        // Thêm cột chọn nhanh Page Template
+        add_filter('manage_pages_columns', array($this, 'custom_page_template_column'));
+        add_action('manage_pages_custom_column', array($this, 'custom_page_template_column_content'), 10, 2);
+
+        // Add CSS & JS to Admin
+        add_action('admin_enqueue_scripts', [$this, 'attach_css_files_admin']);
+        add_action('admin_enqueue_scripts', [$this, 'attach_js_files_admin']);
+
+        // Ajax apply template for page
+        add_action('admin_enqueue_scripts', array($this, 'wep_admin_enqueue_scripts'));
+        add_action('wp_ajax_apply_page_template', array($this, 'apply_page_template'));
     }
+
+    // Định nghĩa biến ajaxurl trong JavaScript
+    function wep_admin_enqueue_scripts() {
+?>
+        <script type="text/javascript">
+            var ajaxurl = '<?php echo esc_url(admin_url('admin-ajax.php')); ?>';
+        </script>
+        <?php
+    }
+
+    // Xử lý AJAX request để áp dụng template cho trang
+    function apply_page_template() {
+        $post_id = isset($_POST['post_id']) ? intval($_POST['post_id']) : 0;
+        $page_template = isset($_POST['page_template']) ? sanitize_text_field($_POST['page_template']) : '';
+
+        // Lưu template cho trang
+        update_post_meta($post_id, '_wp_page_template', $page_template);
+
+        wp_die(); // Kết thúc AJAX request
+    }
+
+
+    /**
+     * Enqueue Stylesheets files Admin
+     *
+     * @return void
+     */
+    function attach_css_files_admin() {
+        $cssFiles = require THEME_CONFIG . '/admin-cssfiles.config.php';
+        if (!empty($cssFiles)) {
+            foreach ($cssFiles as $cssFile) {
+                if (!empty($cssFile['path'])) {
+                    $fileId = (!empty($cssFile['handle'])) ? $cssFile['handle'] : 'cssfile-' . microtime();
+                    wp_register_style(
+                        $fileId,
+                        $cssFile['path'],
+                        (!empty($cssFile['dependencies'])) ? $cssFile['dependencies'] : [],
+                        (!empty($cssFile['version'])) ? $cssFile['version'] : '',
+                        (!empty($cssFile['media'])) ? $cssFile['media'] : 'all'
+                    );
+                    wp_enqueue_style($fileId);
+                }
+            }
+        }
+    }
+    /**
+     * Register block script Admin
+     */
+    function attach_js_files_admin() {
+        $jsFiles = require THEME_CONFIG . '/admin-jsfiles.config.php';
+        if (!empty($jsFiles)) {
+            foreach ($jsFiles as $jsFile) {
+                if (!empty($jsFile['path'])) {
+                    // Enqueue script to WordPress
+                    wp_enqueue_script(
+                        (!empty($jsFile['handle'])) ? $jsFile['handle'] : 'jsfile-' . microtime(),
+                        $jsFile['path'],
+                        (!empty($jsFile['dependencies']) && is_array($jsFile['dependencies'])) ? $jsFile['dependencies'] : [],
+                        (!empty($jsFile['version'])) ? $jsFile['version'] : '',
+                        (!empty($jsFile['in_footer'])) ? $jsFile['in_footer'] : false
+                    );
+                }
+            }
+        }
+
+        // Add JS Vars
+        if (!empty($jsFiles[0])) {
+            ob_start();
+            require THEME_CONFIG . '/script-vars.config.php';
+            $jsVars = ob_get_clean();
+            wp_add_inline_script($jsFiles[0]['handle'], $jsVars, 'before');
+        }
+    }
+
+    // Thêm cột "Giao diện" vào trang quản lý Page
+    function custom_page_template_column($columns) {
+        $columns['page_template'] = 'Giao diện';
+        return $columns;
+    }
+
+    // Hiển thị nội dung cho cột "Giao diện"
+    function custom_page_template_column_content($column_name, $post_id) {
+        if ($column_name === 'page_template') {
+            // Lấy giao diện của trang
+            $page_template = get_post_meta($post_id, '_wp_page_template', true);
+
+            // Hiển thị tên giao diện
+            // echo esc_html($page_template);
+
+            // Hiển thị dropdown select với tất cả các template
+            echo '<select class="page-template-select" data-post-id="' . esc_attr($post_id) . '" style="width:100%">';
+            echo '<option value="">Mặc định</option>';
+            $all_templates = get_page_templates();
+
+            foreach ($all_templates as $template_file => $template_name) {
+                echo '<option value="' . esc_attr($template_name) . '"';
+
+                // Kiểm tra nếu không có giao diện nào được chọn hoặc giao diện mặc định
+                if (empty($page_template) || ($page_template === $template_name)) {
+                    echo ' selected="selected"';
+                }
+
+                echo '>' . esc_html($template_file) . '</option>';
+            }
+            echo '</select>';
+        }
+    }
+
+
 
 
     /**
@@ -109,7 +230,7 @@ class Class_WEP_Functions {
         switch ($comment->comment_type):
             case 'pingback':
             case 'trackback':
-?>
+        ?>
                 <li class="post pingback">
                     <p>
                         <?php

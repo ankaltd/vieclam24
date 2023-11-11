@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Trang chi tiết việc làm
+ * Template Name: Chi tiết việc làm (Job)
  */
 
 //  new WEP_Page_Header();

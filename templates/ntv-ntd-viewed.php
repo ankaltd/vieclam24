@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Danh sách nhà tuyển dụng đã xem
+ * Template Name: Danh sách nhà tuyển dụng đã xem (NTV)
  */
 
 //  new WEP_Page_Header();

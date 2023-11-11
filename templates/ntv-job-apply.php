@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Danh sách việc đã ứng tuyển
+ * Template Name: Danh sách việc đã ứng tuyển (NTV)
  */
 
 //  new WEP_Page_Header();

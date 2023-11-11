@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Chăm sóc khách hàng
+ * Template Name: Chăm sóc khách hàng (CSKH)
  */
 
 //  new WEP_Page_Header();

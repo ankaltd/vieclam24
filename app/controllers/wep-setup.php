@@ -383,6 +383,7 @@ class WEP_Setup {
             wp_add_inline_script($jsFiles[0]['handle'], $jsVars, 'before');
         }
     }
+    
     /**
      * Enqueue Stylesheets files Editor
      *

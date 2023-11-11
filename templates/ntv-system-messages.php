@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Danh sách thông báo hệ thống
+ * Template Name: Danh sách thông báo hệ thống (NTV)
  */
 
 //  new WEP_Page_Header();

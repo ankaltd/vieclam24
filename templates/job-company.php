@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Trang việc làm công ty đang tuyển
+ * Template Name: Việc làm công ty đang tuyển (Job)
  */
 
 //  new WEP_Page_Header();

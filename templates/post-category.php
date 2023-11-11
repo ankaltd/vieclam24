@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Trang chuyên mục bài viết (cẩm nang)
+ * Template Name: Chuyên mục bài viết (cẩm nang)
  */
 
 //  new WEP_Page_Header();

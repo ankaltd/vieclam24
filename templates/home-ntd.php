@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Trang chủ Nhà tuyển dụng
+ * Template Name: Trang chủ (NTD)
  */
 
 //  new WEP_Page_Header();

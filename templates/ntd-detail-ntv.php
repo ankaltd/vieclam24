@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Chi tiết ứng viên
+ * Template Name: Chi tiết ứng viên (NTD)
  */
 
 //  new WEP_Page_Header();

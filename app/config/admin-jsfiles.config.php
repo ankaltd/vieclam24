@@ -19,15 +19,8 @@
  */
 return apply_filters('wep_js_files_admin', [
     [
-        'handle'        => 'admin-sticky-js',
-        'path'          => THEME_URL . '/app/assets/js/wep-admin-sticky.js',
-        'dependencies'  => ['jquery'],
-        'version'       => '1.0.0',
-        'in_footer'     => true
-    ],
-    [
-        'handle'        => 'wep-admin-scripts-js',
-        'path'          => THEME_URL . '/app/assets/js/wep-admin-scripts.js',
+        'handle'        => 'wep-ajax-admin-js',
+        'path'          => THEME_URL . '/app/assets/js/wep-ajax-admin.js',
         'dependencies'  => ['jquery'],
         'version'       => '1.0.0',
         'in_footer'     => true

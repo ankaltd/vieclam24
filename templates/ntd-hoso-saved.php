@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Danh sách hồ sơ đã lưu
+ * Template Name: Danh sách hồ sơ đã lưu (NTD)
  */
 
 //  new WEP_Page_Header();

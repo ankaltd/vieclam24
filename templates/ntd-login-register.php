@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Đăng ký đăng nhập nhà tuyển dụng
+ * Template Name: Đăng ký đăng nhập nhà tuyển dụng (NTD)
  */
 
 //  new WEP_Page_Header();

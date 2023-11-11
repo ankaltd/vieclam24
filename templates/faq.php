@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Trang hồ sơ trực tuyến
+ * Template Name: Hướng dẫn FAQs
  */
 
 //  new WEP_Page_Header();

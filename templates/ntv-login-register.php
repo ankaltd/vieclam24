@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Đăng ký hay đăng nhập
+ * Template Name: Đăng ký hay đăng nhập (NTV)
  */
 
 //  new WEP_Page_Header();

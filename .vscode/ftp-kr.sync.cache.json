@@ -263,8 +263,8 @@
               "classes": {
                 "class-wep-functions.php": {
                   "type": "-",
-                  "size": 21333,
-                  "lmtime": 1699596632446,
+                  "size": 23094,
+                  "lmtime": 1699696682715,
                   "modified": false
                 }
               },
@@ -519,12 +519,6 @@
                   "lmtime": 1699589602622,
                   "modified": false
                 },
-                "wep-sidebar.php": {
-                  "type": "-",
-                  "size": 5087,
-                  "lmtime": 1699589602306,
-                  "modified": false
-                },
                 "wep-tag.php": {
                   "type": "-",
                   "size": 11822,
@@ -644,6 +638,44 @@
                 }
               },
               "pages": {
+                "models": {
+                  "wep-page-category-model.php": {
+                    "type": "-",
+                    "size": 85,
+                    "lmtime": 1699589590667,
+                    "modified": false
+                  },
+                  "wep-page-category-product-model.php": {
+                    "type": "-",
+                    "size": 101,
+                    "lmtime": 1699589591602,
+                    "modified": false
+                  },
+                  "wep-page-header-model.php": {
+                    "type": "-",
+                    "size": 294,
+                    "lmtime": 1699589591309,
+                    "modified": false
+                  },
+                  "wep-page-home-model.php": {
+                    "type": "-",
+                    "size": 258,
+                    "lmtime": 1699589590782,
+                    "modified": false
+                  },
+                  "wep-page-single-model.php": {
+                    "type": "-",
+                    "size": 81,
+                    "lmtime": 1699589591190,
+                    "modified": false
+                  },
+                  "wep-page-single-product-model.php": {
+                    "type": "-",
+                    "size": 97,
+                    "lmtime": 1699589590550,
+                    "modified": false
+                  }
+                },
                 "views": {
                   "wep-page-404-view.php": {
                     "type": "-",
@@ -736,16 +768,22 @@
                   "lmtime": 1699589601458,
                   "modified": false
                 },
+                "wep-page-content.php": {
+                  "type": "-",
+                  "size": 319,
+                  "lmtime": 1699695090672,
+                  "modified": false
+                },
                 "wep-page-footer.php": {
                   "type": "-",
-                  "size": 2146,
-                  "lmtime": 1699589602776,
+                  "size": 319,
+                  "lmtime": 1699693731091,
                   "modified": false
                 },
                 "wep-page-header.php": {
                   "type": "-",
-                  "size": 1956,
-                  "lmtime": 1699589602640,
+                  "size": 326,
+                  "lmtime": 1699693685479,
                   "modified": false
                 },
                 "wep-page-home.php": {
@@ -760,6 +798,12 @@
                   "lmtime": 1699589601307,
                   "modified": false
                 },
+                "wep-page-sidebar.php": {
+                  "type": "-",
+                  "size": 3788,
+                  "lmtime": 1699694102787,
+                  "modified": false
+                },
                 "wep-page-single-product.php": {
                   "type": "-",
                   "size": 9661,
@@ -771,44 +815,6 @@
                   "size": 4096,
                   "lmtime": 1699589603020,
                   "modified": false
-                },
-                "models": {
-                  "wep-page-category-model.php": {
-                    "type": "-",
-                    "size": 85,
-                    "lmtime": 1699589590667,
-                    "modified": false
-                  },
-                  "wep-page-category-product-model.php": {
-                    "type": "-",
-                    "size": 101,
-                    "lmtime": 1699589591602,
-                    "modified": false
-                  },
-                  "wep-page-header-model.php": {
-                    "type": "-",
-                    "size": 294,
-                    "lmtime": 1699589591309,
-                    "modified": false
-                  },
-                  "wep-page-home-model.php": {
-                    "type": "-",
-                    "size": 258,
-                    "lmtime": 1699589590782,
-                    "modified": false
-                  },
-                  "wep-page-single-model.php": {
-                    "type": "-",
-                    "size": 81,
-                    "lmtime": 1699589591190,
-                    "modified": false
-                  },
-                  "wep-page-single-product-model.php": {
-                    "type": "-",
-                    "size": 97,
-                    "lmtime": 1699589590550,
-                    "modified": false
-                  }
                 }
               },
               "views": {
@@ -918,16 +924,10 @@
                 }
               }
             },
-            "archive-loop.php": {
-              "type": "-",
-              "size": 649,
-              "lmtime": 0,
-              "modified": false
-            },
             "archive.php": {
               "type": "-",
-              "size": 882,
-              "lmtime": 0,
+              "size": 894,
+              "lmtime": 1699692888173,
               "modified": false
             },
             "assets": {
@@ -3292,53 +3292,23 @@
                 "modified": false
               }
             },
-            "author-bio.php": {
-              "type": "-",
-              "size": 1873,
-              "lmtime": 0,
-              "modified": false
-            },
             "author.php": {
               "type": "-",
-              "size": 920,
-              "lmtime": 0,
+              "size": 938,
+              "lmtime": 1699692898488,
               "modified": false
             },
             "build": {},
             "category.php": {
               "type": "-",
-              "size": 723,
-              "lmtime": 0,
+              "size": 735,
+              "lmtime": 1699692973896,
               "modified": false
             },
             "comments.php": {
               "type": "-",
-              "size": 3068,
-              "lmtime": 0,
-              "modified": false
-            },
-            "content-index.php": {
-              "type": "-",
-              "size": 1876,
-              "lmtime": 0,
-              "modified": false
-            },
-            "content-none.php": {
-              "type": "-",
-              "size": 683,
-              "lmtime": 0,
-              "modified": false
-            },
-            "content-single.php": {
-              "type": "-",
-              "size": 2380,
-              "lmtime": 0,
-              "modified": false
-            },
-            "content.php": {
-              "type": "-",
-              "size": 3368,
-              "lmtime": 0,
+              "size": 3015,
+              "lmtime": 1699692396826,
               "modified": false
             },
             "footer.php": {
@@ -3367,8 +3337,8 @@
             },
             "index.php": {
               "type": "-",
-              "size": 605,
-              "lmtime": 0,
+              "size": 611,
+              "lmtime": 1699692200325,
               "modified": false
             },
             "languages": {},
@@ -3378,23 +3348,49 @@
               "lmtime": 0,
               "modified": false
             },
-            "page-full.php": {
-              "type": "-",
-              "size": 866,
-              "lmtime": 0,
-              "modified": false
-            },
-            "page-nosidebar.php": {
-              "type": "-",
-              "size": 871,
-              "lmtime": 0,
-              "modified": false
-            },
             "page.php": {
               "type": "-",
               "size": 1080,
-              "lmtime": 0,
+              "lmtime": 1699690212227,
               "modified": false
+            },
+            "parts": {
+              "archive-loop.php": {
+                "type": "-",
+                "size": 691,
+                "lmtime": 1699692140013,
+                "modified": false
+              },
+              "author-bio.php": {
+                "type": "-",
+                "size": 1873,
+                "lmtime": 1699690202975,
+                "modified": false
+              },
+              "content-none.php": {
+                "type": "-",
+                "size": 683,
+                "lmtime": 1699690206994,
+                "modified": false
+              },
+              "content-single.php": {
+                "type": "-",
+                "size": 2401,
+                "lmtime": 1699692113488,
+                "modified": false
+              },
+              "content.php": {
+                "type": "-",
+                "size": 3389,
+                "lmtime": 1699692116852,
+                "modified": false
+              },
+              "content-index.php": {
+                "type": "-",
+                "size": 1897,
+                "lmtime": 1699692108732,
+                "modified": false
+              }
             },
             "readme.txt": {
               "type": "-",
@@ -3410,8 +3406,8 @@
             },
             "search.php": {
               "type": "-",
-              "size": 825,
-              "lmtime": 0,
+              "size": 831,
+              "lmtime": 1699693082329,
               "modified": false
             },
             "searchform.php": {
@@ -3428,8 +3424,8 @@
             },
             "single.php": {
               "type": "-",
-              "size": 1570,
-              "lmtime": 0,
+              "size": 1576,
+              "lmtime": 1699692479932,
               "modified": false
             },
             "style-editor.css": {
@@ -3446,8 +3442,8 @@
             },
             "tag.php": {
               "type": "-",
-              "size": 675,
-              "lmtime": 0,
+              "size": 687,
+              "lmtime": 1699693109606,
               "modified": false
             },
             "templates": {
@@ -3465,8 +3461,8 @@
               },
               "home.php": {
                 "type": "-",
-                "size": 149,
-                "lmtime": 1699594440594,
+                "size": 135,
+                "lmtime": 1699694834377,
                 "modified": false
               },
               "job-company.php": {
@@ -3589,6 +3585,18 @@
                 "lmtime": 1699642845200,
                 "modified": false
               },
+              "page-full.php": {
+                "type": "-",
+                "size": 866,
+                "lmtime": 1699690210854,
+                "modified": false
+              },
+              "page-nosidebar.php": {
+                "type": "-",
+                "size": 871,
+                "lmtime": 1699690211562,
+                "modified": false
+              },
               "post-category.php": {
                 "type": "-",
                 "size": 182,
@@ -3603,8 +3611,8 @@
               },
               "single-company.php": {
                 "type": "-",
-                "size": 166,
-                "lmtime": 1699642119375,
+                "size": 160,
+                "lmtime": 1699695412885,
                 "modified": false
               }
             },

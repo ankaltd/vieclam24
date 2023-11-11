@@ -2,41 +2,31 @@
 
 
 /* Sidebar Class */
-
-class WEP_Sidebar {
+class WEP_Page_Sidebar {
 
     /* Init */
-    public function __construct($current_page = 'post') {
-
-        // Sidebar Post
-        add_action('wep_sidebar_post_widgets', array('WEP_Sidebar_View', 'render_wep_widgets_toc'), 10);
-        // add_action('wep_sidebar_post_widgets', array('WEP_Sidebar_View', 'render_wep_widgets_post_categories'), 20);
-        add_action('wep_sidebar_post_widgets', array('WEP_Sidebar_View', 'render_wep_widgets_list_service_related'), 30);
-        add_action('wep_sidebar_post_widgets', array('WEP_Sidebar_View', 'render_wep_widgets_list_product_related'), 40);
-        // add_action('wep_sidebar_post_widgets', array('WEP_Sidebar_View', 'render_wep_widgets_list_post_related'), 50);
-
-        // Sidebar Service
-        add_action('wep_sidebar_product_widgets', array('WEP_Sidebar_View', 'render_wep_widgets_service_commitments'), 10);
-        add_action('wep_sidebar_product_widgets', array('WEP_Sidebar_View', 'render_wep_widgets_service_shop_address'), 20);
-        add_action('wep_sidebar_product_widgets', array('WEP_Sidebar_View', 'render_wep_widgets_service_same_category'), 30);
-
-        // Sidebar Category
-        add_action('wep_sidebar_category_widgets', array('WEP_Sidebar_View', 'render_wep_widgets_post_categories'), 10);
-        add_action('wep_sidebar_category_widgets', array('WEP_Sidebar_View', 'render_wep_widgets_post_same_category'), 20);
-
-        // Sidebar Product Category
-        add_action('wep_sidebar_product_category_widgets', array('WEP_Sidebar_View', 'render_wep_widgets_filter_service'), 10);
-
+    public function __construct($current_page = '') {
         // Output
         if (($current_page === 'post') || is_single('post')) :
             self::for_post();
-        elseif (($current_page === 'product') || is_product()) :
+
+        elseif (($current_page === 'product') || function_exists('is_product')) :
             self::for_product();
+
         elseif (($current_page === 'category') || is_category()) :
             self::for_category();
-        elseif (($current_page === 'product-category') || is_product_category()) :
+
+        elseif (($current_page === 'product-category') || function_exists('is_product_category')) :
             self::for_product_category();
+
+        else :
+            self::default();
         endif;
+    }
+
+    /* Sidebar Default */
+    static function default() {
+        get_sidebar();
     }
 
     /* Sidebar Post */

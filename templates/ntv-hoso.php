@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Trang hồ sơ trực tuyến
+ * Template Name: Hồ sơ trực tuyến (NTV)
  */
 
 //  new WEP_Page_Header();

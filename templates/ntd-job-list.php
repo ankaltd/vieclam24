@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Danh sách tin đã đăng
+ * Template Name: Danh sách tin đã đăng (NTD)
  */
 
 //  new WEP_Page_Header();

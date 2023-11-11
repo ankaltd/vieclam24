@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Danh sách hồ sơ ứng viên
+ * Template Name: Danh sách hồ sơ ứng viên (NTD)
  */
 
 //  new WEP_Page_Header();
