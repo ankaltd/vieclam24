@@ -23,10 +23,10 @@ if ( have_posts() ) :
 	</h1>
 </header>
 <?php
-	get_template_part( 'archive', 'loop' );
+	get_template_part( 'parts/archive', 'loop' );
 else :
 	// 404.
-	get_template_part( 'content', 'none' );
+	get_template_part( 'parts/content', 'none' );
 endif;
 
 wp_reset_postdata(); // End of the loop.

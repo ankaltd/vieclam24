@@ -104,7 +104,7 @@ class Class_WEP_Functions {
      * @param array  $args    Comment args.
      * @param int    $depth   Comment depth.
      */
-    function vieclam24_comment($comment, $args, $depth) {
+    static function vieclam24_comment($comment, $args, $depth) {
         $GLOBALS['comment'] = $comment;
         switch ($comment->comment_type):
             case 'pingback':
@@ -290,7 +290,7 @@ class Class_WEP_Functions {
      *
      * @since v1.0
      */
-    function vieclam24_article_posted_on() {
+    static function vieclam24_article_posted_on() {
         printf(
             wp_kses_post(__('<span class="sep">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s">%4$s</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author-meta vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'vieclam24')),
             esc_url(get_the_permalink()),
@@ -354,7 +354,7 @@ class Class_WEP_Functions {
      *
      * @param string $nav_id Navigation ID.
      */
-    function vieclam24_content_nav($nav_id) {
+    static function vieclam24_content_nav($nav_id) {
         global $wp_query;
 
         if ($wp_query->max_num_pages > 1) {

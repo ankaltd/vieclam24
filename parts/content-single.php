@@ -12,7 +12,7 @@
 			if ( 'post' === get_post_type() ) :
 		?>
 			<div class="entry-meta">
-				<?php vieclam24_article_posted_on(); ?>
+				<?php Class_WEP_Functions::vieclam24_article_posted_on(); ?>
 			</div><!-- /.entry-meta -->
 		<?php
 			endif;
