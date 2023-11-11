@@ -307,19 +307,21 @@ class WEP_ACF {
             }
         }
     }
-    // save local json
+
+    // save local json acf
     public function wep_acf_json_save_point($path) {
         // update path
-        $path = get_stylesheet_directory() . '/app/acf-json';
+        $path = get_stylesheet_directory() . '/app/modules/acf/acf-json';
         // return
         return $path;
     }
+
     // load local json
     public function wep_acf_json_load_point($paths) {
         // remove original path (optional)
         unset($paths[0]);
         // append path
-        $paths[] = get_stylesheet_directory() . '/app/acf-json';
+        $paths[] = get_stylesheet_directory() . '/app/modules/acf/acf-json';
         // return
         return $paths;
     }

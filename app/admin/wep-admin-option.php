@@ -5,7 +5,7 @@
  * 
  */
 
-class WEP_Option {
+class WEP_Admin_Option {
 
     private $general_option_pages = array(
         'Trang chủ' => 'https://bvdt.webp.vn/wp-admin/post.php?post=223&action=edit',

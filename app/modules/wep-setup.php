@@ -163,19 +163,19 @@ class WEP_Setup {
 
             // Gán giá trị tùy chọn từ database vào biến $general_options ở đây nếu cần
             global $general_options;
-            $general_options = WEP_Helper::getJsonAsArray(THEME_CONFIG . '/option-json/general.json');
+            $general_options = WEP_Helper::getJsonAsArray(THEME_APP . '/settings/option-json/general.json');
 
             // Lấy tùy chọn chung của hệ thống Menu
             global $menu_options;
-            $menu_options = WEP_Helper::getJsonAsArray(THEME_CONFIG . '/option-json/menu.json');
+            $menu_options = WEP_Helper::getJsonAsArray(THEME_APP . '/settings/option-json/menu.json');
 
             // Lấy tùy chọn chung của thành phần Widget Sidebar
             global $sidebar_options;
-            $sidebar_options = WEP_Helper::getJsonAsArray(THEME_CONFIG . '/option-json/sidebar.json');
+            $sidebar_options = WEP_Helper::getJsonAsArray(THEME_APP . '/settings/option-json/sidebar.json');
 
             // Lấy tùy chọn chung của thành phần Home
             global $home_options;
-            $home_options = WEP_Helper::getJsonAsArray(THEME_CONFIG . '/option-json/home.json');
+            $home_options = WEP_Helper::getJsonAsArray(THEME_APP . '/settings/option-json/home.json');
 
         endif;
     }

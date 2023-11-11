@@ -13,11 +13,11 @@ function autoload($class_name) {
     /* 1 - MVC store in models - views - controllers folders */
     // If class name container "model" that is model, inside folder models    
     if (strstr($class_name, 'model')) {
-        $path = THEME_APP . '/models/' . $class_name . '.php';
+        $path = THEME_APP . '/modules/models/' . $class_name . '.php';
 
     } elseif (strstr($class_name, 'view')) {
         // If class name container "view" that is view, inside folder views        
-        $path = THEME_APP . '/views/' . $class_name . '.php';   
+        $path = THEME_APP . '/modules/views/' . $class_name . '.php';   
 
     /* 2 - Admin classes store in admin folder */
     } elseif (strstr($class_name, 'admin')) {

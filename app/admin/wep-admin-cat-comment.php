@@ -2,7 +2,7 @@
 
 /* Comment Category Admin */
 
-class WEP_Cmt_Cat_Admin {
+class WEP_Admin_Cat_Comment {
     public function __construct() {
 
         if (is_admin()) {
