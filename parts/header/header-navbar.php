@@ -1,3 +1,6 @@
+<?php  
+    extract($args);
+?>
 <div id="navbar" class="collapse navbar-collapse">
     <?php
     // Loading WordPress Custom Menu (theme_location).
@@ -23,3 +26,4 @@
     endif;
     ?>
 </div><!-- /.navbar-collapse -->
+
