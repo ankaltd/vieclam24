@@ -3,7 +3,7 @@
  * The template for displaying the archive loop.
  */
 
-WEP_Functions_Class::vieclam24_content_nav( 'nav-above' );
+WEP_Functions::vieclam24_content_nav( 'nav-above' );
 
 if ( have_posts() ) :
 ?>
@@ -26,4 +26,4 @@ endif;
 
 wp_reset_postdata();
 
-WEP_Functions_Class::vieclam24_content_nav( 'nav-below' );
+WEP_Functions::vieclam24_content_nav( 'nav-below' );

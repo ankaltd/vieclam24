@@ -68,7 +68,7 @@ if (post_password_required()) {
 			 * define theme_comment() and that will be used instead.
 			 * See theme_comment() in my-theme/functions.php for more.
 			 */
-			wp_list_comments(array('callback' => array('WEP_Functions_Class', 'vieclam24_comment')));
+			wp_list_comments(array('callback' => array('WEP_Functions', 'vieclam24_comment')));
 			?>
 		</ol>
 		<?php

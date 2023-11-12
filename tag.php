@@ -1,28 +1,21 @@
 <?php
+
 /**
  * The Template used to display Tag Archive pages.
  */
 
-get_header();
+new WEP_Page_Header();
 
-if ( have_posts() ) :
-?>
-	<header class="page-header">
-		<h1 class="page-title"><?php printf( esc_html__( 'Tag: %s', 'vieclam24' ), single_tag_title( '', false ) ); ?></h1>
-		<?php
-			$tag_description = tag_description();
-			if ( ! empty( $tag_description ) ) :
-				echo apply_filters( 'tag_archive_meta', '<div class="tag-archive-meta">' . $tag_description . '</div>' );
-			endif;
-		?>
-	</header>
-<?php
-	get_template_part( 'parts/archive', 'loop' );
+if (have_posts()) :
+
+	get_template_part('parts/page/page-header-tag');
+
+	get_template_part('parts/archive-loop');
 else :
 	// 404.
-	get_template_part( 'parts/content', 'none' );
+	get_template_part('parts/content-none');
 endif;
 
 wp_reset_postdata(); // End of the loop.
 
-get_footer();
+new WEP_Page_Footer();

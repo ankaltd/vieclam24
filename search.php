@@ -1,30 +1,22 @@
 <?php
+
 /**
  * The Template for displaying Search Results pages.
  */
 
-get_header();
+new WEP_Page_Header();
 
-if ( have_posts() ) :
-?>	
-	<header class="page-header">
-		<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'vieclam24' ), get_search_query() ); ?></h1>
-	</header>
-<?php
-	get_template_part( 'parts/archive', 'loop' );
+if (have_posts()) :
+
+	get_template_part('parts/page/page-header-search');
+	get_template_part('parts/archive', 'loop');
+
 else :
-?>
-	<article id="post-0" class="post no-results not-found">
-		<header class="entry-header">
-			<h1 class="entry-title"><?php esc_html_e( 'Nothing Found', 'vieclam24' ); ?></h1>
-		</header><!-- /.entry-header -->
-		<p><?php esc_html_e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'vieclam24' ); ?></p>
-		<?php
-			get_search_form();
-		?>
-	</article><!-- /#post-0 -->
-<?php
+
+	new WEP_Page_Content('nothing-found');
+
 endif;
+
 wp_reset_postdata();
 
-get_footer();
+new WEP_Page_Footer();
