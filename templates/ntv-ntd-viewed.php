@@ -4,6 +4,10 @@
  * Template Name: Danh sách nhà tuyển dụng đã xem (NTV)
  */
 
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly
+}
+
 //  new WEP_Page_Header();
 
 //  new WEP_Page_Category_Product();

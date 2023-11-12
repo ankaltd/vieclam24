@@ -4,6 +4,11 @@
  * Template Name: Danh sách tin đã đăng (NTD)
  */
 
+
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly
+}
+
 //  new WEP_Page_Header();
 
 //  new WEP_Page_Category_Product();
