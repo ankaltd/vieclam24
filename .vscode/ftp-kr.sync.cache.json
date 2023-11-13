@@ -6,8 +6,8 @@
           "vieclam24": {
             "404.php": {
               "type": "-",
-              "size": 658,
-              "lmtime": 0,
+              "size": 311,
+              "lmtime": 1699806935744,
               "modified": false
             },
             "LICENSE": {
@@ -947,8 +947,8 @@
             },
             "archive.php": {
               "type": "-",
-              "size": 894,
-              "lmtime": 1699692888173,
+              "size": 358,
+              "lmtime": 1699807962522,
               "modified": false
             },
             "assets": {
@@ -3315,28 +3315,28 @@
             },
             "author.php": {
               "type": "-",
-              "size": 938,
-              "lmtime": 1699692898488,
+              "size": 808,
+              "lmtime": 1699807938868,
               "modified": false
             },
             "build": {},
             "category.php": {
               "type": "-",
-              "size": 735,
-              "lmtime": 1699692973896,
+              "size": 364,
+              "lmtime": 1699808054274,
               "modified": false
             },
             "comments.php": {
               "type": "-",
-              "size": 3015,
-              "lmtime": 1699692396826,
+              "size": 3009,
+              "lmtime": 1699805619986,
               "modified": false
             },
             "footer.php": {
               "type": "-",
-              "size": 2267,
+              "size": 692,
               "lmtime": 0,
-              "modified": false
+              "modified": true
             },
             "functions.php": {
               "type": "-",
@@ -3346,14 +3346,14 @@
             },
             "header.php": {
               "type": "-",
-              "size": 3581,
+              "size": 1550,
               "lmtime": 0,
-              "modified": false
+              "modified": true
             },
             "image.php": {
               "type": "-",
-              "size": 2749,
-              "lmtime": 0,
+              "size": 732,
+              "lmtime": 1699808410529,
               "modified": false
             },
             "index.php": {
@@ -3371,15 +3371,29 @@
             },
             "page.php": {
               "type": "-",
-              "size": 1080,
+              "size": 633,
               "lmtime": 1699690212227,
-              "modified": false
+              "modified": true
             },
             "parts": {
+              "404": {
+                "entry-content.php": {
+                  "type": "-",
+                  "size": 312,
+                  "lmtime": 1699807340972,
+                  "modified": false
+                },
+                "entry-title.php": {
+                  "type": "-",
+                  "size": 76,
+                  "lmtime": 1699807238517,
+                  "modified": false
+                }
+              },
               "archive-loop.php": {
                 "type": "-",
-                "size": 691,
-                "lmtime": 1699692140013,
+                "size": 679,
+                "lmtime": 1699805620034,
                 "modified": false
               },
               "auth": {
@@ -3432,10 +3446,22 @@
                 "lmtime": 1699690202975,
                 "modified": false
               },
+              "content-404.php": {
+                "type": "-",
+                "size": 267,
+                "lmtime": 1699807352022,
+                "modified": false
+              },
+              "content-image.php": {
+                "type": "-",
+                "size": 1916,
+                "lmtime": 1699808178348,
+                "modified": false
+              },
               "content-index.php": {
                 "type": "-",
-                "size": 1897,
-                "lmtime": 1699692108732,
+                "size": 1891,
+                "lmtime": 1699805620054,
                 "modified": false
               },
               "content-none.php": {
@@ -3444,18 +3470,31 @@
                 "lmtime": 1699690206994,
                 "modified": false
               },
+              "content-nothing-found.php": {
+                "type": "-",
+                "size": 426,
+                "lmtime": 1699805756212,
+                "modified": false
+              },
+              "content-page.php": {
+                "type": "-",
+                "size": 576,
+                "lmtime": 0,
+                "modified": false
+              },
               "content-single.php": {
                 "type": "-",
-                "size": 2401,
-                "lmtime": 1699692113488,
+                "size": 2395,
+                "lmtime": 1699805620008,
                 "modified": false
               },
               "content.php": {
                 "type": "-",
-                "size": 3389,
-                "lmtime": 1699692116852,
+                "size": 3383,
+                "lmtime": 1699805620005,
                 "modified": false
               },
+              "footer": {},
               "global": {
                 "breadcrumb.php": {
                   "type": "-",
@@ -3494,6 +3533,7 @@
                   "modified": false
                 }
               },
+              "header": {},
               "home": {
                 "vieclam": {
                   "page-breadcrumb.jpg": {
@@ -3518,6 +3558,12 @@
               },
               "job-of-company": {},
               "loop": {
+                "apply-now.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1699730287385,
+                  "modified": false
+                },
                 "follow-now.php": {
                   "type": "-",
                   "size": 0,
@@ -3566,6 +3612,12 @@
                   "lmtime": 1699730254914,
                   "modified": false
                 },
+                "pagination-parent.php": {
+                  "type": "-",
+                  "size": 232,
+                  "lmtime": 1699808369437,
+                  "modified": false
+                },
                 "pagination.php": {
                   "type": "-",
                   "size": 0,
@@ -3584,10 +3636,42 @@
                   "lmtime": 1699730321939,
                   "modified": false
                 },
-                "apply-now.php": {
+                "navigation-post.php": {
                   "type": "-",
-                  "size": 0,
-                  "lmtime": 1699730287385,
+                  "size": 1335,
+                  "lmtime": 1699808861368,
+                  "modified": false
+                }
+              },
+              "page": {
+                "page-header-archive.php": {
+                  "type": "-",
+                  "size": 578,
+                  "lmtime": 1699807648360,
+                  "modified": false
+                },
+                "page-header-author.php": {
+                  "type": "-",
+                  "size": 190,
+                  "lmtime": 1699807866356,
+                  "modified": false
+                },
+                "page-header-category.php": {
+                  "type": "-",
+                  "size": 414,
+                  "lmtime": 1699808019787,
+                  "modified": false
+                },
+                "page-header-search.php": {
+                  "type": "-",
+                  "size": 158,
+                  "lmtime": 1699806443829,
+                  "modified": false
+                },
+                "page-header-tag.php": {
+                  "type": "-",
+                  "size": 370,
+                  "lmtime": 1699809048758,
                   "modified": false
                 }
               },
@@ -4100,6 +4184,20 @@
                   "modified": false
                 }
               },
+              "sidebar": {
+                "primary-two.php": {
+                  "type": "-",
+                  "size": 2183,
+                  "lmtime": 1699809465587,
+                  "modified": false
+                },
+                "primary-widget-area.php": {
+                  "type": "-",
+                  "size": 540,
+                  "lmtime": 1699809322585,
+                  "modified": false
+                }
+              },
               "single-company": {},
               "single-faqs": {},
               "single-job": {
@@ -4220,8 +4318,8 @@
             },
             "search.php": {
               "type": "-",
-              "size": 831,
-              "lmtime": 1699693082329,
+              "size": 337,
+              "lmtime": 1699807613916,
               "modified": false
             },
             "searchform.php": {
@@ -4232,14 +4330,14 @@
             },
             "sidebar.php": {
               "type": "-",
-              "size": 2682,
-              "lmtime": 0,
+              "size": 377,
+              "lmtime": 1699809476513,
               "modified": false
             },
             "single.php": {
               "type": "-",
-              "size": 1576,
-              "lmtime": 1699692479932,
+              "size": 509,
+              "lmtime": 1699808944865,
               "modified": false
             },
             "style-editor.css": {
@@ -4256,8 +4354,8 @@
             },
             "tag.php": {
               "type": "-",
-              "size": 687,
-              "lmtime": 1699693109606,
+              "size": 357,
+              "lmtime": 1699809096874,
               "modified": false
             },
             "templates": {

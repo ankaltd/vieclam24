@@ -16,6 +16,51 @@ class WEP_Tag {
     static function init() {
     }
 
+    // Render Container Tag
+    public static function container($tag = 'open', $full = false, $args = array()) {
+
+        $tag_args = array('width' => $full ? '-fluid' : '');
+        $tag_args += $args;
+
+        if ($tag == 'open') :
+            get_template_part('parts/global/container-start', null, $tag_args);
+        else :
+            get_template_part('parts/global/container-end');
+        endif;
+    }
+
+    // Render Row Tag
+    public static function row($tag = 'open', $args = array()) {
+
+        if ($tag == 'open') :
+            get_template_part('parts/global/row-start', null, $args);
+        else :
+            get_template_part('parts/global/row-end');
+        endif;
+    }
+
+    // Render Section Tag
+    public static function section($tag = 'open', $args = array()) {
+
+        if ($tag == 'open') :
+            get_template_part('parts/global/section-start', null, $args);
+        else :
+            get_template_part('parts/global/section-end');
+        endif;
+    }
+
+    // Render Image Tag
+    public static function image($src = 'default.png', $responsive = true, $args = array()) {
+
+        $tag_args = array(
+            'src' => $src,
+            'responsive' => $responsive,
+        );
+        $tag_args += $args;
+
+        get_template_part('parts/global/image', null, $tag_args);
+    }
+
     // Render Bootstrap Tag
     public static function render_bs_tag($args = '') {
 
