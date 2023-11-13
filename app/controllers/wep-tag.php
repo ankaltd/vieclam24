@@ -16,7 +16,12 @@ class WEP_Tag {
     static function init() {
     }
 
-    // Render Container Tag
+    /** 
+     * Render Container Tag 
+     * @var $tag = 'close' => closing tag
+     * @var $full = true => container-fluid
+     * @var $args = array attributes for tag (tag_id, tag_classes, tag_style, tag_atts)
+     */
     public static function container($tag = 'open', $full = false, $args = array()) {
 
         $tag_args = array('width' => $full ? '-fluid' : '');
@@ -29,7 +34,11 @@ class WEP_Tag {
         endif;
     }
 
-    // Render Row Tag
+    /** 
+     * Render Row Tag 
+     * @var $tag = 'end' => closing tag
+     * @var $args = array attributes for tag (tag_id, tag_classes, tag_style, tag_atts)
+     */
     public static function row($tag = 'open', $args = array()) {
 
         if ($tag == 'open') :
@@ -39,7 +48,33 @@ class WEP_Tag {
         endif;
     }
 
-    // Render Section Tag
+    /** 
+     * Render Column Tag 
+     * @var $tag = 'end' => closing tag
+     * @var $cols = '12' => number of column
+     * @var $args = array attributes for tag (tag_id, tag_classes, tag_style, tag_atts)
+     */
+    public static function col($tag = 'open', $cols = '12', $args = array()) {
+
+        $tag_args = array(
+            'classes' =>  'col-' . $cols
+        );
+
+        $tag_args += $args;
+
+        if ($tag == 'open') :
+            get_template_part('parts/global/col-start', null, $tag_args);
+        else :
+            get_template_part('parts/global/col-end');
+        endif;
+    }
+
+    /** 
+     * Render Section Tag 
+     * @var $tag = 'end' => closing tag
+     * @var $full = true => container-fluid
+     * @var $args = array attributes for tag (tag_id, tag_classes, tag_style, tag_atts)
+     */
     public static function section($tag = 'open', $args = array()) {
 
         if ($tag == 'open') :
@@ -49,12 +84,19 @@ class WEP_Tag {
         endif;
     }
 
-    // Render Image Tag
-    public static function image($src = 'default.png', $responsive = true, $args = array()) {
+    /** 
+     * Render Image Tag 
+     * @var $src = '' => default image
+     * @var $responsive = true => img-fluid
+     * @var $args = array attributes for tag (tag_id, tag_classes, tag_style, tag_atts, tag_width, tag_height, tag_alt)
+     */
+    public static function image($src = 'default.png', $responsive = true, $width = 'auto', $height = 'auto', $args = array()) {
 
         $tag_args = array(
             'src' => $src,
             'responsive' => $responsive,
+            'width' => $width,
+            'height' => $height,
         );
         $tag_args += $args;
 
