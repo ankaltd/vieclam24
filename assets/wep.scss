@@ -88,10 +88,10 @@
 // Components custom for Modules and Plugins
 @import "../assets/scss/modules/woo-custom";
 
-// Responsive mobile first then
-@import "../assets/scss/responsive/wep-global-tablet";
-@import "../assets/scss/responsive/wep-global-laptop";
-@import "../assets/scss/responsive/wep-global-pc";
+// Responsive mobile first then global and more page-device
+@import "../assets/scss/responsive-global/wep-tablet";
+@import "../assets/scss/responsive-global/wep-laptop";
+@import "../assets/scss/responsive-global/wep-pc";
 
 
 // 9. Optionally include helpers and utilities API last to generate classes based on the Sass map in `_utilities.scss`
