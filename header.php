@@ -37,6 +37,7 @@ $search_enabled  = get_theme_mod('search_enabled', '1'); // Get custom meta-valu
 		<?php get_template_part('parts/header/navbar/header-navbar-end');		?>
 		<!-- Header Nav End -->
 
+		<?php WEP_Tag::container('open', true) ?>
 		<!-- Header Top Menu -->
 		<?php get_template_part('parts/header/header-top-menu') ?>
 		<!-- Header Top Menu End -->
@@ -44,6 +45,8 @@ $search_enabled  = get_theme_mod('search_enabled', '1'); // Get custom meta-valu
 		<!-- Header Branch List -->
 		<?php get_template_part('parts/header/branch/header-branch-list') ?>
 		<!-- Header Branch List End -->
+		<?php WEP_Tag::container('end') ?>
+
 
 		<?php get_template_part('parts/header/header-end') ?>
 
