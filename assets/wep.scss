@@ -6,7 +6,7 @@
 
 // Default variable overrides
 // 2. Include any default SCSS variable overrides here
-@import "../assets/scss/common/wep-vars";
+@import "../assets/scss/general/wep-vars";
 
 // Required
 // 3. Include remainder of required Bootstrap stylesheets
@@ -21,7 +21,7 @@
 @import "../node_modules/bootstrap/scss/root";
 
 // 6. Overrides root CSS vars here
-@import "../assets/scss/common/responsive-vars";
+@import "../assets/scss/responsive/responsive-vars";
 
 
 // Optional Bootstrap components here
@@ -32,7 +32,9 @@
 @import "../node_modules/bootstrap/scss/images";
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
+
 // =========================
+
 @import "../node_modules/bootstrap/scss/tables";
 @import "../node_modules/bootstrap/scss/forms";
 @import "../node_modules/bootstrap/scss/buttons";
@@ -61,36 +63,35 @@
 
 // 8. Add additional WEP components ...
 
-// Common WEP
-@import "../assets/scss/common/global";
-@import "../assets/scss/common/typography";
-@import "../assets/scss/common/unit";
-@import "../assets/scss/common/button";
-@import "../assets/scss/common/hover";
-@import "../assets/scss/common/responsive";
-@import "../assets/scss/common/darkmode";
-@import "../assets/scss/common/concept";
-@import "../assets/scss/common/wp_blocks";
+// General Classes WEP
+@import "../assets/scss/general/global";
+@import "../assets/scss/general/typography";
+@import "../assets/scss/general/button";
+@import "../assets/scss/general/unit";
+@import "../assets/scss/general/wp_blocks";
 
-// Components WEP
-@import "../assets/scss/components/common-components";
-@import "../assets/scss/components/header";
-@import "../assets/scss/components/navigation";
+// Global Components WEP
+@import "../assets/scss/global/components";
+@import "../assets/scss/global/header";
+@import "../assets/scss/global/navigation";
+@import "../assets/scss/global/sidebar";
+@import "../assets/scss/global/footer";
+
+// Components by Pages
 @import "../assets/scss/components/home";
 @import "../assets/scss/components/product-cat";
 @import "../assets/scss/components/product-detail";
 @import "../assets/scss/components/category";
 @import "../assets/scss/components/single";
 @import "../assets/scss/components/contact";
-@import "../assets/scss/components/sidebar";
-@import "../assets/scss/components/footer";
-@import "../assets/scss/components/content-html";
-@import "../assets/scss/components/woo-custom";
 
-// Responsive mobile first
-@import "../assets/scss/common/wep-tablet";
-@import "../assets/scss/common/wep-laptop";
-@import "../assets/scss/common/wep-pc";
+// Components custom for Modules and Plugins
+@import "../assets/scss/modules/woo-custom";
+
+// Responsive mobile first then
+@import "../assets/scss/responsive/wep-global-tablet";
+@import "../assets/scss/responsive/wep-global-laptop";
+@import "../assets/scss/responsive/wep-global-pc";
 
 
 // 9. Optionally include helpers and utilities API last to generate classes based on the Sass map in `_utilities.scss`
