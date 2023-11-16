@@ -39,18 +39,10 @@ return apply_filters('wep_css_files', [
     [
 
         'handle'        => 'wep-font',
-        'path'          => 'https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap',
+        'path'          => 'https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap',
         'dependencies'  => [],
         'version'       => '1.0.0',
-        'media'         => 'all'
-    ],
-    [
-
-        'handle'        => 'wep-icons',
-        'path'          => THEME_URL . '/node_modules/bootstrap-icons/font/bootstrap-icons.min.css',
-        'dependencies'  => ['wep-font'],
-        'version'       => '1.0.0',
-        'media'         => 'all'
+        'media'         => 'all'        
     ],
     [
 
@@ -62,9 +54,9 @@ return apply_filters('wep_css_files', [
     ],
     [
 
-        'handle'        => 'wep-stylesheet',
-        'path'          => THEME_URL . '/assets/wep.css',
-        'dependencies'  => ['wep-font','wep-icons'],
+        'handle'        => 'wep-home',
+        'path'          => THEME_URL . '/assets/css/home.css',
+        'dependencies'  => ['wep-font'],
         'version'       => '1.0.0',
         'media'         => 'all'
     ]

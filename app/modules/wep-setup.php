@@ -4,7 +4,7 @@
  * Setup Theme Class
  */
 class WEP_Setup {
-    
+
     public function __construct() {
 
         // On WP Init
@@ -107,8 +107,8 @@ class WEP_Setup {
         new WEP_Shortcode;
 
         // Init Woo
-        new WEP_Woocommerce;      
-    
+        new WEP_Woocommerce;
+
         // Khởi tạo Menu Admin
         new WEP_Admin_Menu();
 
@@ -384,7 +384,7 @@ class WEP_Setup {
             wp_add_inline_script($jsFiles[0]['handle'], $jsVars, 'before');
         }
     }
-    
+
     /**
      * Enqueue Stylesheets files Editor
      *
@@ -436,6 +436,7 @@ class WEP_Setup {
             wp_add_inline_script($jsFiles[0]['handle'], $jsVars, 'before');
         }
     }
+
     // Hints
     function wep_resource_hints($urls, $relation_type) {
         if (wp_style_is('wep-google-font', 'queue') && 'preconnect' === $relation_type) {
@@ -446,6 +447,7 @@ class WEP_Setup {
         }
         return $urls;
     }
+
     /**
      * Called on WordPress Init
      *

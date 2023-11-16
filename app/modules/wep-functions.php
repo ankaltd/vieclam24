@@ -70,13 +70,95 @@ class WEP_Functions {
         add_filter('manage_pages_columns', array($this, 'custom_page_template_column'));
         add_action('manage_pages_custom_column', array($this, 'custom_page_template_column_content'), 10, 2);
 
+        // Ajax apply template for page
+        add_action('admin_enqueue_scripts', array($this, 'wep_admin_enqueue_scripts'));
+        add_action('wp_ajax_apply_page_template', array($this, 'apply_page_template'));
+
         // Add CSS & JS to Admin
         add_action('admin_enqueue_scripts', [$this, 'attach_css_files_admin']);
         add_action('admin_enqueue_scripts', [$this, 'attach_js_files_admin']);
 
-        // Ajax apply template for page
-        add_action('admin_enqueue_scripts', array($this, 'wep_admin_enqueue_scripts'));
-        add_action('wp_ajax_apply_page_template', array($this, 'apply_page_template'));
+        // Add Hints Font
+        add_filter('wp_resource_hints', [$this, 'wep_resource_hints'], 10, 2);
+
+        // Add Preconnect Font        
+        add_action('admin_enqueue_scripts', [$this, 'add_preconnect_links'], 10, 2);
+
+        // Enqueue Scripts => CSS and JS for Frontend        
+        add_action('wp_enqueue_scripts', [$this, 'attach_css_files_frondend']);
+        add_action('wp_enqueue_scripts', [$this, 'attach_js_files_frondend']);
+    }
+
+    // Pre Connect Font Google
+    function add_preconnect_links() {
+        echo '<link rel="preconnect" href="https://fonts.googleapis.com">';
+        echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
+    }
+
+
+    // Hints
+    function wep_resource_hints($urls, $relation_type) {
+        if (wp_style_is('wep-google-font', 'queue') && 'preconnect' === $relation_type) {
+            $urls[] = array(
+                'href' => 'https://fonts.gstatic.com',
+                'crossorigin',
+            );
+        }
+        return $urls;
+    }
+
+    /**
+     * Enqueue Javascript files
+     *
+     * @return void
+     */
+    public function attach_js_files_frondend() {
+        $jsFiles = require THEME_CONFIG . '/script-files.config.php';
+        if (!empty($jsFiles)) {
+            foreach ($jsFiles as $jsFile) {
+                if (!empty($jsFile['path'])) {
+                    // Enqueue script to WordPress
+                    wp_enqueue_script(
+                        (!empty($jsFile['handle'])) ? $jsFile['handle'] : 'jsfile-' . microtime(),
+                        $jsFile['path'],
+                        (!empty($jsFile['dependencies']) && is_array($jsFile['dependencies'])) ? $jsFile['dependencies'] : [],
+                        (!empty($jsFile['version'])) ? $jsFile['version'] : '',
+                        (!empty($jsFile['in_footer'])) ? $jsFile['in_footer'] : false
+                    );
+                }
+            }
+        }
+
+        // Add JS Vars
+        if (!empty($jsFiles[0])) {
+            ob_start();
+            require THEME_CONFIG . '/script-vars.config.php';
+            $jsVars = ob_get_clean();
+            wp_add_inline_script($jsFiles[0]['handle'], $jsVars, 'before');
+        }
+    }
+    /**
+     * Enqueue Stylesheets files
+     *
+     * @return void
+     */
+    public function attach_css_files_frondend() {
+        $cssFiles = require THEME_CONFIG . '/style-files.config.php';
+        if (!empty($cssFiles)) {
+            foreach ($cssFiles as $cssFile) {
+                if (!empty($cssFile['path'])) {
+                    $fileId = (!empty($cssFile['handle'])) ? $cssFile['handle'] : 'cssfile-' . microtime();
+                    wp_register_style(
+                        $fileId,
+                        $cssFile['path'],
+                        (!empty($cssFile['dependencies'])) ? $cssFile['dependencies'] : [],
+                        (!empty($cssFile['version'])) ? $cssFile['version'] : '',
+                        (!empty($cssFile['media'])) ? $cssFile['media'] : 'all'
+                    );
+                    wp_enqueue_style($fileId);
+                }
+            }
+        }
     }
 
     // Định nghĩa biến ajaxurl trong JavaScript
@@ -208,7 +290,7 @@ class WEP_Functions {
         }
 
         // 2. Scripts.
-        wp_enqueue_script('mainjs', get_theme_file_uri('build/main.js'), array(), $theme_version, true);
+        wp_enqueue_script('vieclamjs', get_theme_file_uri('assets/vieclam.js'), array(), $theme_version, true);
 
         if (is_singular() && comments_open() && get_option('thread_comments')) {
             wp_enqueue_script('comment-reply');
@@ -325,16 +407,16 @@ class WEP_Functions {
         $aria_req = ($req ? " aria-required='true' required" : '');
         $consent  = (empty($commenter['comment_author_email']) ? '' : ' checked="checked"');
         $fields   = array(
-            'author'  => '<div class="form-floating mb-3">
+            'author'  => '<div class="mb-3 form-floating">
 							<input type="text" id="author" name="author" class="form-control" value="' . esc_attr($commenter['comment_author']) . '" placeholder="' . esc_html__('Name', 'vieclam24') . ($req ? '*' : '') . '"' . $aria_req . ' />
 							<label for="author">' . esc_html__('Name', 'vieclam24') . ($req ? '*' : '') . '</label>
 						</div>',
-            'email'   => '<div class="form-floating mb-3">
+            'email'   => '<div class="mb-3 form-floating">
 							<input type="email" id="email" name="email" class="form-control" value="' . esc_attr($commenter['comment_author_email']) . '" placeholder="' . esc_html__('Email', 'vieclam24') . ($req ? '*' : '') . '"' . $aria_req . ' />
 							<label for="email">' . esc_html__('Email', 'vieclam24') . ($req ? '*' : '') . '</label>
 						</div>',
             'url'     => '',
-            'cookies' => '<p class="form-check mb-3 comment-form-cookies-consent">
+            'cookies' => '<p class="mb-3 form-check comment-form-cookies-consent">
 							<input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" class="form-check-input" type="checkbox" value="yes"' . $consent . ' />
 							<label class="form-check-label" for="wp-comment-cookies-consent">' . esc_html__('Save my name, email, and website in this browser for the next time I comment.', 'vieclam24') . '</label>
 						</p>',
@@ -342,7 +424,7 @@ class WEP_Functions {
 
         $defaults = array(
             'fields'               => apply_filters('comment_form_default_fields', $fields),
-            'comment_field'        => '<div class="form-floating mb-3">
+            'comment_field'        => '<div class="mb-3 form-floating">
 											<textarea id="comment" name="comment" class="form-control" aria-required="true" required placeholder="' . esc_attr__('Comment', 'vieclam24') . ($req ? '*' : '') . '"></textarea>
 											<label for="comment">' . esc_html__('Comment', 'vieclam24') . '</label>
 										</div>',
@@ -480,7 +562,7 @@ class WEP_Functions {
 
         if ($wp_query->max_num_pages > 1) {
                 ?>
-                <div id="<?php echo esc_attr($nav_id); ?>" class="d-flex mb-4 justify-content-between">
+                <div id="<?php echo esc_attr($nav_id); ?>" class="mb-4 d-flex justify-content-between">
                     <div><?php next_posts_link('<span aria-hidden="true">&larr;</span> ' . esc_html__('Older posts', 'vieclam24')); ?></div>
                     <div><?php previous_posts_link(esc_html__('Newer posts', 'vieclam24') . ' <span aria-hidden="true">&rarr;</span>'); ?></div>
                 </div><!-- /.d-flex -->

@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   important: true,
   content: ["./src/**/*.php", "./src/**/*.html", "./src/**/*.js"],
@@ -7,6 +10,11 @@ module.exports = {
       colors: {
         primary: "#3490dc",
         secondary: "#ffed4a",
+      },
+      extend: {
+        fontFamily: {
+          'sans': ['"Be Vietnam Pro"', ...defaultTheme.fontFamily.sans],
+        },
       },
       fontSize: {
         "7xl": "5rem",
