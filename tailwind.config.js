@@ -1,25 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   important: true,
-  content: ["./src/**/*.php", "./src/**/*.html", "./src/**/*.js"],
+  content: ["./**/*.php"],
   theme: {
     extend: {
-      colors: {
-        primary: "#3490dc",
-        secondary: "#ffed4a",
+      fontFamily: {
+        sans: ['"Be Vietnam Pro"', ...defaultTheme.fontFamily.sans],
       },
-      extend: {
-        fontFamily: {
-          'sans': ['"Be Vietnam Pro"', ...defaultTheme.fontFamily.sans],
-        },
-      },
-      fontSize: {
-        "7xl": "5rem",
-      },
-      // ...Thêm các mở rộng khác nếu cần
     },
   },
   variants: {

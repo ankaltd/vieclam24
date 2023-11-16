@@ -16,9 +16,7 @@ $search_enabled  = get_theme_mod('search_enabled', '1'); // Get custom meta-valu
 
 <body <?php body_class(); ?>>
 
-	<?php wp_body_open(); ?>
-
-	<a href="#main" class="visually-hidden-focusable"><?php esc_html_e('Skip to main content', 'vieclam24'); ?></a>
+	<?php wp_body_open(); ?>	
 	<!-- Top Note -->
 	<?php get_template_part('parts/header/header-top-notice') ?>
 	<!-- Top Note End -->

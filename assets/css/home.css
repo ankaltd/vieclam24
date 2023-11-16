@@ -44,7 +44,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Be Vietnam Pro", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -436,6 +436,7 @@ video {
 
 html {
   font-family: "Be Vietnam Pro", system-ui, sans-serif;
+  font-size: 14px;
 }
 
 *, ::before, ::after {
@@ -536,4 +537,384 @@ html {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.visible {
+  visibility: visible !important;
+}
+
+.collapse {
+  visibility: collapse !important;
+}
+
+.static {
+  position: static !important;
+}
+
+.absolute {
+  position: absolute !important;
+}
+
+.relative {
+  position: relative !important;
+}
+
+.sticky {
+  position: sticky !important;
+}
+
+.right-4 {
+  right: 1rem !important;
+}
+
+.top-0 {
+  top: 0px !important;
+}
+
+.top-4 {
+  top: 1rem !important;
+}
+
+.z-\[99999\] {
+  z-index: 99999 !important;
+}
+
+.clear-both {
+  clear: both !important;
+}
+
+.m-0 {
+  margin: 0px !important;
+}
+
+.my-2 {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.my-auto {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+.mb-0 {
+  margin-bottom: 0px !important;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1rem !important;
+}
+
+.me-auto {
+  margin-inline-end: auto !important;
+}
+
+.mr-1 {
+  margin-right: 0.25rem !important;
+}
+
+.mr-3 {
+  margin-right: 0.75rem !important;
+}
+
+.mr-\[10px\] {
+  margin-right: 10px !important;
+}
+
+.mt-0 {
+  margin-top: 0px !important;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.mt-3 {
+  margin-top: 0.75rem !important;
+}
+
+.mt-5 {
+  margin-top: 1.25rem !important;
+}
+
+.box-border {
+  box-sizing: border-box !important;
+}
+
+.block {
+  display: block !important;
+}
+
+.inline {
+  display: inline !important;
+}
+
+.flex {
+  display: flex !important;
+}
+
+.table {
+  display: table !important;
+}
+
+.grid {
+  display: grid !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.h-0 {
+  height: 0px !important;
+}
+
+.h-6 {
+  height: 1.5rem !important;
+}
+
+.h-\[40px\] {
+  height: 40px !important;
+}
+
+.w-\[40px\] {
+  width: 40px !important;
+}
+
+.w-full {
+  width: 100% !important;
+}
+
+.items-start {
+  align-items: flex-start !important;
+}
+
+.justify-center {
+  justify-content: center !important;
+}
+
+.rounded {
+  border-radius: 0.25rem !important;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem !important;
+}
+
+.border {
+  border-width: 1px !important;
+}
+
+.border-white {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important;
+}
+
+.bg-\[\#E6F8F9\] {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(230 248 249 / var(--tw-bg-opacity)) !important;
+}
+
+.p-0 {
+  padding: 0px !important;
+}
+
+.p-1 {
+  padding: 0.25rem !important;
+}
+
+.p-2 {
+  padding: 0.5rem !important;
+}
+
+.p-3 {
+  padding: 0.75rem !important;
+}
+
+.px-3 {
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+}
+
+.py-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.py-3 {
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+.pe-3 {
+  padding-inline-end: 0.75rem !important;
+}
+
+.pl-3 {
+  padding-left: 0.75rem !important;
+}
+
+.pr-12 {
+  padding-right: 3rem !important;
+}
+
+.pr-3 {
+  padding-right: 0.75rem !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-start {
+  text-align: start !important;
+}
+
+.text-end {
+  text-align: end !important;
+}
+
+.text-2xl {
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+}
+
+.text-base {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+}
+
+.font-bold {
+  font-weight: 700 !important;
+}
+
+.font-medium {
+  font-weight: 500 !important;
+}
+
+.lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-\[\#414045\] {
+  --tw-text-opacity: 1 !important;
+  color: rgb(65 64 69 / var(--tw-text-opacity)) !important;
+}
+
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+
+.outline {
+  outline-style: solid !important;
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
+}
+
+@media (min-width: 768px) {
+  .md\:right-6 {
+    right: 1.5rem !important;
+  }
+
+  .md\:top-\[15px\] {
+    top: 15px !important;
+  }
+
+  .md\:clear-both {
+    clear: both !important;
+  }
+
+  .md\:m-0 {
+    margin: 0px !important;
+  }
+
+  .md\:mr-1 {
+    margin-right: 0.25rem !important;
+  }
+
+  .md\:inline {
+    display: inline !important;
+  }
+
+  .md\:h-\[35px\] {
+    height: 35px !important;
+  }
+
+  .md\:w-\[35px\] {
+    width: 35px !important;
+  }
+
+  .md\:items-center {
+    align-items: center !important;
+  }
+
+  .md\:px-3 {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  .md\:py-2 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:relative {
+    position: relative !important;
+  }
+
+  .lg\:z-auto {
+    z-index: auto !important;
+  }
 }

@@ -26,11 +26,11 @@ class WEP_Setup {
         add_action('upload_mimes', [$this, 'allowed_upload_mines']);
 
         // Disable Block editor for posts
-        // add_filter('use_block_editor_for_post', '__return_false', 10);
+        add_filter('use_block_editor_for_post', '__return_false', 10);
         // Disable Block editor for post types
-        // add_filter('use_block_editor_for_post_type', '__return_false', 10);
+        add_filter('use_block_editor_for_post_type', '__return_false', 10);
         // Disable "Try Guntenberg" Panel
-        // remove_filter('try_gutenberg_panel', 'wp_try_gutenberg_panel');
+        remove_filter('try_gutenberg_panel', 'wp_try_gutenberg_panel');
 
         // Vô hiệu hóa Revision
         // Hàm vô hiệu hóa tạo revisions cho bài đăng
@@ -86,10 +86,10 @@ class WEP_Setup {
         add_filter('template_include', [$this, 'wep_custom_template_include'], 99);
 
         // ACF Hooks if ACF Pro is installed for Page Option and CPT
-        new WEP_ACF;
+        // new WEP_ACF;
 
         // Loading Site Option for General
-        new WEP_Option;
+        // new WEP_Option;
 
         // Template Function Hooks auto
         new WEP_Hooks;
@@ -98,34 +98,34 @@ class WEP_Setup {
         // new WEP_Cmt_Cat_Admin();
 
         // Khởi tạo đối tượng WEP_Ajax
-        new WEP_Ajax();
+        // new WEP_Ajax();
 
         // Init SEO module for web
-        new WEP_SEO_Class;
+        // new WEP_SEO_Class;
 
         // Init Shortcode
-        new WEP_Shortcode;
+        // new WEP_Shortcode;
 
         // Init Woo
-        new WEP_Woocommerce;
+        // new WEP_Woocommerce;
 
         // Khởi tạo Menu Admin
-        new WEP_Admin_Menu();
+        // new WEP_Admin_Menu();
 
         // Google Sheet Export
         // new WEP_Export_To_Googlesheet();
 
         // Khởi tạo Menu chính
-        new WEP_Menu();
+        // new WEP_Menu();
 
         // Template function for loading view
-        WEP_Part_View::init();
+        // WEP_Part_View::init();
 
         // Init Helper for tools (ex: echo WEP_Helper::path(), ...)
-        WEP_Helper::init();
+        // WEP_Helper::init();
 
         // Init Template Tag for web (ex: the_title, the_image,...)
-        WEP_Tag::init();
+        // WEP_Tag::init();
     }
 
     // Disabled Revisons Posts and Products
@@ -198,7 +198,7 @@ class WEP_Setup {
         if (!is_admin()) :
 
             // Single Product
-            if (is_product()) {
+            if (function_exists('is_product')) {
 
                 // chung
                 if ($single_product_template) {
@@ -208,7 +208,7 @@ class WEP_Setup {
                         return locate_template($single_product_template);
                     }
                 }
-            } elseif (is_product_category()) {
+            } elseif (function_exists('is_product_category')) {
                 // Xử lý cụ thể riêng từng loại archive áp cho product type
 
                 // chung

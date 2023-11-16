@@ -40,6 +40,9 @@ class WEP_Functions {
         add_filter('comment_form_defaults', array($this, 'vieclam24_custom_commentform'));
         add_action('wp_enqueue_scripts', array($this, 'vieclam24_scripts_loader'));
 
+        // Just load block if using on page
+        add_filter('should_load_separate_core_block_assets', '__return_true');
+
         /**
          * Nav menus.
          *
@@ -56,15 +59,15 @@ class WEP_Functions {
 
 
         // Custom Nav Walker: wp_bootstrap_navwalker().
-        $custom_walker = __DIR__ . '/inc/wp-bootstrap-navwalker.php';
-        if (is_readable($custom_walker)) {
-            require_once $custom_walker;
-        }
+        // $custom_walker = __DIR__ . '/inc/wp-bootstrap-navwalker.php';
+        // if (is_readable($custom_walker)) {
+        //     require_once $custom_walker;
+        // }
 
-        $custom_walker_footer = __DIR__ . '/inc/wp-bootstrap-navwalker-footer.php';
-        if (is_readable($custom_walker_footer)) {
-            require_once $custom_walker_footer;
-        }
+        // $custom_walker_footer = __DIR__ . '/inc/wp-bootstrap-navwalker-footer.php';
+        // if (is_readable($custom_walker_footer)) {
+        //     require_once $custom_walker_footer;
+        // }
 
         // Thêm cột chọn nhanh Page Template
         add_filter('manage_pages_columns', array($this, 'custom_page_template_column'));
@@ -87,6 +90,43 @@ class WEP_Functions {
         // Enqueue Scripts => CSS and JS for Frontend        
         add_action('wp_enqueue_scripts', [$this, 'attach_css_files_frondend']);
         add_action('wp_enqueue_scripts', [$this, 'attach_js_files_frondend']);
+
+        // default inline style
+        add_action('after_setup_theme', array($this, 'remove_global_styles'));
+        add_filter('print_styles', array($this, 'wep_remove_global_styles_inline_css'));
+        add_filter('style_loader_tag', array($this, 'remove_global_styles_inline_css'), 10, 2);
+        add_filter('style_loader_tag', array($this,'my_remove_global_styles_inline_css'));
+
+    }
+
+    function my_remove_global_styles_inline_css($tag) {
+        // Tìm kiếm chuỗi 'global-styles-inline-css' trong thẻ <style>
+        if (strpos($tag, 'id="global-styles-inline-css"') !== false) {
+            // Nếu tìm thấy, trả về chuỗi trống để loại bỏ thẻ <style>
+            return '';
+        }
+        return $tag;
+    }
+    
+
+    function remove_global_styles_inline_css($tag, $handle) {
+        if ($handle === 'global-styles-inline-css') {
+            return '';
+        }
+        return $tag;
+    }
+
+    function wep_remove_global_styles_inline_css($styles) {
+        foreach ($styles as $style => $data) {
+            if (strpos($data['src'], 'global-styles') !== false) {
+                unset($styles[$style]);
+            }
+        }
+        return $styles;
+    }
+
+    function remove_global_styles() {
+        remove_theme_support('wp-block-styles');
     }
 
     // Pre Connect Font Google
@@ -283,11 +323,10 @@ class WEP_Functions {
 
         // 1. Styles.
         wp_enqueue_style('style', get_theme_file_uri('style.css'), array(), $theme_version, 'all');
-        // wp_enqueue_style('main', get_theme_file_uri('build/main.css'), array(), $theme_version, 'all'); // main.scss: Compiled Framework source + custom styles.
 
-        if (is_rtl()) {
-            wp_enqueue_style('rtl', get_theme_file_uri('build/rtl.css'), array(), $theme_version, 'all');
-        }
+        // if (is_rtl()) {
+        //     wp_enqueue_style('rtl', get_theme_file_uri('build/rtl.css'), array(), $theme_version, 'all');
+        // }
 
         // 2. Scripts.
         wp_enqueue_script('vieclamjs', get_theme_file_uri('assets/vieclam.js'), array(), $theme_version, true);
