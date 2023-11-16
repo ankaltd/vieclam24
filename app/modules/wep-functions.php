@@ -201,7 +201,7 @@ class WEP_Functions {
 
         // 1. Styles.
         wp_enqueue_style('style', get_theme_file_uri('style.css'), array(), $theme_version, 'all');
-        wp_enqueue_style('main', get_theme_file_uri('build/main.css'), array(), $theme_version, 'all'); // main.scss: Compiled Framework source + custom styles.
+        // wp_enqueue_style('main', get_theme_file_uri('build/main.css'), array(), $theme_version, 'all'); // main.scss: Compiled Framework source + custom styles.
 
         if (is_rtl()) {
             wp_enqueue_style('rtl', get_theme_file_uri('build/rtl.css'), array(), $theme_version, 'all');

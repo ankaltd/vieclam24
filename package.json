@@ -10,20 +10,32 @@
 		"url": "git://github.com/them-es/themes-starter.git"
 	},
 	"scripts": {
-		"watch": "webpack serve && wp-scripts start",
-		"build": "wp-scripts build"
+		"watch:css": "npm-run-all --parallel build:css watch:scss",
+		"watch:scss": "onchange 'src/assets/scss/**/*.scss' -- npm run build:css",
+		"build:css": "npx tailwindcss --postcss -i ./tailwind.css -o ./style.css --watch",
+		"build:css2": "npx tailwindcss --postcss -i ./style.scss -o ./style2.css --watch",
+		"build:all": "npm-run-all --serial watch:css watch:scss build:css"
 	},
 	"browserslist": [
 		"last 2 versions"
 	],
 	"dependencies": {
-		"bootstrap": "^5.3.1",
 		"@popperjs/core": "^2.11.8",
-		"jquery": "^3.7.0"
+		"bootstrap": "^5.3.1",
+		"jquery": "^3.7.0",
+		"onchange": "^7.1.0",
+		"postcss": "^8.4.31",
+		"postcss-cli": "^10.1.0"
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^26.11.0",
+		"concurrently": "^8.2.2",
+		"cssnano": "^6.0.1",
+		"npm-run-all": "^4.1.5",
 		"path": "^0.12.7",
+		"postcss-import": "^15.1.0",
+		"tailwindcss": "^3.3.5",
+		"uglify-js": "^3.17.4",
 		"webpack-remove-empty-scripts": "^1.0.3"
 	}
 }

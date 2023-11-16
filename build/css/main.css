@@ -625,6 +625,6 @@ video {
 
 /* All of the existing CSS goes here. */
 
-@import '/assets/scss/general/global'
+@import '/assets/scss/general/global/header.scss'
 
 /* Custom CSS */

@@ -5,3 +5,7 @@
 body {
 	font-family: inherit !important;
 }
+
+.woocomerce {
+    color: red;
+}

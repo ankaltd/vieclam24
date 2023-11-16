@@ -21,7 +21,7 @@ module.exports = {
 			},
 		},
 		context: path.resolve(__dirname, 'assets'),
-		entry: ['./main.js', './main.scss'],
+		entry: ['./main.js', './main.scss', '.wep.scss'],
 		// jQuery support
 		/*externals: {
 			jquery: "jQuery",
