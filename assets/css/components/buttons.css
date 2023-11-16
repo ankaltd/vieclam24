@@ -1,6 +1,0 @@
-/* components/buttons.css */
-.btn {
-  padding: theme("spacing.4") theme("spacing.2");
-  /* ... */
-  color: red;
-}

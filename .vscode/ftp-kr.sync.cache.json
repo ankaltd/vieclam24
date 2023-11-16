@@ -868,23 +868,7 @@
               "modified": false
             },
             "assets": {
-              "css": {
-                "components": {
-                  "buttons.css": {
-                    "type": "-",
-                    "size": 114,
-                    "lmtime": 1700073059963,
-                    "modified": false
-                  },
-                  "card..css": {
-                    "type": "-",
-                    "size": 79,
-                    "lmtime": 1700072077230,
-                    "modified": false
-                  }
-                },
-                "global": {}
-              },
+              "css": {},
               "images": {},
               "js": {
                 "dropdownModule.js": {
@@ -3276,6 +3260,12 @@
                   }
                 }
               },
+              "tailwind.css": {
+                "type": "-",
+                "size": 101,
+                "lmtime": 1700145883059,
+                "modified": false
+              },
               "wep.js": {
                 "type": "-",
                 "size": 880,
@@ -3296,15 +3286,6 @@
               "modified": false
             },
             "build": {
-              "css": {
-                "main.css": {
-                  "type": "-",
-                  "size": 12346,
-                  "lmtime": 1700068578789,
-                  "modified": false
-                }
-              },
-              "js": {},
               "main.asset.php": {
                 "type": "-",
                 "size": 84,
@@ -7306,8 +7287,8 @@
             },
             "package.json": {
               "type": "-",
-              "size": 1193,
-              "lmtime": 1700072768828,
+              "size": 401,
+              "lmtime": 1700146242889,
               "modified": false
             },
             "page.php": {
@@ -8556,8 +8537,8 @@
             },
             "style.css": {
               "type": "-",
-              "size": 6759,
-              "lmtime": 1700072276359,
+              "size": 557,
+              "lmtime": 1700145819429,
               "modified": false
             },
             "tag.php": {
@@ -8570,12 +8551,6 @@
               "type": "-",
               "size": 737,
               "lmtime": 1700072373358,
-              "modified": false
-            },
-            "tailwind.css": {
-              "type": "-",
-              "size": 750,
-              "lmtime": 1700072276050,
               "modified": false
             },
             "templates": {

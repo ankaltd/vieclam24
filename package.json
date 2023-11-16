@@ -1,41 +1,16 @@
 {
-	"name": "themes-starter",
-	"version": "3.0.0",
-	"license": "GPL-2.0",
-	"description": "A WordPress Starter Theme built with Bootstrap 5.",
-	"homepage": "https://them.es",
-	"author": "them.es",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/them-es/themes-starter.git"
-	},
+	"name": "tailwindcss",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
 	"scripts": {
-		"watch:css": "npm-run-all --parallel build:css watch:scss",
-		"watch:scss": "onchange 'src/assets/scss/**/*.scss' -- npm run build:css",
-		"build:css": "npx tailwindcss --postcss -i ./tailwind.css -o ./style.css --watch",
-		"build:css2": "npx tailwindcss --postcss -i ./style.scss -o ./style2.css --watch",
-		"build:all": "npm-run-all --serial watch:css watch:scss build:css"
+		"build_home": "npx tailwindcss -i ./assets/tailwind.css -o ./assets/css/home.css --watch",
+		"build_all": "npm-run-all --serial build_global build_home build_detail"
 	},
-	"browserslist": [
-		"last 2 versions"
-	],
-	"dependencies": {
-		"@popperjs/core": "^2.11.8",
-		"bootstrap": "^5.3.1",
-		"jquery": "^3.7.0",
-		"onchange": "^7.1.0",
-		"postcss": "^8.4.31",
-		"postcss-cli": "^10.1.0"
-	},
+	"author": "",
+	"license": "ISC",
 	"devDependencies": {
-		"@wordpress/scripts": "^26.11.0",
-		"concurrently": "^8.2.2",
-		"cssnano": "^6.0.1",
-		"npm-run-all": "^4.1.5",
-		"path": "^0.12.7",
-		"postcss-import": "^15.1.0",
-		"tailwindcss": "^3.3.5",
-		"uglify-js": "^3.17.4",
-		"webpack-remove-empty-scripts": "^1.0.3"
+		"@tailwindcss/typography": "^0.5.10",
+		"tailwindcss": "^3.3.5"
 	}
 }
