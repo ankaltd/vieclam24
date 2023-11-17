@@ -282,8 +282,8 @@
                 },
                 "script-files.config.php": {
                   "type": "-",
-                  "size": 984,
-                  "lmtime": 1700148000173,
+                  "size": 724,
+                  "lmtime": 1700158974326,
                   "modified": false
                 },
                 "script-vars.config.php": {
@@ -492,8 +492,8 @@
                 "walker": {},
                 "wep-functions.php": {
                   "type": "-",
-                  "size": 29363,
-                  "lmtime": 1700148297604,
+                  "size": 30649,
+                  "lmtime": 1700161763152,
                   "modified": false
                 },
                 "wep-menu.php": {
@@ -522,8 +522,8 @@
                 },
                 "wep-setup.php": {
                   "type": "-",
-                  "size": 25951,
-                  "lmtime": 1700147697317,
+                  "size": 26009,
+                  "lmtime": 1700159969286,
                   "modified": false
                 },
                 "woocommerce": {}
@@ -725,8 +725,8 @@
               "css": {
                 "home.css": {
                   "type": "-",
-                  "size": 10013,
-                  "lmtime": 1700147186032,
+                  "size": 15353,
+                  "lmtime": 1700162416388,
                   "modified": false
                 }
               },
@@ -3198,8 +3198,14 @@
               },
               "tailwind.css": {
                 "type": "-",
-                "size": 147,
-                "lmtime": 1700147185763,
+                "size": 170,
+                "lmtime": 1700162482736,
+                "modified": false
+              },
+              "vieclam.js": {
+                "type": "-",
+                "size": 0,
+                "lmtime": 1700148268867,
                 "modified": false
               },
               "wep.js": {
@@ -3212,12 +3218,6 @@
                 "type": "-",
                 "size": 3818,
                 "lmtime": 1699988733087,
-                "modified": false
-              },
-              "vieclam.js": {
-                "type": "-",
-                "size": 0,
-                "lmtime": 1700148268867,
                 "modified": false
               }
             },
@@ -3248,14 +3248,14 @@
             "functions.php": {
               "type": "-",
               "size": 448,
-              "lmtime": 1699596607680,
-              "modified": true
+              "lmtime": 1700160149842,
+              "modified": false
             },
             "header.php": {
               "type": "-",
-              "size": 2949,
+              "size": 1921,
               "lmtime": 1700149004083,
-              "modified": false
+              "modified": true
             },
             "image.php": {
               "type": "-",
@@ -8594,8 +8594,8 @@
             },
             "tailwind.config.js": {
               "type": "-",
-              "size": 749,
-              "lmtime": 1700147887136,
+              "size": 491,
+              "lmtime": 1700162261164,
               "modified": false
             },
             "templates": {

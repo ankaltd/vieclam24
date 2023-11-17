@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Đăng ký đăng nhập nhà tuyển dụng (NTD)
+ * Template Name: Đăng nhập người tìm việc
  */
 
 if (!defined('ABSPATH')) {

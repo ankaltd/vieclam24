@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Đăng ký hay đăng nhập (NTV)
+ * Template Name: Danh sách nhà tuyển dụng đã xem hồ sơ
  */
 
 if (!defined('ABSPATH')) {

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Chăm sóc khách hàng (CSKH)
+ * Template Name: Danh sách nhà tuyển dụng đã theo dõi hồ sơ
  */
 
 if (!defined('ABSPATH')) {
