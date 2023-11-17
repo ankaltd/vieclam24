@@ -1,12 +1,4 @@
 @tailwind base;
-
-@layer base {
-  html {
-    font-family: "Be Vietnam Pro", system-ui, sans-serif;
-    font-size: 14px;
-  }
-}
-
 @tailwind components;
 @tailwind utilities;
 

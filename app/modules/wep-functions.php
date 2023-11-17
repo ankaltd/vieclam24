@@ -92,41 +92,33 @@ class WEP_Functions {
         add_action('wp_enqueue_scripts', [$this, 'attach_js_files_frondend']);
 
         // default inline style
-        add_action('after_setup_theme', array($this, 'remove_global_styles'));
-        add_filter('print_styles', array($this, 'wep_remove_global_styles_inline_css'));
-        add_filter('style_loader_tag', array($this, 'remove_global_styles_inline_css'), 10, 2);
-        add_filter('style_loader_tag', array($this,'my_remove_global_styles_inline_css'));
+        remove_action('wp_enqueue_scripts', 'wp_enqueue_global_styles');
+        remove_action('wp_footer', 'wp_enqueue_global_styles', 1);
+        add_action('wp_enqueue_scripts', array($this, 'wps_deregister_styles'), 100);
+        add_action('wp_enqueue_scripts', array($this, 'remove_global_styles'));
 
+        // block inline style remove
+        add_action('wp_enqueue_scripts', array($this, 'dm_remove_wp_block_library_css'));
+        add_action('wp_enqueue_scripts', array($this, 'smartwp_remove_wp_block_library_css'), 100);
+      
     }
 
-    function my_remove_global_styles_inline_css($tag) {
-        // Tìm kiếm chuỗi 'global-styles-inline-css' trong thẻ <style>
-        if (strpos($tag, 'id="global-styles-inline-css"') !== false) {
-            // Nếu tìm thấy, trả về chuỗi trống để loại bỏ thẻ <style>
-            return '';
-        }
-        return $tag;
-    }
-    
-
-    function remove_global_styles_inline_css($tag, $handle) {
-        if ($handle === 'global-styles-inline-css') {
-            return '';
-        }
-        return $tag;
+    function smartwp_remove_wp_block_library_css() {
+        wp_dequeue_style('wp-block-library');
+        wp_dequeue_style('wp-block-library-theme');
+        wp_dequeue_style('wc-blocks-style'); // Remove WooCommerce block CSS
     }
 
-    function wep_remove_global_styles_inline_css($styles) {
-        foreach ($styles as $style => $data) {
-            if (strpos($data['src'], 'global-styles') !== false) {
-                unset($styles[$style]);
-            }
-        }
-        return $styles;
+    function dm_remove_wp_block_library_css() {
+        wp_dequeue_style('wp-block-library');
     }
 
     function remove_global_styles() {
-        remove_theme_support('wp-block-styles');
+        wp_dequeue_style('global-styles');
+    }
+
+    function wps_deregister_styles() {
+        wp_dequeue_style('global-styles');
     }
 
     // Pre Connect Font Google

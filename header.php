@@ -8,46 +8,6 @@
 	<?php wp_head(); ?>
 </head>
 
-<?php
-$navbar_scheme   = get_theme_mod('navbar_scheme', 'navbar-light bg-light'); // Get custom meta-value.
-$navbar_position = get_theme_mod('navbar_position', 'static'); // Get custom meta-value.
-$search_enabled  = get_theme_mod('search_enabled', '1'); // Get custom meta-value.
-?>
-
 <body <?php body_class(); ?>>
-
-	<?php wp_body_open(); ?>	
-	<!-- Top Note -->
+	<?php wp_body_open(); ?>
 	<?php get_template_part('parts/header/header-top-notice') ?>
-	<!-- Top Note End -->
-
-	<div id="wrapper">
-		<?php get_template_part('parts/header/header-start') ?>
-
-		<!-- Header Nav -->
-		<?php get_template_part('parts/header/navbar/header-navbar-start', null, array('navbar_scheme' => $navbar_scheme, 'navbar_position' => $navbar_position)) ?>
-		<?php WEP_Tag::container() ?>
-		<?php get_template_part('parts/header/navbar/header-logo') ?>
-		<?php get_template_part('parts/header/navbar/header-navbar-toggler') ?>
-		<?php get_template_part('parts/header/navbar/header-navbar', null, array('search_enabled' => $search_enabled)) ?>
-		<?php WEP_Tag::container('end') ?>
-
-		<?php get_template_part('parts/header/navbar/header-navbar-end');		?>
-		<!-- Header Nav End -->
-
-		<?php WEP_Tag::container('open', true) ?>
-		<!-- Header Top Menu -->
-		<?php get_template_part('parts/header/header-top-menu') ?>
-		<!-- Header Top Menu End -->
-
-		<!-- Header Branch List -->
-		<?php get_template_part('parts/header/branch/header-branch-list') ?>
-		<!-- Header Branch List End -->
-		<?php WEP_Tag::container('end') ?>
-
-
-		<?php get_template_part('parts/header/header-end') ?>
-
-		<?php
-		get_template_part('parts/global/wrapper-start', null, array('navbar_position' => $navbar_position))
-		?>

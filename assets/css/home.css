@@ -434,11 +434,6 @@ video {
   display: none;
 }
 
-html {
-  font-family: "Be Vietnam Pro", system-ui, sans-serif;
-  font-size: 14px;
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -820,6 +815,10 @@ html {
   text-align: end !important;
 }
 
+.text-14 {
+  font-size: 14px !important;
+}
+
 .text-2xl {
   font-size: 1.5rem !important;
   line-height: 2rem !important;
@@ -845,6 +844,10 @@ html {
 .text-\[\#414045\] {
   --tw-text-opacity: 1 !important;
   color: rgb(65 64 69 / var(--tw-text-opacity)) !important;
+}
+
+.text-se-accent-100 {
+  color: rgba(44,149,255,1) !important;
 }
 
 .shadow {
