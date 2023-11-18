@@ -492,8 +492,8 @@
                 "walker": {},
                 "wep-functions.php": {
                   "type": "-",
-                  "size": 30649,
-                  "lmtime": 1700161763152,
+                  "size": 30443,
+                  "lmtime": 1700235893321,
                   "modified": false
                 },
                 "wep-menu.php": {
@@ -725,8 +725,8 @@
               "css": {
                 "home.css": {
                   "type": "-",
-                  "size": 15353,
-                  "lmtime": 1700162416388,
+                  "size": 24576,
+                  "lmtime": 1700323168227,
                   "modified": false
                 }
               },
@@ -741,7 +741,7 @@
                   "blog.svg": {
                     "type": "-",
                     "size": 2121,
-                    "lmtime": 0,
+                    "lmtime": 1700317094889,
                     "modified": false
                   },
                   "chat.svg": {
@@ -753,13 +753,13 @@
                   "cv-tool.svg": {
                     "type": "-",
                     "size": 3563,
-                    "lmtime": 0,
+                    "lmtime": 1700317094733,
                     "modified": false
                   },
                   "default_avatar.svg": {
                     "type": "-",
                     "size": 3549,
-                    "lmtime": 0,
+                    "lmtime": 1700317094573,
                     "modified": false
                   },
                   "facebook.svg": {
@@ -777,7 +777,7 @@
                   "gross-net-converter.svg": {
                     "type": "-",
                     "size": 3994,
-                    "lmtime": 0,
+                    "lmtime": 1700317094418,
                     "modified": false
                   },
                   "hotline.svg": {
@@ -786,10 +786,10 @@
                     "lmtime": 0,
                     "modified": false
                   },
-                  "personality-test.svg": {
+                  "insurance.svg": {
                     "type": "-",
-                    "size": 3601,
-                    "lmtime": 0,
+                    "size": 1781,
+                    "lmtime": 1700317094488,
                     "modified": false
                   },
                   "youtube.svg": {
@@ -798,10 +798,120 @@
                     "lmtime": 0,
                     "modified": false
                   },
-                  "insurance.svg": {
+                  "personality-test.svg": {
                     "type": "-",
-                    "size": 1781,
-                    "lmtime": 1700148503933,
+                    "size": 3601,
+                    "lmtime": 1700317094461,
+                    "modified": false
+                  }
+                },
+                "png": {
+                  "1.png": {
+                    "type": "-",
+                    "size": 737,
+                    "lmtime": 0,
+                    "modified": false
+                  },
+                  "12.png": {
+                    "type": "-",
+                    "size": 1535,
+                    "lmtime": 0,
+                    "modified": false
+                  },
+                  "13.png": {
+                    "type": "-",
+                    "size": 1398,
+                    "lmtime": 0,
+                    "modified": false
+                  },
+                  "166305862458.jpeg": {
+                    "type": "-",
+                    "size": 2331,
+                    "lmtime": 0,
+                    "modified": false
+                  },
+                  "17.png": {
+                    "type": "-",
+                    "size": 1629,
+                    "lmtime": 0,
+                    "modified": false
+                  },
+                  "34.png": {
+                    "type": "-",
+                    "size": 1788,
+                    "lmtime": 0,
+                    "modified": false
+                  },
+                  "35.png": {
+                    "type": "-",
+                    "size": 723,
+                    "lmtime": 0,
+                    "modified": false
+                  },
+                  "6.png": {
+                    "type": "-",
+                    "size": 801,
+                    "lmtime": 0,
+                    "modified": false
+                  },
+                  "6c8eb7d9a857581864e869018c9de5e1_3416238_vieclam24h_1579496739.png": {
+                    "type": "-",
+                    "size": 2516,
+                    "lmtime": 0,
+                    "modified": false
+                  },
+                  "9570272a529328e39039d4555cb414ee_1527590669_900x900_2.jpeg": {
+                    "type": "-",
+                    "size": 2415,
+                    "lmtime": 0,
+                    "modified": false
+                  },
+                  "LogoRoyal-01_168733402970.png": {
+                    "type": "-",
+                    "size": 4302,
+                    "lmtime": 0,
+                    "modified": false
+                  },
+                  "Untitled%20design_168733212318.png": {
+                    "type": "-",
+                    "size": 773,
+                    "lmtime": 0,
+                    "modified": false
+                  },
+                  "VGCC-desktop.jpeg": {
+                    "type": "-",
+                    "size": 12245,
+                    "lmtime": 0,
+                    "modified": false
+                  },
+                  "VL24h-1-desktop.jpeg": {
+                    "type": "-",
+                    "size": 53682,
+                    "lmtime": 0,
+                    "modified": false
+                  },
+                  "VL24h-2-desktop.jpeg": {
+                    "type": "-",
+                    "size": 9634,
+                    "lmtime": 0,
+                    "modified": false
+                  },
+                  "title.png": {
+                    "type": "-",
+                    "size": 997,
+                    "lmtime": 0,
+                    "modified": false
+                  },
+                  "z4450782518491_3de5f2a47b76e4fd2c1b581c16ccb2c6_168732913893.jpeg": {
+                    "type": "-",
+                    "size": 2949,
+                    "lmtime": 0,
+                    "modified": false
+                  },
+                  "ic-bo-cong thuong.png": {
+                    "type": "-",
+                    "size": 2356,
+                    "lmtime": 1700322934478,
                     "modified": false
                   }
                 }
@@ -3198,8 +3308,8 @@
               },
               "tailwind.css": {
                 "type": "-",
-                "size": 170,
-                "lmtime": 1700162482736,
+                "size": 633,
+                "lmtime": 1700323166822,
                 "modified": false
               },
               "vieclam.js": {
@@ -3241,8 +3351,8 @@
             },
             "footer.php": {
               "type": "-",
-              "size": 947,
-              "lmtime": 1699892641127,
+              "size": 667,
+              "lmtime": 1700322090183,
               "modified": false
             },
             "functions.php": {
@@ -3253,9 +3363,9 @@
             },
             "header.php": {
               "type": "-",
-              "size": 1921,
-              "lmtime": 1700149004083,
-              "modified": true
+              "size": 423,
+              "lmtime": 1700321577082,
+              "modified": false
             },
             "image.php": {
               "type": "-",
@@ -3265,8 +3375,8 @@
             },
             "index.php": {
               "type": "-",
-              "size": 615,
-              "lmtime": 1700072269757,
+              "size": 197,
+              "lmtime": 1700325044665,
               "modified": false
             },
             "languages": {},
@@ -7363,6 +7473,1484 @@
                   "modified": false
                 }
               },
+              "01-home": {
+                "1-home-banner-slider.php": {
+                  "type": "-",
+                  "size": 1,
+                  "lmtime": 1700239354713,
+                  "modified": false
+                },
+                "2-home-search-form.php.php": {
+                  "type": "-",
+                  "size": 1,
+                  "lmtime": 1700239354713,
+                  "modified": false
+                },
+                "3-home-hightlight-branch.php": {
+                  "type": "-",
+                  "size": 1,
+                  "lmtime": 1700239354713,
+                  "modified": false
+                },
+                "4-home-top-company.php": {
+                  "type": "-",
+                  "size": 1,
+                  "lmtime": 1700239354713,
+                  "modified": false
+                },
+                "5-home-urgent-jobs-grid-slider.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700239589516,
+                  "modified": false
+                },
+                "6-home-banner-ads.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700239636558,
+                  "modified": false
+                },
+                "7-home-suggestion-jobs-grid.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700239661488,
+                  "modified": false
+                },
+                "8-home-career handbook-grid.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700239690289,
+                  "modified": false
+                },
+                "footer-bottom.jpg": {
+                  "type": "-",
+                  "size": 64309,
+                  "lmtime": 1700226338248,
+                  "modified": false
+                },
+                "footer-middle.jpg": {
+                  "type": "-",
+                  "size": 34655,
+                  "lmtime": 1700226338417,
+                  "modified": false
+                },
+                "footer-top.jpg": {
+                  "type": "-",
+                  "size": 46394,
+                  "lmtime": 1700226338646,
+                  "modified": false
+                },
+                "home-banner-tao-cv.jpg": {
+                  "type": "-",
+                  "size": 90178,
+                  "lmtime": 1700226338879,
+                  "modified": false
+                },
+                "home-button-camnang.jpg": {
+                  "type": "-",
+                  "size": 5827,
+                  "lmtime": 1700226339032,
+                  "modified": false
+                },
+                "home-button-tao-hoso.jpg": {
+                  "type": "-",
+                  "size": 4377,
+                  "lmtime": 1700226339196,
+                  "modified": false
+                },
+                "home-camnang-grid.jpg": {
+                  "type": "-",
+                  "size": 117766,
+                  "lmtime": 1700226339414,
+                  "modified": false
+                },
+                "home-list-nganhnghe.jpg": {
+                  "type": "-",
+                  "size": 114000,
+                  "lmtime": 1700226339644,
+                  "modified": false
+                },
+                "home-nganhnhe-menu.jpg": {
+                  "type": "-",
+                  "size": 14655,
+                  "lmtime": 1700226339814,
+                  "modified": false
+                },
+                "home-slider-search-form.jpg": {
+                  "type": "-",
+                  "size": 17836,
+                  "lmtime": 1700226339984,
+                  "modified": false
+                },
+                "home-slider.jpg": {
+                  "type": "-",
+                  "size": 88079,
+                  "lmtime": 1700226340204,
+                  "modified": false
+                },
+                "home-top-company.jpg": {
+                  "type": "-",
+                  "size": 27766,
+                  "lmtime": 1700226340387,
+                  "modified": false
+                },
+                "home-top-menu.jpg": {
+                  "type": "-",
+                  "size": 15296,
+                  "lmtime": 1700226340529,
+                  "modified": false
+                },
+                "home-vieclam-columns.jpg": {
+                  "type": "-",
+                  "size": 48298,
+                  "lmtime": 1700226340743,
+                  "modified": false
+                },
+                "home-vieclam-gap-slider.jpg": {
+                  "type": "-",
+                  "size": 224580,
+                  "lmtime": 1700226340977,
+                  "modified": false
+                },
+                "home-vieclam-goiy-grid.jpg": {
+                  "type": "-",
+                  "size": 106123,
+                  "lmtime": 1700226341245,
+                  "modified": false
+                },
+                "top_note.png": {
+                  "type": "-",
+                  "size": 11753,
+                  "lmtime": 1700226341378,
+                  "modified": false
+                },
+                "vieclam": {
+                  "page-breadcrumb.jpg": {
+                    "type": "-",
+                    "size": 2768,
+                    "lmtime": 1700226341528,
+                    "modified": false
+                  },
+                  "vieclam-by-nghenghiep.jpg": {
+                    "type": "-",
+                    "size": 120121,
+                    "lmtime": 1700226341743,
+                    "modified": false
+                  },
+                  "vieclam-by-tinhthanh.jpg": {
+                    "type": "-",
+                    "size": 74798,
+                    "lmtime": 1700226341926,
+                    "modified": false
+                  }
+                },
+                "9-home-jobs-by-columns.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700239775232,
+                  "modified": false
+                }
+              },
+              "02-home-ntd": {
+                "1-home-hero-banner-cta.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700239998053,
+                  "modified": false
+                },
+                "2-home-list-promotion-cta.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700240030900,
+                  "modified": false
+                },
+                "3-home-list-features.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700240051516,
+                  "modified": false
+                },
+                "4-home-list-screenshot-slider.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700240117493,
+                  "modified": false
+                },
+                "5-home-customer-logo-grid-slider.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700240143430,
+                  "modified": false
+                },
+                "6-home-list-knowledge.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700240164206,
+                  "modified": false
+                },
+                "7-home-consulting-form.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700240194398,
+                  "modified": false
+                }
+              },
+              "03-search-job": {
+                "1-section-select-branch.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700240502637,
+                  "modified": false
+                },
+                "2-section-search-jobs-form.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700240525935,
+                  "modified": false
+                },
+                "3-section-filter-jobs-advanced.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700240562283,
+                  "modified": false
+                },
+                "4-section-list-jobs-result.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700240624998,
+                  "modified": false
+                },
+                "5-section-suggestion-jobs-grid.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700240660138,
+                  "modified": false
+                },
+                "search-advanced-filter-sticky.jpg": {
+                  "type": "-",
+                  "size": 20791,
+                  "lmtime": 1700226342075,
+                  "modified": false
+                },
+                "search-advanced-filter.jpg": {
+                  "type": "-",
+                  "size": 20057,
+                  "lmtime": 1700226342274,
+                  "modified": false
+                },
+                "search-ajax-search.jpg": {
+                  "type": "-",
+                  "size": 29699,
+                  "lmtime": 1700226342463,
+                  "modified": false
+                },
+                "search-location.jpg": {
+                  "type": "-",
+                  "size": 16234,
+                  "lmtime": 1700226342630,
+                  "modified": false
+                },
+                "search-nghenghiep-select.jpg": {
+                  "type": "-",
+                  "size": 23022,
+                  "lmtime": 1700226342823,
+                  "modified": false
+                },
+                "search-result-grid-main-sorting.jpg": {
+                  "type": "-",
+                  "size": 75964,
+                  "lmtime": 1700226343031,
+                  "modified": false
+                },
+                "search-result-grid-main.jpg": {
+                  "type": "-",
+                  "size": 102734,
+                  "lmtime": 1700226343310,
+                  "modified": false
+                },
+                "search-result-grid.jpg": {
+                  "type": "-",
+                  "size": 122806,
+                  "lmtime": 1700226343640,
+                  "modified": false
+                },
+                "search-result-vieclam-by-nghenghiep.jpg": {
+                  "type": "-",
+                  "size": 59378,
+                  "lmtime": 1700226343893,
+                  "modified": false
+                },
+                "search-result-widget.jpg": {
+                  "type": "-",
+                  "size": 30915,
+                  "lmtime": 1700226344065,
+                  "modified": false
+                },
+                "search-resutl-grid-pagenav-bar.jpg": {
+                  "type": "-",
+                  "size": 4229,
+                  "lmtime": 1700226344211,
+                  "modified": false
+                },
+                "search-sorting-bar.jpg": {
+                  "type": "-",
+                  "size": 8777,
+                  "lmtime": 1700226344412,
+                  "modified": false
+                },
+                "search-top-filter.jpg": {
+                  "type": "-",
+                  "size": 27190,
+                  "lmtime": 1700226344581,
+                  "modified": false
+                },
+                "6-section-jobs-by-branch.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700240681576,
+                  "modified": false
+                }
+              },
+              "05-single-job": {
+                "1-breadcrumb.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700240761638,
+                  "modified": false
+                },
+                "2-job-summary.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700240820988,
+                  "modified": false
+                },
+                "3-job-detail-tab": {
+                  "1-general-information.php": {
+                    "type": "-",
+                    "size": 0,
+                    "lmtime": 1700240939149,
+                    "modified": false
+                  },
+                  "2-job-description.php": {
+                    "type": "-",
+                    "size": 0,
+                    "lmtime": 1700240955616,
+                    "modified": false
+                  },
+                  "3-job-requirements.php": {
+                    "type": "-",
+                    "size": 0,
+                    "lmtime": 1700240973845,
+                    "modified": false
+                  },
+                  "4-job-benefits.php": {
+                    "type": "-",
+                    "size": 0,
+                    "lmtime": 1700241013511,
+                    "modified": false
+                  },
+                  "5-need-skills.php": {
+                    "type": "-",
+                    "size": 0,
+                    "lmtime": 1700241037078,
+                    "modified": false
+                  },
+                  "6-work-location.php": {
+                    "type": "-",
+                    "size": 0,
+                    "lmtime": 1700241061354,
+                    "modified": false
+                  },
+                  "7-keywords.php": {
+                    "type": "-",
+                    "size": 0,
+                    "lmtime": 1700241084560,
+                    "modified": false
+                  },
+                  "8-sharing.php": {
+                    "type": "-",
+                    "size": 0,
+                    "lmtime": 1700241105295,
+                    "modified": false
+                  }
+                },
+                "3-job-detail-tab.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700240852502,
+                  "modified": false
+                },
+                "vieclam-chitiet": {
+                  "vieclam-chitiet-breadcrumb.jpg": {
+                    "type": "-",
+                    "size": 10637,
+                    "lmtime": 1700226344750,
+                    "modified": false
+                  },
+                  "vieclam-chitiet-congty.jpg": {
+                    "type": "-",
+                    "size": 66842,
+                    "lmtime": 1700226344945,
+                    "modified": false
+                  },
+                  "vieclam-chitiet-header-sticky.jpg": {
+                    "type": "-",
+                    "size": 34156,
+                    "lmtime": 1700226345128,
+                    "modified": false
+                  },
+                  "vieclam-chitiet-header.jpg": {
+                    "type": "-",
+                    "size": 45696,
+                    "lmtime": 1700226345308,
+                    "modified": false
+                  },
+                  "vieclam-chitiet-tuyendung1.jpg": {
+                    "type": "-",
+                    "size": 107564,
+                    "lmtime": 1700226345573,
+                    "modified": false
+                  },
+                  "vieclam-chitiet-tuyendung2.jpg": {
+                    "type": "-",
+                    "size": 131498,
+                    "lmtime": 1700226345826,
+                    "modified": false
+                  },
+                  "vieclam-chitiet-tuyendung3.jpg": {
+                    "type": "-",
+                    "size": 129429,
+                    "lmtime": 1700226346076,
+                    "modified": false
+                  },
+                  "vieclam-chitiet-widget-sidebar-pagenav.jpg": {
+                    "type": "-",
+                    "size": 17199,
+                    "lmtime": 1700226346269,
+                    "modified": false
+                  },
+                  "vieclam-chitiet-widget-sidebar.jpg": {
+                    "type": "-",
+                    "size": 52305,
+                    "lmtime": 1700226346462,
+                    "modified": false
+                  }
+                },
+                "vieclam-cty": {
+                  "vieclam-cty-dangtuyen.jpg": {
+                    "type": "-",
+                    "size": 78772,
+                    "lmtime": 1700226346677,
+                    "modified": false
+                  },
+                  "vieclam-cty-danhsach.jpg": {
+                    "type": "-",
+                    "size": 82711,
+                    "lmtime": 1700226346911,
+                    "modified": false
+                  },
+                  "vieclam-cty-gioithieu.jpg": {
+                    "type": "-",
+                    "size": 102329,
+                    "lmtime": 1700226347143,
+                    "modified": false
+                  },
+                  "vieclam-cty-header.jpg": {
+                    "type": "-",
+                    "size": 69342,
+                    "lmtime": 1700226347361,
+                    "modified": false
+                  },
+                  "vieclam-cty-hinhanh.jpg": {
+                    "type": "-",
+                    "size": 169365,
+                    "lmtime": 1700226347640,
+                    "modified": false
+                  },
+                  "vieclam-cty-lienhe.jpg": {
+                    "type": "-",
+                    "size": 62698,
+                    "lmtime": 1700226347860,
+                    "modified": false
+                  },
+                  "vieclam-cty-widget.jpg": {
+                    "type": "-",
+                    "size": 7657,
+                    "lmtime": 1700226348010,
+                    "modified": false
+                  }
+                },
+                "4-company.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700241159950,
+                  "modified": false
+                }
+              },
+              "06-single-company": {
+                "1-section-banner-photo.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700241252177,
+                  "modified": false
+                },
+                "2-section-heading-avata.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700241281843,
+                  "modified": false
+                },
+                "3-section-jobs-recruiting-list.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700241304695,
+                  "modified": false
+                },
+                "4-section-introduction.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700241387955,
+                  "modified": false
+                },
+                "5-section-contact-map.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700241429923,
+                  "modified": false
+                }
+              },
+              "08-home-news": {
+                "1-home-hot-keywords.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700241658059,
+                  "modified": false
+                },
+                "2-home-featured-news.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700241676024,
+                  "modified": false
+                },
+                "3-home-grid-news-by-category.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700241714902,
+                  "modified": false
+                },
+                "4-home-content-columns.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700241771952,
+                  "modified": false
+                }
+              },
+              "09-category": {
+                "1-section-banner.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242031856,
+                  "modified": false
+                },
+                "2-section-featured-news.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242079134,
+                  "modified": false
+                },
+                "3-section-category-posts-grid.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242102867,
+                  "modified": false
+                }
+              },
+              "10-single-news": {
+                "1-single-categories.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700241863798,
+                  "modified": false
+                },
+                "2-single-thumbnail.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700241874910,
+                  "modified": false
+                },
+                "3-single-toc.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700241895193,
+                  "modified": false
+                },
+                "3-single-same-category.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700241932662,
+                  "modified": false
+                }
+              },
+              "11-page-faq": {
+                "faq-footer.jpg": {
+                  "type": "-",
+                  "size": 7145,
+                  "lmtime": 1700226348160,
+                  "modified": false
+                },
+                "faq-header.jpg": {
+                  "type": "-",
+                  "size": 89521,
+                  "lmtime": 1700226348339,
+                  "modified": false
+                },
+                "faq-list-huongdan-ntv-chitiet-pagenav.jpg": {
+                  "type": "-",
+                  "size": 47999,
+                  "lmtime": 1700226348548,
+                  "modified": false
+                },
+                "faq-list-huongdan-ntv-chitiet.jpg": {
+                  "type": "-",
+                  "size": 110028,
+                  "lmtime": 1700226348794,
+                  "modified": false
+                },
+                "faq-list-huongdan-ntv.jpg": {
+                  "type": "-",
+                  "size": 94079,
+                  "lmtime": 1700226349024,
+                  "modified": false
+                },
+                "faq-list.jpg": {
+                  "type": "-",
+                  "size": 53049,
+                  "lmtime": 1700226349196,
+                  "modified": false
+                }
+              },
+              "12-single-faqs": {},
+              "13-page": {
+                "page-header-archive.php": {
+                  "type": "-",
+                  "size": 578,
+                  "lmtime": 1700226349327,
+                  "modified": false
+                },
+                "page-header-author.php": {
+                  "type": "-",
+                  "size": 190,
+                  "lmtime": 1700226349477,
+                  "modified": false
+                },
+                "page-header-category.php": {
+                  "type": "-",
+                  "size": 414,
+                  "lmtime": 1700226349610,
+                  "modified": false
+                },
+                "page-header-search.php": {
+                  "type": "-",
+                  "size": 158,
+                  "lmtime": 1700226349743,
+                  "modified": false
+                },
+                "page-header-tag.php": {
+                  "type": "-",
+                  "size": 370,
+                  "lmtime": 1700226349879,
+                  "modified": false
+                }
+              },
+              "20-page-ntv": {
+                "ntv-account": {},
+                "ntv-job": {},
+                "taikhoan-ntv": {
+                  "taikhoan-ntv-hoso-add-footer-sticky.jpg": {
+                    "type": "-",
+                    "size": 18714,
+                    "lmtime": 1700226350032,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-hoso-add-kinhnghiem.jpg": {
+                    "type": "-",
+                    "size": 50861,
+                    "lmtime": 1700226350306,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-hoso-add-nguoithamkhao.jpg": {
+                    "type": "-",
+                    "size": 35213,
+                    "lmtime": 1700226350497,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-hoso-add-sidebar-sticky.jpg": {
+                    "type": "-",
+                    "size": 20261,
+                    "lmtime": 1700226350652,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-hoso-add-thongtinchung.jpg": {
+                    "type": "-",
+                    "size": 93996,
+                    "lmtime": 1700226350969,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-hoso-add-thongtinhocvan.jpg": {
+                    "type": "-",
+                    "size": 52159,
+                    "lmtime": 1700226351225,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-hoso-add-thongtinngoaingu.jpg": {
+                    "type": "-",
+                    "size": 28402,
+                    "lmtime": 1700226351375,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-hoso-add-thongtintinhoc.jpg": {
+                    "type": "-",
+                    "size": 26164,
+                    "lmtime": 1700226351543,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-hoso-add.jpg": {
+                    "type": "-",
+                    "size": 35748,
+                    "lmtime": 1700226351774,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-hoso-dinhkem-edit.jpg": {
+                    "type": "-",
+                    "size": 68914,
+                    "lmtime": 1700226352026,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-hoso-dinhkem-taicv.jpg": {
+                    "type": "-",
+                    "size": 40372,
+                    "lmtime": 1700226352192,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-hoso-dinhkem-thongtinchung.jpg": {
+                    "type": "-",
+                    "size": 81080,
+                    "lmtime": 1700226352490,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-hoso-dinhkem.jpg": {
+                    "type": "-",
+                    "size": 19659,
+                    "lmtime": 1700226352695,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-hoso-dinhkiem-thongtincanhan.jpg": {
+                    "type": "-",
+                    "size": 27286,
+                    "lmtime": 1700226352895,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-hoso-tructuyen.jpg": {
+                    "type": "-",
+                    "size": 27900,
+                    "lmtime": 1700226353060,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-menu.jpg": {
+                    "type": "-",
+                    "size": 44079,
+                    "lmtime": 1700226353277,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-ntdnoibat-slider.jpg": {
+                    "type": "-",
+                    "size": 141880,
+                    "lmtime": 1700226353762,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-ntdtheodoi-danhsach.jpg": {
+                    "type": "-",
+                    "size": 51404,
+                    "lmtime": 1700226354027,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-ntdxem-danhsach.jpg": {
+                    "type": "-",
+                    "size": 46433,
+                    "lmtime": 1700226354242,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-profile-thongtin-canhan-edit.jpg": {
+                    "type": "-",
+                    "size": 75761,
+                    "lmtime": 1700226354514,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-profile-thongtin-canhan.jpg": {
+                    "type": "-",
+                    "size": 30722,
+                    "lmtime": 1700226354714,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-profile-thongtin.jpg": {
+                    "type": "-",
+                    "size": 64211,
+                    "lmtime": 1700226354989,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-thongbaoviec-add.jpg": {
+                    "type": "-",
+                    "size": 60487,
+                    "lmtime": 1700226355288,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-thongbaoviec.jpg": {
+                    "type": "-",
+                    "size": 56258,
+                    "lmtime": 1700226355543,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-viecdaluu.jpg": {
+                    "type": "-",
+                    "size": 45195,
+                    "lmtime": 1700226355809,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-viecungtuyen-danhsach.jpg": {
+                    "type": "-",
+                    "size": 56121,
+                    "lmtime": 1700226356075,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-viecungtuyen-phuhop.jpg": {
+                    "type": "-",
+                    "size": 126673,
+                    "lmtime": 1700226356415,
+                    "modified": false
+                  },
+                  "taikhoan-ntv-viecungtuyen-xemthem.jpg": {
+                    "type": "-",
+                    "size": 70990,
+                    "lmtime": 1700226356657,
+                    "modified": false
+                  }
+                }
+              },
+              "21-register-ntv": {
+                "registr-ntv-form.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243180900,
+                  "modified": false
+                }
+              },
+              "22-login-ntv": {
+                "login-ntv-form.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243180900,
+                  "modified": false
+                }
+              },
+              "23-account-ntv": {
+                "1-heading.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242394918,
+                  "modified": false
+                },
+                "2-banner.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242402527,
+                  "modified": false
+                },
+                "3-register-information.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242419897,
+                  "modified": false
+                },
+                "4-personal-information.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242433537,
+                  "modified": false
+                }
+              },
+              "24-profile-ntv": {
+                "1-heading-help.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242462602,
+                  "modified": false
+                },
+                "2-online-profile.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242498129,
+                  "modified": false
+                },
+                "3-add-profile.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242508375,
+                  "modified": false
+                },
+                "4-attach-profile.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242539826,
+                  "modified": false
+                }
+              },
+              "25-profile-information": {
+                "1-heading.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242593612,
+                  "modified": false
+                },
+                "2-personal-information.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242617156,
+                  "modified": false
+                },
+                "3-general-information.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242636337,
+                  "modified": false
+                },
+                "4-experience.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242656880,
+                  "modified": false
+                },
+                "5-education.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242680488,
+                  "modified": false
+                },
+                "6-language.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242712080,
+                  "modified": false
+                },
+                "7-informatic.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242736349,
+                  "modified": false
+                },
+                "8-reference-information.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242769476,
+                  "modified": false
+                }
+              },
+              "26-profile-preview": {},
+              "27-jobs-applied": {
+                "1-heading.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242818903,
+                  "modified": false
+                },
+                "2-jobs-list-filter.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242870222,
+                  "modified": false
+                },
+                "3-suggestion-jobs-grid.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242897375,
+                  "modified": false
+                }
+              },
+              "28-jobs-saved": {
+                "1-heading.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242940810,
+                  "modified": false
+                },
+                "2-jobs-list-filter.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242959150,
+                  "modified": false
+                },
+                "3-suggestion-jobs-grid.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242983896,
+                  "modified": false
+                }
+              },
+              "29-0-ntd-viewed-profile": {
+                "1-heading.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242818903,
+                  "modified": false
+                },
+                "3-suggestion-jobs-grid.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242897375,
+                  "modified": false
+                },
+                "2-ntd-list-filter.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242870222,
+                  "modified": false
+                }
+              },
+              "29-1-ntd-following-profile": {
+                "1-heading.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242818903,
+                  "modified": false
+                },
+                "2-ntd-list-filter.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242870222,
+                  "modified": false
+                },
+                "3-suggestion-jobs-grid.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242897375,
+                  "modified": false
+                }
+              },
+              "30-page-ntd": {
+                "ntd-account": {},
+                "ntd-hoso": {},
+                "ntd-job": {},
+                "taikhoan-ntd": {
+                  "home-ntd-customer-slider.jpg": {
+                    "type": "-",
+                    "size": 35502,
+                    "lmtime": 1700226356861,
+                    "modified": false
+                  },
+                  "home-ntd-dangky-tuvan.jpg": {
+                    "type": "-",
+                    "size": 104711,
+                    "lmtime": 1700226357188,
+                    "modified": false
+                  },
+                  "home-ntd-footer.jpg": {
+                    "type": "-",
+                    "size": 84816,
+                    "lmtime": 1700226357458,
+                    "modified": false
+                  },
+                  "home-ntd-gioithieu-slider.jpg": {
+                    "type": "-",
+                    "size": 133588,
+                    "lmtime": 1700226357785,
+                    "modified": false
+                  },
+                  "home-ntd-gioithieu-slider2.jpg": {
+                    "type": "-",
+                    "size": 127543,
+                    "lmtime": 1700226358168,
+                    "modified": false
+                  },
+                  "home-ntd-header-banner.jpg": {
+                    "type": "-",
+                    "size": 109656,
+                    "lmtime": 1700226358518,
+                    "modified": false
+                  },
+                  "home-ntd-kienthuc-accodition-news.jpg": {
+                    "type": "-",
+                    "size": 84521,
+                    "lmtime": 1700226358820,
+                    "modified": false
+                  },
+                  "ntd-cskh.jpg": {
+                    "type": "-",
+                    "size": 101379,
+                    "lmtime": 1700226359121,
+                    "modified": false
+                  },
+                  "ntd-dangky1.jpg": {
+                    "type": "-",
+                    "size": 46215,
+                    "lmtime": 1700226359359,
+                    "modified": false
+                  },
+                  "ntd-dangky2.jpg": {
+                    "type": "-",
+                    "size": 44848,
+                    "lmtime": 1700226359559,
+                    "modified": false
+                  },
+                  "ntd-dangnhap.jpg": {
+                    "type": "-",
+                    "size": 33611,
+                    "lmtime": 1700226359734,
+                    "modified": false
+                  },
+                  "ntd-dangtin-goiy.jpg": {
+                    "type": "-",
+                    "size": 63801,
+                    "lmtime": 1700226359990,
+                    "modified": false
+                  },
+                  "ntd-dangtin-goiy2.jpg": {
+                    "type": "-",
+                    "size": 60452,
+                    "lmtime": 1700226360241,
+                    "modified": false
+                  },
+                  "ntd-dangtin-goiy3.jpg": {
+                    "type": "-",
+                    "size": 50453,
+                    "lmtime": 1700226360475,
+                    "modified": false
+                  },
+                  "ntd-dangtin-xemtruoc.jpg": {
+                    "type": "-",
+                    "size": 111992,
+                    "lmtime": 1700226360819,
+                    "modified": false
+                  },
+                  "ntd-dangtin-xemtruoc2.jpg": {
+                    "type": "-",
+                    "size": 155993,
+                    "lmtime": 1700226361205,
+                    "modified": false
+                  },
+                  "ntd-dangtin-xemtruoc3.jpg": {
+                    "type": "-",
+                    "size": 54848,
+                    "lmtime": 1700226361377,
+                    "modified": false
+                  },
+                  "ntd-dangtin.jpg": {
+                    "type": "-",
+                    "size": 150678,
+                    "lmtime": 1700226361720,
+                    "modified": false
+                  },
+                  "ntd-dangtin1.jpg": {
+                    "type": "-",
+                    "size": 91686,
+                    "lmtime": 1700226361990,
+                    "modified": false
+                  },
+                  "ntd-dangtin2.jpg": {
+                    "type": "-",
+                    "size": 70952,
+                    "lmtime": 1700226362193,
+                    "modified": false
+                  },
+                  "ntd-dangtin3.jpg": {
+                    "type": "-",
+                    "size": 55345,
+                    "lmtime": 1700226362391,
+                    "modified": false
+                  },
+                  "ntd-dangtin4.jpg": {
+                    "type": "-",
+                    "size": 49975,
+                    "lmtime": 1700226362592,
+                    "modified": false
+                  },
+                  "ntd-dangtin5.jpg": {
+                    "type": "-",
+                    "size": 48950,
+                    "lmtime": 1700226362808,
+                    "modified": false
+                  },
+                  "ntd-danhsachtindang.jpg": {
+                    "type": "-",
+                    "size": 104108,
+                    "lmtime": 1700226363183,
+                    "modified": false
+                  },
+                  "ntd-hoso-daluu.jpg": {
+                    "type": "-",
+                    "size": 35954,
+                    "lmtime": 1700226363394,
+                    "modified": false
+                  },
+                  "ntd-hoso-ungtuyen.jpg": {
+                    "type": "-",
+                    "size": 72981,
+                    "lmtime": 1700226363641,
+                    "modified": false
+                  },
+                  "ntd-hoso-ungvien-chitiet.jpg": {
+                    "type": "-",
+                    "size": 125538,
+                    "lmtime": 1700226364016,
+                    "modified": false
+                  },
+                  "ntd-hoso-ungvien-chitiet2.jpg": {
+                    "type": "-",
+                    "size": 207503,
+                    "lmtime": 1700226364511,
+                    "modified": false
+                  },
+                  "ntd-hoso-ungvien-chitiet3.jpg": {
+                    "type": "-",
+                    "size": 241575,
+                    "lmtime": 1700226365212,
+                    "modified": false
+                  },
+                  "ntd-hoso-ungvien-chitiet4.jpg": {
+                    "type": "-",
+                    "size": 38079,
+                    "lmtime": 1700226365411,
+                    "modified": false
+                  },
+                  "ntd-hoso-ungvien-pagenav.jpg": {
+                    "type": "-",
+                    "size": 133871,
+                    "lmtime": 1700226365737,
+                    "modified": false
+                  },
+                  "ntd-thongtin-congty-giayphep.jpg": {
+                    "type": "-",
+                    "size": 45226,
+                    "lmtime": 1700226365991,
+                    "modified": false
+                  },
+                  "ntd-thongtin-congty.jpg": {
+                    "type": "-",
+                    "size": 81144,
+                    "lmtime": 1700226366240,
+                    "modified": false
+                  },
+                  "ntd-thongtin-taikhoan.jpg": {
+                    "type": "-",
+                    "size": 100096,
+                    "lmtime": 1700226366539,
+                    "modified": false
+                  },
+                  "ntd-timkiem-ungvien.jpg": {
+                    "type": "-",
+                    "size": 138781,
+                    "lmtime": 1700226366969,
+                    "modified": false
+                  }
+                }
+              },
+              "31-register-ntd": {
+                "registr-ntd-form.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243180900,
+                  "modified": false
+                }
+              },
+              "32-login-ntd": {
+                "login-ntd-form.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243180900,
+                  "modified": false
+                }
+              },
+              "33-profiles-applied": {
+                "1-heading.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243650775,
+                  "modified": false
+                },
+                "2-filtering.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243666531,
+                  "modified": false
+                },
+                "3-listing.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243682760,
+                  "modified": false
+                }
+              },
+              "34-profile-saved": {
+                "1-heading.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243650775,
+                  "modified": false
+                },
+                "2-filtering.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243666531,
+                  "modified": false
+                },
+                "3-listing.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243682760,
+                  "modified": false
+                }
+              },
+              "35-search-profile": {
+                "1-heading.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243751110,
+                  "modified": false
+                },
+                "2-searh-profile-form.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243779492,
+                  "modified": false
+                },
+                "3-advanced-filter.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243806234,
+                  "modified": false
+                },
+                "4-search-result.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243823605,
+                  "modified": false
+                }
+              },
+              "36-profile-detail": {
+                "1-heading.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243840780,
+                  "modified": false
+                },
+                "2-section-contact-ntd.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243869634,
+                  "modified": false
+                },
+                "2-basic-information-form.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243463057,
+                  "modified": false
+                },
+                "3-working-location.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243513052,
+                  "modified": false
+                },
+                "4-skills-and-salary.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243532316,
+                  "modified": false
+                },
+                "5-contact-information-form.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243559629,
+                  "modified": false
+                }
+              },
+              "37-add-post": {
+                "1-heading.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243452286,
+                  "modified": false
+                },
+                "2-basic-information-form.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243463057,
+                  "modified": false
+                },
+                "3-working-location.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243513052,
+                  "modified": false
+                },
+                "4-skills-and-salary.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243532316,
+                  "modified": false
+                },
+                "5-contact-information-form.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243559629,
+                  "modified": false
+                }
+              },
+              "38-post-list": {
+                "1-heading.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243602360,
+                  "modified": false
+                },
+                "2-accounting.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243613593,
+                  "modified": false
+                },
+                "3-filtering.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243621811,
+                  "modified": false
+                },
+                "4-listing.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243630410,
+                  "modified": false
+                }
+              },
+              "39-account-ntd": {
+                "1-account-information.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243284514,
+                  "modified": false
+                },
+                "2-company-information.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243311413,
+                  "modified": false
+                },
+                "3-GPKD.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700243326426,
+                  "modified": false
+                }
+              },
+              "391-company-ntd": {},
               "archive-loop.php": {
                 "type": "-",
                 "size": 679,
@@ -7394,6 +8982,12 @@
                   "lmtime": 1699729450766,
                   "modified": false
                 },
+                "form-register-ntd.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1699729514455,
+                  "modified": false
+                },
                 "form-register.php": {
                   "type": "-",
                   "size": 0,
@@ -7405,18 +8999,30 @@
                   "size": 0,
                   "lmtime": 1699729407725,
                   "modified": false
-                },
-                "form-register-ntd.php": {
-                  "type": "-",
-                  "size": 0,
-                  "lmtime": 1699729514455,
-                  "modified": false
                 }
               },
               "author-bio.php": {
                 "type": "-",
                 "size": 1873,
                 "lmtime": 1699690202975,
+                "modified": false
+              },
+              "content-01-home.php": {
+                "type": "-",
+                "size": 85,
+                "lmtime": 1700325173275,
+                "modified": false
+              },
+              "content-02-home-ntd.php": {
+                "type": "-",
+                "size": 85,
+                "lmtime": 1700325173275,
+                "modified": false
+              },
+              "content-03-search-job.php": {
+                "type": "-",
+                "size": 85,
+                "lmtime": 1700325173275,
                 "modified": false
               },
               "content-404.php": {
@@ -7468,17 +9074,28 @@
                 "modified": false
               },
               "footer": {
-                "footer-bottom": {},
-                "footer-bottom.php": {
+                "1-footer-home.php": {
                   "type": "-",
-                  "size": 106,
-                  "lmtime": 1699892596222,
+                  "size": 0,
+                  "lmtime": 1700228269823,
                   "modified": false
                 },
-                "footer-copyright.php": {
+                "2-footer-news.php": {
                   "type": "-",
-                  "size": 171,
-                  "lmtime": 0,
+                  "size": 0,
+                  "lmtime": 1700228269823,
+                  "modified": false
+                },
+                "3-footer-ntv.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700228269823,
+                  "modified": false
+                },
+                "4-footer-ntd.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700228269823,
                   "modified": false
                 },
                 "footer-end.php": {
@@ -7487,18 +9104,45 @@
                   "lmtime": 0,
                   "modified": false
                 },
-                "footer-menu.php": {
-                  "type": "-",
-                  "size": 987,
-                  "lmtime": 0,
-                  "modified": false
+                "footer-home": {
+                  "1-footer-top-contact-support.php": {
+                    "type": "-",
+                    "size": 8040,
+                    "lmtime": 1700321772526,
+                    "modified": false
+                  },
+                  "2-footer-jobs-by-location-columns.php": {
+                    "type": "-",
+                    "size": 2684,
+                    "lmtime": 1700321786523,
+                    "modified": false
+                  },
+                  "3-footer-about-information.php": {
+                    "type": "-",
+                    "size": 4777,
+                    "lmtime": 1700322986315,
+                    "modified": false
+                  },
+                  "4-footer-copyright.php": {
+                    "type": "-",
+                    "size": 15588,
+                    "lmtime": 1700321848010,
+                    "modified": false
+                  }
                 },
-                "footer-middle": {},
-                "footer-middle.php": {
-                  "type": "-",
-                  "size": 106,
-                  "lmtime": 1699892585440,
-                  "modified": false
+                "footer-news": {
+                  "footer-widgets.php": {
+                    "type": "-",
+                    "size": 476,
+                    "lmtime": 1699797239720,
+                    "modified": false
+                  },
+                  "footer-menu.php": {
+                    "type": "-",
+                    "size": 987,
+                    "lmtime": 1699797171330,
+                    "modified": false
+                  }
                 },
                 "footer-start.php": {
                   "type": "-",
@@ -7506,18 +9150,25 @@
                   "lmtime": 0,
                   "modified": false
                 },
-                "footer-top": {},
-                "footer-top.php": {
-                  "type": "-",
-                  "size": 103,
-                  "lmtime": 1699892577629,
-                  "modified": false
-                },
-                "footer-widgets.php": {
-                  "type": "-",
-                  "size": 476,
-                  "lmtime": 0,
-                  "modified": false
+                "footer-ntd": {
+                  "1-footer-hotline-for-ntd.php": {
+                    "type": "-",
+                    "size": 0,
+                    "lmtime": 1700240295565,
+                    "modified": false
+                  },
+                  "2-footer-about-information.php": {
+                    "type": "-",
+                    "size": 0,
+                    "lmtime": 1700240321020,
+                    "modified": false
+                  },
+                  "3-footer-copyright.php": {
+                    "type": "-",
+                    "size": 0,
+                    "lmtime": 1700240332449,
+                    "modified": false
+                  }
                 }
               },
               "global": {
@@ -7601,13 +9252,35 @@
                 }
               },
               "header": {
-                "branch": {
-                  "header-branch-list.php": {
-                    "type": "-",
-                    "size": 138,
-                    "lmtime": 1699888224485,
-                    "modified": false
-                  }
+                "1-header-home.php": {
+                  "type": "-",
+                  "size": 24569,
+                  "lmtime": 1700317286494,
+                  "modified": false
+                },
+                "2-header-news.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700228200710,
+                  "modified": false
+                },
+                "3-header-ntv.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700228200710,
+                  "modified": false
+                },
+                "4-header-ntd.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700228200710,
+                  "modified": false
+                },
+                "header-branch-list.php": {
+                  "type": "-",
+                  "size": 138,
+                  "lmtime": 1699888224485,
+                  "modified": false
                 },
                 "header-end.php": {
                   "type": "-",
@@ -7629,8 +9302,8 @@
                 },
                 "header-top-notice.php": {
                   "type": "-",
-                  "size": 189,
-                  "lmtime": 1699873262999,
+                  "size": 1043,
+                  "lmtime": 1700236405114,
                   "modified": false
                 },
                 "navbar": {
@@ -7666,131 +9339,6 @@
                   }
                 }
               },
-              "home": {
-                "footer-bottom.jpg": {
-                  "type": "-",
-                  "size": 64309,
-                  "lmtime": 1699505705951,
-                  "modified": false
-                },
-                "footer-middle.jpg": {
-                  "type": "-",
-                  "size": 34655,
-                  "lmtime": 1699505681689,
-                  "modified": false
-                },
-                "footer-top.jpg": {
-                  "type": "-",
-                  "size": 46394,
-                  "lmtime": 1699505665972,
-                  "modified": false
-                },
-                "home-banner-tao-cv.jpg": {
-                  "type": "-",
-                  "size": 90178,
-                  "lmtime": 1699505264330,
-                  "modified": false
-                },
-                "home-button-camnang.jpg": {
-                  "type": "-",
-                  "size": 5827,
-                  "lmtime": 1699505585957,
-                  "modified": false
-                },
-                "home-button-tao-hoso.jpg": {
-                  "type": "-",
-                  "size": 4377,
-                  "lmtime": 1699505486987,
-                  "modified": false
-                },
-                "home-camnang-grid.jpg": {
-                  "type": "-",
-                  "size": 117766,
-                  "lmtime": 1699505565474,
-                  "modified": false
-                },
-                "home-list-nganhnghe.jpg": {
-                  "type": "-",
-                  "size": 114000,
-                  "lmtime": 1699505514014,
-                  "modified": false
-                },
-                "home-nganhnhe-menu.jpg": {
-                  "type": "-",
-                  "size": 14655,
-                  "lmtime": 1699505455122,
-                  "modified": false
-                },
-                "home-slider-search-form.jpg": {
-                  "type": "-",
-                  "size": 17836,
-                  "lmtime": 1699505152992,
-                  "modified": false
-                },
-                "home-slider.jpg": {
-                  "type": "-",
-                  "size": 88079,
-                  "lmtime": 1699505128800,
-                  "modified": false
-                },
-                "home-top-company.jpg": {
-                  "type": "-",
-                  "size": 27766,
-                  "lmtime": 1699505193403,
-                  "modified": false
-                },
-                "home-top-menu.jpg": {
-                  "type": "-",
-                  "size": 15296,
-                  "lmtime": 1699454146831,
-                  "modified": false
-                },
-                "home-vieclam-columns.jpg": {
-                  "type": "-",
-                  "size": 48298,
-                  "lmtime": 1699505632454,
-                  "modified": false
-                },
-                "home-vieclam-gap-slider.jpg": {
-                  "type": "-",
-                  "size": 224580,
-                  "lmtime": 1699505364717,
-                  "modified": false
-                },
-                "home-vieclam-goiy-grid.jpg": {
-                  "type": "-",
-                  "size": 106123,
-                  "lmtime": 1699505328187,
-                  "modified": false
-                },
-                "top_note.png": {
-                  "type": "-",
-                  "size": 11753,
-                  "lmtime": 1699864882975,
-                  "modified": false
-                },
-                "vieclam": {
-                  "page-breadcrumb.jpg": {
-                    "type": "-",
-                    "size": 2768,
-                    "lmtime": 1699510051436,
-                    "modified": false
-                  },
-                  "vieclam-by-nghenghiep.jpg": {
-                    "type": "-",
-                    "size": 120121,
-                    "lmtime": 1699509995924,
-                    "modified": false
-                  },
-                  "vieclam-by-tinhthanh.jpg": {
-                    "type": "-",
-                    "size": 74798,
-                    "lmtime": 1699510027480,
-                    "modified": false
-                  }
-                }
-              },
-              "job-of-company": {},
               "loop": {
                 "apply-now.php": {
                   "type": "-",
@@ -7814,6 +9362,12 @@
                   "type": "-",
                   "size": 0,
                   "lmtime": 1699730023130,
+                  "modified": false
+                },
+                "navigation-post.php": {
+                  "type": "-",
+                  "size": 1335,
+                  "lmtime": 1699808861368,
                   "modified": false
                 },
                 "no-candidate-found.php": {
@@ -7869,556 +9423,28 @@
                   "size": 0,
                   "lmtime": 1699730321939,
                   "modified": false
-                },
-                "navigation-post.php": {
-                  "type": "-",
-                  "size": 1335,
-                  "lmtime": 1699808861368,
-                  "modified": false
                 }
               },
-              "page": {
-                "page-header-archive.php": {
-                  "type": "-",
-                  "size": 578,
-                  "lmtime": 1699807648360,
-                  "modified": false
-                },
-                "page-header-author.php": {
-                  "type": "-",
-                  "size": 190,
-                  "lmtime": 1699807866356,
-                  "modified": false
-                },
-                "page-header-category.php": {
-                  "type": "-",
-                  "size": 414,
-                  "lmtime": 1699808019787,
-                  "modified": false
-                },
-                "page-header-search.php": {
-                  "type": "-",
-                  "size": 158,
-                  "lmtime": 1699806443829,
-                  "modified": false
-                },
-                "page-header-tag.php": {
-                  "type": "-",
-                  "size": 370,
-                  "lmtime": 1699809048758,
-                  "modified": false
-                }
-              },
-              "page-faq": {
-                "faq-footer.jpg": {
-                  "type": "-",
-                  "size": 7145,
-                  "lmtime": 1699513795108,
-                  "modified": false
-                },
-                "faq-header.jpg": {
-                  "type": "-",
-                  "size": 89521,
-                  "lmtime": 1699513758090,
-                  "modified": false
-                },
-                "faq-list-huongdan-ntv-chitiet-pagenav.jpg": {
-                  "type": "-",
-                  "size": 47999,
-                  "lmtime": 1699513879659,
-                  "modified": false
-                },
-                "faq-list-huongdan-ntv-chitiet.jpg": {
-                  "type": "-",
-                  "size": 110028,
-                  "lmtime": 1699513852533,
-                  "modified": false
-                },
-                "faq-list-huongdan-ntv.jpg": {
-                  "type": "-",
-                  "size": 94079,
-                  "lmtime": 1699513821458,
-                  "modified": false
-                },
-                "faq-list.jpg": {
-                  "type": "-",
-                  "size": 53049,
-                  "lmtime": 1699513778878,
-                  "modified": false
-                }
-              },
-              "page-ntd": {
-                "ntd-account": {},
-                "ntd-hoso": {},
-                "taikhoan-ntd": {
-                  "home-ntd-customer-slider.jpg": {
-                    "type": "-",
-                    "size": 35502,
-                    "lmtime": 1699514070683,
-                    "modified": false
-                  },
-                  "home-ntd-dangky-tuvan.jpg": {
-                    "type": "-",
-                    "size": 104711,
-                    "lmtime": 1699514150895,
-                    "modified": false
-                  },
-                  "home-ntd-footer.jpg": {
-                    "type": "-",
-                    "size": 84816,
-                    "lmtime": 1699514172182,
-                    "modified": false
-                  },
-                  "home-ntd-gioithieu-slider.jpg": {
-                    "type": "-",
-                    "size": 133588,
-                    "lmtime": 1699514016009,
-                    "modified": false
-                  },
-                  "home-ntd-gioithieu-slider2.jpg": {
-                    "type": "-",
-                    "size": 127543,
-                    "lmtime": 1699514043110,
-                    "modified": false
-                  },
-                  "home-ntd-header-banner.jpg": {
-                    "type": "-",
-                    "size": 109656,
-                    "lmtime": 1699513958178,
-                    "modified": false
-                  },
-                  "home-ntd-kienthuc-accodition-news.jpg": {
-                    "type": "-",
-                    "size": 84521,
-                    "lmtime": 1699514129981,
-                    "modified": false
-                  },
-                  "ntd-cskh.jpg": {
-                    "type": "-",
-                    "size": 101379,
-                    "lmtime": 1699514478603,
-                    "modified": false
-                  },
-                  "ntd-dangky1.jpg": {
-                    "type": "-",
-                    "size": 46215,
-                    "lmtime": 1699514267230,
-                    "modified": false
-                  },
-                  "ntd-dangky2.jpg": {
-                    "type": "-",
-                    "size": 44848,
-                    "lmtime": 1699514291192,
-                    "modified": false
-                  },
-                  "ntd-dangnhap.jpg": {
-                    "type": "-",
-                    "size": 33611,
-                    "lmtime": 1699514244911,
-                    "modified": false
-                  },
-                  "ntd-dangtin-goiy.jpg": {
-                    "type": "-",
-                    "size": 63801,
-                    "lmtime": 1699514630491,
-                    "modified": false
-                  },
-                  "ntd-dangtin-goiy2.jpg": {
-                    "type": "-",
-                    "size": 60452,
-                    "lmtime": 1699514707586,
-                    "modified": false
-                  },
-                  "ntd-dangtin-goiy3.jpg": {
-                    "type": "-",
-                    "size": 50453,
-                    "lmtime": 1699514742221,
-                    "modified": false
-                  },
-                  "ntd-dangtin-xemtruoc.jpg": {
-                    "type": "-",
-                    "size": 111992,
-                    "lmtime": 1699514932593,
-                    "modified": false
-                  },
-                  "ntd-dangtin-xemtruoc2.jpg": {
-                    "type": "-",
-                    "size": 155993,
-                    "lmtime": 1699514954242,
-                    "modified": false
-                  },
-                  "ntd-dangtin-xemtruoc3.jpg": {
-                    "type": "-",
-                    "size": 54848,
-                    "lmtime": 1699514973076,
-                    "modified": false
-                  },
-                  "ntd-dangtin.jpg": {
-                    "type": "-",
-                    "size": 150678,
-                    "lmtime": 1699513976117,
-                    "modified": false
-                  },
-                  "ntd-dangtin1.jpg": {
-                    "type": "-",
-                    "size": 91686,
-                    "lmtime": 1699514504706,
-                    "modified": false
-                  },
-                  "ntd-dangtin2.jpg": {
-                    "type": "-",
-                    "size": 70952,
-                    "lmtime": 1699514534627,
-                    "modified": false
-                  },
-                  "ntd-dangtin3.jpg": {
-                    "type": "-",
-                    "size": 55345,
-                    "lmtime": 1699514596324,
-                    "modified": false
-                  },
-                  "ntd-dangtin4.jpg": {
-                    "type": "-",
-                    "size": 49975,
-                    "lmtime": 1699514675333,
-                    "modified": false
-                  },
-                  "ntd-dangtin5.jpg": {
-                    "type": "-",
-                    "size": 48950,
-                    "lmtime": 1699514822208,
-                    "modified": false
-                  },
-                  "ntd-danhsachtindang.jpg": {
-                    "type": "-",
-                    "size": 104108,
-                    "lmtime": 1699515001884,
-                    "modified": false
-                  },
-                  "ntd-hoso-daluu.jpg": {
-                    "type": "-",
-                    "size": 35954,
-                    "lmtime": 1699515051615,
-                    "modified": false
-                  },
-                  "ntd-hoso-ungtuyen.jpg": {
-                    "type": "-",
-                    "size": 72981,
-                    "lmtime": 1699515026540,
-                    "modified": false
-                  },
-                  "ntd-hoso-ungvien-chitiet.jpg": {
-                    "type": "-",
-                    "size": 125538,
-                    "lmtime": 1699515158730,
-                    "modified": false
-                  },
-                  "ntd-hoso-ungvien-chitiet2.jpg": {
-                    "type": "-",
-                    "size": 207503,
-                    "lmtime": 1699515203940,
-                    "modified": false
-                  },
-                  "ntd-hoso-ungvien-chitiet3.jpg": {
-                    "type": "-",
-                    "size": 241575,
-                    "lmtime": 1699515230147,
-                    "modified": false
-                  },
-                  "ntd-hoso-ungvien-chitiet4.jpg": {
-                    "type": "-",
-                    "size": 38079,
-                    "lmtime": 1699515255199,
-                    "modified": false
-                  },
-                  "ntd-hoso-ungvien-pagenav.jpg": {
-                    "type": "-",
-                    "size": 133871,
-                    "lmtime": 1699515104367,
-                    "modified": false
-                  },
-                  "ntd-thongtin-congty-giayphep.jpg": {
-                    "type": "-",
-                    "size": 45226,
-                    "lmtime": 1699514425735,
-                    "modified": false
-                  },
-                  "ntd-thongtin-congty.jpg": {
-                    "type": "-",
-                    "size": 81144,
-                    "lmtime": 1699514395862,
-                    "modified": false
-                  },
-                  "ntd-thongtin-taikhoan.jpg": {
-                    "type": "-",
-                    "size": 100096,
-                    "lmtime": 1699514358779,
-                    "modified": false
-                  },
-                  "ntd-timkiem-ungvien.jpg": {
-                    "type": "-",
-                    "size": 138781,
-                    "lmtime": 1699515075017,
-                    "modified": false
-                  }
-                },
-                "ntd-job": {}
-              },
-              "page-ntv": {
-                "ntv-account": {},
-                "taikhoan-ntv": {
-                  "taikhoan-ntv-hoso-add-footer-sticky.jpg": {
-                    "type": "-",
-                    "size": 18714,
-                    "lmtime": 1699513207874,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-hoso-add-kinhnghiem.jpg": {
-                    "type": "-",
-                    "size": 50861,
-                    "lmtime": 1699513100194,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-hoso-add-nguoithamkhao.jpg": {
-                    "type": "-",
-                    "size": 35213,
-                    "lmtime": 1699513172957,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-hoso-add-sidebar-sticky.jpg": {
-                    "type": "-",
-                    "size": 20261,
-                    "lmtime": 1699513035536,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-hoso-add-thongtinchung.jpg": {
-                    "type": "-",
-                    "size": 93996,
-                    "lmtime": 1699513062354,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-hoso-add-thongtinhocvan.jpg": {
-                    "type": "-",
-                    "size": 52159,
-                    "lmtime": 1699513117101,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-hoso-add-thongtinngoaingu.jpg": {
-                    "type": "-",
-                    "size": 28402,
-                    "lmtime": 1699513134303,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-hoso-add-thongtintinhoc.jpg": {
-                    "type": "-",
-                    "size": 26164,
-                    "lmtime": 1699513152893,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-hoso-add.jpg": {
-                    "type": "-",
-                    "size": 35748,
-                    "lmtime": 1699513017868,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-hoso-dinhkem-edit.jpg": {
-                    "type": "-",
-                    "size": 68914,
-                    "lmtime": 1699513381464,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-hoso-dinhkem-taicv.jpg": {
-                    "type": "-",
-                    "size": 40372,
-                    "lmtime": 1699513309018,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-hoso-dinhkem-thongtinchung.jpg": {
-                    "type": "-",
-                    "size": 81080,
-                    "lmtime": 1699513409216,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-hoso-dinhkem.jpg": {
-                    "type": "-",
-                    "size": 19659,
-                    "lmtime": 1699512983968,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-hoso-dinhkiem-thongtincanhan.jpg": {
-                    "type": "-",
-                    "size": 27286,
-                    "lmtime": 1699513344200,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-hoso-tructuyen.jpg": {
-                    "type": "-",
-                    "size": 27900,
-                    "lmtime": 1699512967146,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-menu.jpg": {
-                    "type": "-",
-                    "size": 44079,
-                    "lmtime": 1699512833526,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-ntdnoibat-slider.jpg": {
-                    "type": "-",
-                    "size": 141880,
-                    "lmtime": 1699513705711,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-ntdtheodoi-danhsach.jpg": {
-                    "type": "-",
-                    "size": 51404,
-                    "lmtime": 1699513676858,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-ntdxem-danhsach.jpg": {
-                    "type": "-",
-                    "size": 46433,
-                    "lmtime": 1699513650051,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-profile-thongtin-canhan-edit.jpg": {
-                    "type": "-",
-                    "size": 75761,
-                    "lmtime": 1699512920176,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-profile-thongtin-canhan.jpg": {
-                    "type": "-",
-                    "size": 30722,
-                    "lmtime": 1699512896683,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-profile-thongtin.jpg": {
-                    "type": "-",
-                    "size": 64211,
-                    "lmtime": 1699512880682,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-thongbaoviec-add.jpg": {
-                    "type": "-",
-                    "size": 60487,
-                    "lmtime": 1699513615398,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-thongbaoviec.jpg": {
-                    "type": "-",
-                    "size": 56258,
-                    "lmtime": 1699513589293,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-viecdaluu.jpg": {
-                    "type": "-",
-                    "size": 45195,
-                    "lmtime": 1699513547454,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-viecungtuyen-danhsach.jpg": {
-                    "type": "-",
-                    "size": 56121,
-                    "lmtime": 1699513461407,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-viecungtuyen-phuhop.jpg": {
-                    "type": "-",
-                    "size": 126673,
-                    "lmtime": 1699513499580,
-                    "modified": false
-                  },
-                  "taikhoan-ntv-viecungtuyen-xemthem.jpg": {
-                    "type": "-",
-                    "size": 70990,
-                    "lmtime": 1699513519518,
-                    "modified": false
-                  }
-                },
-                "ntv-job": {}
-              },
-              "search-job": {
-                "search-advanced-filter-sticky.jpg": {
-                  "type": "-",
-                  "size": 20791,
-                  "lmtime": 1699511528402,
-                  "modified": false
-                },
-                "search-advanced-filter.jpg": {
-                  "type": "-",
-                  "size": 20057,
-                  "lmtime": 1699509674108,
-                  "modified": false
-                },
-                "search-ajax-search.jpg": {
-                  "type": "-",
-                  "size": 29699,
-                  "lmtime": 1699509601441,
-                  "modified": false
-                },
-                "search-location.jpg": {
-                  "type": "-",
-                  "size": 16234,
-                  "lmtime": 1699509640899,
-                  "modified": false
-                },
-                "search-nghenghiep-select.jpg": {
-                  "type": "-",
-                  "size": 23022,
-                  "lmtime": 1699509623943,
-                  "modified": false
-                },
-                "search-result-grid-main-sorting.jpg": {
-                  "type": "-",
-                  "size": 75964,
-                  "lmtime": 1699509773463,
-                  "modified": false
-                },
-                "search-result-grid-main.jpg": {
-                  "type": "-",
-                  "size": 102734,
-                  "lmtime": 1699509740525,
-                  "modified": false
-                },
-                "search-result-grid.jpg": {
-                  "type": "-",
-                  "size": 122806,
-                  "lmtime": 1699509710925,
-                  "modified": false
-                },
-                "search-result-vieclam-by-nghenghiep.jpg": {
-                  "type": "-",
-                  "size": 59378,
-                  "lmtime": 1699509925914,
-                  "modified": false
-                },
-                "search-result-widget.jpg": {
-                  "type": "-",
-                  "size": 30915,
-                  "lmtime": 1699509893466,
-                  "modified": false
-                },
-                "search-resutl-grid-pagenav-bar.jpg": {
-                  "type": "-",
-                  "size": 4229,
-                  "lmtime": 1699509864930,
-                  "modified": false
-                },
-                "search-sorting-bar.jpg": {
-                  "type": "-",
-                  "size": 8777,
-                  "lmtime": 1699509830570,
-                  "modified": false
-                },
-                "search-top-filter.jpg": {
-                  "type": "-",
-                  "size": 27190,
-                  "lmtime": 1699509580465,
-                  "modified": false
-                }
-              },
+              "offcanvas": {},
               "sidebar": {
+                "1-jobs-single-sidebar-menu.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700241481234,
+                  "modified": false
+                },
+                "2-news-single-sidebar-related.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700241971893,
+                  "modified": false
+                },
+                "3-ntv-sidebar-menu.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242321243,
+                  "modified": false
+                },
                 "primary-two.php": {
                   "type": "-",
                   "size": 2183,
@@ -8430,113 +9456,40 @@
                   "size": 540,
                   "lmtime": 1699809322585,
                   "modified": false
-                }
-              },
-              "single-company": {},
-              "single-faqs": {},
-              "single-job": {
-                "vieclam-chitiet": {
-                  "vieclam-chitiet-breadcrumb.jpg": {
-                    "type": "-",
-                    "size": 10637,
-                    "lmtime": 1699511265419,
-                    "modified": false
-                  },
-                  "vieclam-chitiet-congty.jpg": {
-                    "type": "-",
-                    "size": 66842,
-                    "lmtime": 1699511388748,
-                    "modified": false
-                  },
-                  "vieclam-chitiet-header-sticky.jpg": {
-                    "type": "-",
-                    "size": 34156,
-                    "lmtime": 1699511434591,
-                    "modified": false
-                  },
-                  "vieclam-chitiet-header.jpg": {
-                    "type": "-",
-                    "size": 45696,
-                    "lmtime": 1699511250150,
-                    "modified": false
-                  },
-                  "vieclam-chitiet-tuyendung1.jpg": {
-                    "type": "-",
-                    "size": 107564,
-                    "lmtime": 1699511306876,
-                    "modified": false
-                  },
-                  "vieclam-chitiet-tuyendung2.jpg": {
-                    "type": "-",
-                    "size": 131498,
-                    "lmtime": 1699511327000,
-                    "modified": false
-                  },
-                  "vieclam-chitiet-tuyendung3.jpg": {
-                    "type": "-",
-                    "size": 129429,
-                    "lmtime": 1699511347990,
-                    "modified": false
-                  },
-                  "vieclam-chitiet-widget-sidebar-pagenav.jpg": {
-                    "type": "-",
-                    "size": 17199,
-                    "lmtime": 1699511474236,
-                    "modified": false
-                  },
-                  "vieclam-chitiet-widget-sidebar.jpg": {
-                    "type": "-",
-                    "size": 52305,
-                    "lmtime": 1699511455565,
-                    "modified": false
-                  }
                 },
-                "vieclam-cty": {
-                  "vieclam-cty-dangtuyen.jpg": {
-                    "type": "-",
-                    "size": 78772,
-                    "lmtime": 1699511125001,
-                    "modified": false
-                  },
-                  "vieclam-cty-danhsach.jpg": {
-                    "type": "-",
-                    "size": 82711,
-                    "lmtime": 1699511084903,
-                    "modified": false
-                  },
-                  "vieclam-cty-gioithieu.jpg": {
-                    "type": "-",
-                    "size": 102329,
-                    "lmtime": 1699511164778,
-                    "modified": false
-                  },
-                  "vieclam-cty-header.jpg": {
-                    "type": "-",
-                    "size": 69342,
-                    "lmtime": 1699511038025,
-                    "modified": false
-                  },
-                  "vieclam-cty-hinhanh.jpg": {
-                    "type": "-",
-                    "size": 169365,
-                    "lmtime": 1699511575901,
-                    "modified": false
-                  },
-                  "vieclam-cty-lienhe.jpg": {
-                    "type": "-",
-                    "size": 62698,
-                    "lmtime": 1699511179795,
-                    "modified": false
-                  },
-                  "vieclam-cty-widget.jpg": {
-                    "type": "-",
-                    "size": 7657,
-                    "lmtime": 1699511588209,
-                    "modified": false
-                  }
+                "4-ntd-sidebar-menu.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700242343204,
+                  "modified": false
                 }
               },
-              "single-news": {}
+              "sticky-bars": {
+                "1-footer-sticky-news.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700228417899,
+                  "modified": false
+                },
+                "2-footer-sticky-filter-profile.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700228417899,
+                  "modified": false
+                },
+                "3-header-sticky-jobs-detail.php": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1700241202435,
+                  "modified": false
+                }
+              },
+              "content-04-.php": {
+                "type": "-",
+                "size": 85,
+                "lmtime": 1700325173275,
+                "modified": false
+              }
             },
             "readme.txt": {
               "type": "-",
@@ -8594,178 +9547,214 @@
             },
             "tailwind.config.js": {
               "type": "-",
-              "size": 491,
-              "lmtime": 1700162261164,
+              "size": 1005,
+              "lmtime": 1700322663585,
               "modified": false
             },
             "templates": {
-              "archive-news.php": {
-                "type": "-",
-                "size": 176,
-                "lmtime": 1699717486650,
-                "modified": false
-              },
-              "home-ntd.php": {
-                "type": "-",
-                "size": 232,
-                "lmtime": 1699728757395,
-                "modified": false
-              },
-              "home.php": {
+              "01-home.php": {
                 "type": "-",
                 "size": 218,
                 "lmtime": 1699728918976,
                 "modified": false
               },
-              "job-of-company.php": {
+              "02-home-ntd.php": {
                 "type": "-",
-                "size": 253,
-                "lmtime": 1699728766279,
+                "size": 224,
+                "lmtime": 1700226790905,
                 "modified": false
               },
-              "ntd-company-information.php": {
-                "type": "-",
-                "size": 251,
-                "lmtime": 1699728779256,
-                "modified": false
-              },
-              "ntd-cskh.php": {
+              "03-search-job.php": {
                 "type": "-",
                 "size": 241,
-                "lmtime": 1699728783926,
+                "lmtime": 1699853568235,
                 "modified": false
               },
-              "ntd-detail-ntv.php": {
+              "04-single-job.php": {
                 "type": "-",
-                "size": 239,
-                "lmtime": 1699728788150,
+                "size": 235,
+                "lmtime": 1699853561005,
                 "modified": false
               },
-              "ntd-hoso-apply.php": {
+              "05-single-company.php": {
                 "type": "-",
-                "size": 248,
-                "lmtime": 1699728792933,
+                "size": 157,
+                "lmtime": 1699718558413,
                 "modified": false
               },
-              "ntd-hoso-saved.php": {
-                "type": "-",
-                "size": 246,
-                "lmtime": 1699728798491,
-                "modified": false
-              },
-              "ntd-job-add.php": {
+              "06-job-of-company.php": {
                 "type": "-",
                 "size": 247,
-                "lmtime": 1699728804577,
+                "lmtime": 1699854532942,
                 "modified": false
               },
-              "ntd-job-list.php": {
-                "type": "-",
-                "size": 245,
-                "lmtime": 1699728810968,
-                "modified": false
-              },
-              "ntd-login-register.php": {
-                "type": "-",
-                "size": 261,
-                "lmtime": 1699728815136,
-                "modified": false
-              },
-              "ntv-hoso.php": {
-                "type": "-",
-                "size": 240,
-                "lmtime": 1699728823551,
-                "modified": false
-              },
-              "ntv-job-apply.php": {
-                "type": "-",
-                "size": 253,
-                "lmtime": 1699728827216,
-                "modified": false
-              },
-              "ntv-job-saved.php": {
-                "type": "-",
-                "size": 244,
-                "lmtime": 1699728831123,
-                "modified": false
-              },
-              "ntv-login-register.php": {
-                "type": "-",
-                "size": 245,
-                "lmtime": 1699728835887,
-                "modified": false
-              },
-              "ntv-ntd-following.php": {
-                "type": "-",
-                "size": 262,
-                "lmtime": 1699728839977,
-                "modified": false
-              },
-              "ntv-ntd-viewed.php": {
-                "type": "-",
-                "size": 256,
-                "lmtime": 1699728843781,
-                "modified": false
-              },
-              "ntv-profile.php": {
-                "type": "-",
-                "size": 250,
-                "lmtime": 1699728848206,
-                "modified": false
-              },
-              "ntv-system-messages.php": {
-                "type": "-",
-                "size": 252,
-                "lmtime": 1699728856409,
-                "modified": false
-              },
-              "page-faq.php": {
+              "07-home-news.php": {
                 "type": "-",
                 "size": 230,
-                "lmtime": 1699728752089,
+                "lmtime": 1700226772652,
                 "modified": false
+              },
+              "08-single-news.php": {
+                "type": "-",
+                "size": 167,
+                "lmtime": 1699853551969,
+                "modified": false
+              },
+              "09-page-faq.php": {
+                "type": "-",
+                "size": 224,
+                "lmtime": 1699853762122,
+                "modified": false
+              },
+              "10-single-faq.php": {
+                "type": "-",
+                "size": 220,
+                "lmtime": 1700325406682,
+                "modified": false
+              },
+              "21-register-ntv.php": {
+                "type": "-",
+                "size": 242,
+                "lmtime": 1700227397604,
+                "modified": false
+              },
+              "22-login-ntv.php": {
+                "type": "-",
+                "size": 239,
+                "lmtime": 1700226847832,
+                "modified": false
+              },
+              "23-account-ntv.php": {
+                "type": "-",
+                "size": 244,
+                "lmtime": 1699853774874,
+                "modified": false
+              },
+              "24-profile-ntv.php": {
+                "type": "-",
+                "size": 234,
+                "lmtime": 1699853799454,
+                "modified": false
+              },
+              "25-profile-information.php": {
+                "type": "-",
+                "size": 230,
+                "lmtime": 1700226889713,
+                "modified": false
+              },
+              "26-profile-preview.php": {
+                "type": "-",
+                "size": 250,
+                "lmtime": 1699853779439,
+                "modified": false
+              },
+              "27-jobs-applied.php": {
+                "type": "-",
+                "size": 247,
+                "lmtime": 1699853795070,
+                "modified": false
+              },
+              "28-jobs-saved.php": {
+                "type": "-",
+                "size": 238,
+                "lmtime": 1699853790753,
+                "modified": false
+              },
+              "29-0-ntd-viewed-profile.php": {
+                "type": "-",
+                "size": 253,
+                "lmtime": 1700227482850,
+                "modified": false
+              },
+              "29-1-ntd-following-profile.php": {
+                "type": "-",
+                "size": 259,
+                "lmtime": 1700227490305,
+                "modified": false
+              },
+              "30-page-ntd.php": {
+                "type": "-",
+                "size": 230,
+                "lmtime": 1700227521510,
+                "modified": false
+              },
+              "31-register-ntd.php": {
+                "type": "-",
+                "size": 241,
+                "lmtime": 1700227412904,
+                "modified": false
+              },
+              "32-login-ntd.php": {
+                "type": "-",
+                "size": 238,
+                "lmtime": 1700227563504,
+                "modified": false
+              },
+              "33-profiles-applied.php": {
+                "type": "-",
+                "size": 242,
+                "lmtime": 1699854513877,
+                "modified": false
+              },
+              "34-profiles-saved.php": {
+                "type": "-",
+                "size": 240,
+                "lmtime": 1699854509502,
+                "modified": false
+              },
+              "35-search-profile.php": {
+                "type": "-",
+                "size": 243,
+                "lmtime": 1699854503485,
+                "modified": false
+              },
+              "36-profile-detail.php": {
+                "type": "-",
+                "size": 233,
+                "lmtime": 1699854519705,
+                "modified": false
+              },
+              "37-add-post.php": {
+                "type": "-",
+                "size": 241,
+                "lmtime": 1699854498753,
+                "modified": false
+              },
+              "38-post-list.php": {
+                "type": "-",
+                "size": 239,
+                "lmtime": 1699854494258,
+                "modified": false
+              },
+              "39-0-company-ntd.php": {
+                "type": "-",
+                "size": 245,
+                "lmtime": 1699854528985,
+                "modified": false
+              },
+              "39-1-account-ntd.php": {
+                "type": "-",
+                "size": 246,
+                "lmtime": 1699853770487,
+                "modified": false
+              },
+              "archive-news.php": {
+                "type": "-",
+                "size": 170,
+                "lmtime": 1699717486650,
+                "modified": true
               },
               "page-full.php": {
                 "type": "-",
-                "size": 866,
+                "size": 859,
                 "lmtime": 1699690210854,
-                "modified": false
+                "modified": true
               },
               "page-nosidebar.php": {
                 "type": "-",
-                "size": 871,
+                "size": 864,
                 "lmtime": 1699690211562,
-                "modified": false
-              },
-              "search-job.php": {
-                "type": "-",
-                "size": 247,
-                "lmtime": 1699728770726,
-                "modified": false
-              },
-              "single-company.php": {
-                "type": "-",
-                "size": 157,
-                "lmtime": 1699695412885,
                 "modified": true
-              },
-              "single-job.php": {
-                "type": "-",
-                "size": 241,
-                "lmtime": 1699728774878,
-                "modified": false
-              },
-              "single-news.php": {
-                "type": "-",
-                "size": 173,
-                "lmtime": 1699717474324,
-                "modified": false
-              },
-              "ntd-hoso-search.php": {
-                "type": "-",
-                "size": 249,
-                "lmtime": 1699728818940,
-                "modified": false
               }
             }
           }

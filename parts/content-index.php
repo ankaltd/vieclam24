@@ -1,50 +1,40 @@
-<?php
-/**
- * The template for displaying content in the index.php template.
- */
-?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'col-sm-6' ); ?>>
-	<div class="card mb-4">
-		<header class="card-body">
-			<h2 class="card-title">
-				<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'vieclam24' ), the_title_attribute( array( 'echo' => false ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
-			</h2>
+<main class="bg-se-titan-white">
+	<div class="min-h-screen bg-white lg:pb-4">
+		<section id="employers-banner-version2">
 			<?php
-				if ( 'post' === get_post_type() ) :
-			?>
-				<div class="card-text entry-meta">
-					<?php
-						WEP_Functions::vieclam24_article_posted_on();
+			/**
+			 * The template for displaying content in the index.php template.
+			 */
 
-						$num_comments = get_comments_number();
-						if ( comments_open() && $num_comments >= 1 ) :
-							echo ' <a href="' . esc_url( get_comments_link() ) . '" class="badge badge-pill bg-secondary float-end" title="' . esc_attr( sprintf( _n( '%s Comment', '%s Comments', $num_comments, 'vieclam24' ), $num_comments ) ) . '">' . $num_comments . '</a>';
-						endif;
-					?>
-				</div><!-- /.entry-meta -->
-			<?php
-				endif;
+			get_template_part('parts/01-home/1-home-banner-slider');
 			?>
-		</header>
-		<div class="card-body">
-			<div class="card-text entry-content">
+
+			<div class="wp-container search-container">
 				<?php
-					if ( has_post_thumbnail() ) {
-						echo '<div class="post-thumbnail">' . get_the_post_thumbnail( get_the_ID(), 'large' ) . '</div>';
-					}
-
-					if ( is_search() ) {
-						the_excerpt();
-					} else {
-						the_content();
-					}
+				get_template_part('parts/01-home/2-home-search-form');
+				get_template_part('parts/01-home/3-home-hightlight-branch');
 				?>
-				<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . esc_html__( 'Pages:', 'vieclam24' ) . '</span>', 'after' => '</div>' ) ); ?>
-			</div><!-- /.card-text -->
-			<footer class="entry-meta">
-				<a href="<?php the_permalink(); ?>" class="btn btn-outline-secondary"><?php esc_html_e( 'more', 'vieclam24' ); ?></a>
-			</footer><!-- /.entry-meta -->
-		</div><!-- /.card-body -->
-	</div><!-- /.col -->
-</article><!-- /#post-<?php the_ID(); ?> -->
+			</div>
+			<div class="wp-container">
+				<?php
+				get_template_part('parts/01-home/4-home-top-company');
+				?>
+			</div>
+		</section>
+
+		<?php
+		get_template_part('parts/01-home/5-home-urgent-jobs-grid-slider');
+		?>
+		<section class="wp-container-fluid relative bg-se-titan-white lg:bg-transparent lg:pt-6 pb-4 mb-3">
+			<?php
+			get_template_part('parts/01-home/parts/01-home/6-home-banner-ads');
+			get_template_part('parts/01-home/7-home-suggestion-jobs-grid');
+			?>
+		</section>
+		<?php
+		get_template_part('parts/01-home/8-home-career-handbook-grid');
+		get_template_part('parts/01-home/9-home-jobs-by-columns');
+
+		?>
+	</div>
+</main>

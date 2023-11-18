@@ -2,3 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Header */
+
+.\!bg-primary {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(69, 29, 160, var(--tw-bg-opacity)) !important;
+}
+
+.bg-primary-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(35, 9, 94, var(--tw-bg-opacity));
+}
+
+.TopHeader_dropdown__asawl .TopHeader_dropBtn__W8YPd {
+  color: #fff;
+  padding: 12px;
+  font-size: 13px;
+  border: none;
+  border-radius: 6px;
+  width: auto;
+  font-weight: 600;
+}
+
+/* Footer */
+
+.wp-container {
+  max-width: 1280px;
+}
+
+.wp-container,
+.wp-container-fluid {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,1 @@
+<div class="wp-container bg-white mb-6 md:mb-10"><a href="/cv/danh-sach-cv.html"><img src="/img/banner-home-create-cv-big.png" height="200" class="w-full" alt=""></a></div>

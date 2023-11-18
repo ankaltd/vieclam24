@@ -11,10 +11,21 @@ module.exports = {
         sans: ['"Be Vietnam Pro"', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
-        '14': '14px',
+        14: "14px",
+        11: "11px",
+        13: "13px",
       },
       textColor: {
-        'se-accent-100': 'rgba(44,149,255,1)',
+        "se-accent-100": "rgba(44,149,255,1)",
+      },
+      backgroundColor: {
+        "!primary": "rgba(69,29,160,var(--tw-bg-opacity))!important",
+        "!primary-100": "rgba(35,9,94,var(--tw-bg-opacity))!important",
+      },
+      "--tw-bg-opacity": {
+        1: "1!important",
+        2: "0.5!important", // Thêm các giá trị khác nếu cần
+        // ...
       },
     },
   },
@@ -27,4 +38,5 @@ module.exports = {
   },
   plugins: [],
   module: {},
+  specialCharacters: ["!"],
 };
