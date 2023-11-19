@@ -1,0 +1,1 @@
+<div class="bg-white p-4 space-y-1 flex items-center justify-between shadow-sm leading-none"><div class="text-14 flex items-center"><b class="mr-1">6658</b>tin đăng</div><div class=" flex items-center text-16 text-se-accent-100 font-semibold"><span class="relative leading-none"><i class="svicon-filter mr-2"></i></span><span>Lọc kết quả</span></div></div>
