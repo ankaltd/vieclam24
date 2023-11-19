@@ -1,0 +1,1 @@
+<div class="h-[55px] flex items-center"><span class="text-se-neutral-64 mx-1">Tài khoản của bạn / </span><span class="text-[16px] leading-[20px] font-semibold text-primary">Tạo hồ sơ trực tuyến</span></div>
