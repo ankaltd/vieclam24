@@ -1,0 +1,9 @@
+<div class="jsx-d84db6a84feb175e">
+    <h4 class="jsx-d84db6a84feb175e text-24 font-semibold py-4">Địa điểm làm việc</h4>
+    <ul class="jsx-d84db6a84feb175e">
+        <li class="jsx-d84db6a84feb175e mb-2 flex text-14"><span class="jsx-d84db6a84feb175e text-primary font-medium pt-[1px]"><i class="jsx-d84db6a84feb175e svicon-map-marker-alt mr-1"></i></span><span class="jsx-d84db6a84feb175e"><span class="jsx-d84db6a84feb175e text-primary font-medium pt-[1px] text-12">Hải Phòng</span>, Lô đất L, Khu công nghiệp Nhật Bản - Hải Phòng<!-- -->, An Dương</span></li>
+        <li class="jsx-d84db6a84feb175e mb-2 flex text-14"><span class="jsx-d84db6a84feb175e text-primary font-medium pt-[1px]"><i class="jsx-d84db6a84feb175e svicon-map-marker-alt mr-1"></i></span><span class="jsx-d84db6a84feb175e"><span class="jsx-d84db6a84feb175e text-primary font-medium pt-[1px] text-12">Thái Bình</span>, Lô CN1+2, Khu CN Sông Trà, Quốc lộ 10, xã Tân Bình<!-- -->, Thái Bình</span></li>
+        <li class="jsx-d84db6a84feb175e mb-2 flex text-14"><span class="jsx-d84db6a84feb175e text-primary font-medium pt-[1px]"><i class="jsx-d84db6a84feb175e svicon-map-marker-alt mr-1"></i></span><span class="jsx-d84db6a84feb175e"><span class="jsx-d84db6a84feb175e text-primary font-medium pt-[1px] text-12">Quảng Ninh</span>, Lô CN-02, Khu CN Đông Mai, phường Đông Mai<!-- -->, Quảng Yên</span></li>
+        <li class="jsx-d84db6a84feb175e mb-2 flex text-14"><span class="jsx-d84db6a84feb175e text-primary font-medium pt-[1px]"><i class="jsx-d84db6a84feb175e svicon-map-marker-alt mr-1"></i></span><span class="jsx-d84db6a84feb175e"><span class="jsx-d84db6a84feb175e text-primary font-medium pt-[1px] text-12">Nam Định</span>, Nam Định</span></li>
+    </ul>
+</div>

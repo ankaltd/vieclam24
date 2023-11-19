@@ -1,0 +1,5 @@
+<div>
+    <hr class="mt-8 mb-4">
+    <h3 class="text-14 font-normal pt-4 mb-2">Từ khoá</h3>
+    <div><a class="inline-block mb-2 text-12 font-semibold px-2 py-1 rounded-md bg-[#EFEFF0] text-se-neutral-80 mr-2" href="/vieclam/xe">xe</a><a class="inline-block mb-2 text-12 font-semibold px-2 py-1 rounded-md bg-[#EFEFF0] text-se-neutral-80 mr-2" href="/vieclam/xuat">xuất</a><a class="inline-block mb-2 text-12 font-semibold px-2 py-1 rounded-md bg-[#EFEFF0] text-se-neutral-80 mr-2" href="/vieclam/pho-thong">phổ thông</a><a class="inline-block mb-2 text-12 font-semibold px-2 py-1 rounded-md bg-[#EFEFF0] text-se-neutral-80 mr-2" href="/hai-phong-p92.html">Việc làm Hải Phòng</a><a class="inline-block mb-2 text-12 font-semibold px-2 py-1 rounded-md bg-[#EFEFF0] text-se-neutral-80 mr-2" href="/mien-bac/viec-lam-lao-dong-pho-thong-o49.html">Lao động phổ thông</a><a class="inline-block mb-2 text-12 font-semibold px-2 py-1 rounded-md bg-[#EFEFF0] text-se-neutral-80 mr-2" href="/danh-sach-tin-tuyen-dung-cong-ty-tnhh-yazaki-hai-phong-viet-nam-ntd202254468p92.html">Công Ty TNHH Yazaki Hải ...</a></div>
+</div>
