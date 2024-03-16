@@ -14,3 +14,4 @@ jobs:
         server: 103.167.199.37
         username: vieclam@vieclam24.com.vn
         password: E8c1BPGP
+        local-dir: public_html/wp-content/themes/vieclam24
