@@ -16,4 +16,3 @@ jobs:
         password: E8c1BPGP
         server-dir: /public_html/wp-content/themes/vieclam24/
         dangerous-clean-slate: true
-        timeout: 300
