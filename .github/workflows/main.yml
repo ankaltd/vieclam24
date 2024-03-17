@@ -15,3 +15,4 @@ jobs:
         username: vieclam@vieclam24.com.vn
         password: E8c1BPGP
         server-dir: /public_html/wp-content/themes/vieclam24/
+        dangerous-clean-slate: true
